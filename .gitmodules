@@ -7,3 +7,9 @@
 [submodule "bsp/components/st7796"]
 	path = bsp/components/st7796
 	url = git@github.com:CullenSharp/stm32_7796.git
+[submodule "/Drivers/st7796"]
+	path = /Drivers/st7796
+	url = git@github.com:CullenSharp/stm32_7796.git
+[submodule "/H7A3_NUCLEO/Drivers/st7796"]
+	path = /H7A3_NUCLEO/Drivers/st7796
+	url = git@github.com:CullenSharp/stm32_7796.git
