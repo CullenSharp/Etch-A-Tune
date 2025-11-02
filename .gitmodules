@@ -1,15 +1,6 @@
-[submodule "stm32_7796"]
-	path = stm32_7796
-	url = file:////home/cullen-sharp/git/stm32_7796
-[submodule "st7796"]
-	path = st7796
-	url = git@github.com:CullenSharp/stm32_7796.git
-[submodule "bsp/components/st7796"]
-	path = bsp/components/st7796
-	url = git@github.com:CullenSharp/stm32_7796.git
-[submodule "/Drivers/st7796"]
-	path = /Drivers/st7796
-	url = git@github.com:CullenSharp/stm32_7796.git
 [submodule "/H7A3_NUCLEO/Drivers/st7796"]
 	path = /H7A3_NUCLEO/Drivers/st7796
 	url = git@github.com:CullenSharp/stm32_7796.git
+[submodule "/H7A3_NUCLEO/Drivers/xpt2046"]
+	path = /H7A3_NUCLEO/Drivers/xpt2046
+	url = git@github.com:CullenSharp/stm32_xpt2046.git
