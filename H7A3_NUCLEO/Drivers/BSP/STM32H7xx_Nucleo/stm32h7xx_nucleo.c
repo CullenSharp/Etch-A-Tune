@@ -27,10 +27,10 @@
 #define __STM32H7XX_NUCLEO_BSP_VERSION_SUB1   (0x01U) /*!< [23:16] sub1 version */
 #define __STM32H7XX_NUCLEO_BSP_VERSION_SUB2   (0x02U) /*!< [15:8]  sub2 version */
 #define __STM32H7XX_NUCLEO_BSP_VERSION_RC     (0x00U) /*!< [7:0]  release candidate */
-#define __STM32H7XX_NUCLEO_BSP_VERSION        ((__STM32G0XX_NUCLEO_BSP_VERSION_MAIN << 24)\
-                                              |(__STM32G0XX_NUCLEO_BSP_VERSION_SUB1 << 16)\
-                                              |(__STM32G0XX_NUCLEO_BSP_VERSION_SUB2 << 8 )\
-                                              |(__STM32G0XX_NUCLEO_BSP_VERSION_RC))
+#define __STM32H7XX_NUCLEO_BSP_VERSION        ((__STM32H7XX_NUCLEO_BSP_VERSION_MAIN << 24)\
+                                              |(__STM32H7XX_NUCLEO_BSP_VERSION_SUB1 << 16)\
+                                              |(__STM32H7XX_NUCLEO_BSP_VERSION_SUB2 << 8 )\
+                                              |(__STM32H7XX_NUCLEO_BSP_VERSION_RC))
 
 /**
   * @brief LINK SD Card
