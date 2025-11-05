@@ -1,0 +1,17 @@
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_gpio.h:278:22:LL_GPIO_SetPinMode	24	static
+../Core/Src/Lcd/lcd_io_spi_hal.c:162:6:LcdDirRead	24	static
+../Core/Src/Lcd/lcd_io_spi_hal.c:184:6:LcdDirWrite	4	static
+../Core/Src/Lcd/lcd_io_spi_hal.c:196:20:LcdSpiMode8	4	static
+../Core/Src/Lcd/lcd_io_spi_hal.c:203:20:LcdSpiMode16	4	static
+../Core/Src/Lcd/lcd_io_spi_hal.c:217:10:LCD_IO_DmaBusy	4	static
+../Core/Src/Lcd/lcd_io_spi_hal.c:330:6:FillConvert16to24	32	static
+../Core/Src/Lcd/lcd_io_spi_hal.c:346:6:BitmapConvert16to24	24	static
+../Core/Src/Lcd/lcd_io_spi_hal.c:361:6:BitmapConvert24to16	32	static
+../Core/Src/Lcd/lcd_io_spi_hal.c:433:6:LCDWriteFillMultiData8and16	32	static
+../Core/Src/Lcd/lcd_io_spi_hal.c:523:6:LCDWriteFillMultiData16to24	32	static
+../Core/Src/Lcd/lcd_io_spi_hal.c:694:6:LCDReadMultiData8and16	32	static
+../Core/Src/Lcd/lcd_io_spi_hal.c:768:6:LCDReadMultiData24to16	32	static
+../Core/Src/Lcd/lcd_io_spi_hal.c:837:6:LCD_Delay	16	static
+../Core/Src/Lcd/lcd_io_spi_hal.c:848:6:LCD_IO_Bl_OnOff	16	static
+../Core/Src/Lcd/lcd_io_spi_hal.c:868:6:LCD_IO_Init	8	static
+../Core/Src/Lcd/lcd_io_spi_hal.c:890:6:LCD_IO_Transaction	24	static
