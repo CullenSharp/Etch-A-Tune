@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Etch-A-Tune Gantt" company="" webLink="http://" view-date="2025-11-20" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.3.3316" locale="en_US">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Name" width="200" order="0"/>
+        <field id="tpd4" name="Begin date" width="75" order="1"/>
+        <field id="tpd5" name="End date" width="75" order="2"/>
+        <field id="tpd15" name="Notes" width="20" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="206" order="0"/>
+        <field id="1" name="Default role" width="90" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="true"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="53" uid="99c16234b0d1426aa17be4f528b43d32" name="Class Deliverables" meeting="false" start="2025-09-29" duration="76" complete="81" expand="true">
+            <task id="49" uid="ca546744db994e378587ee702457904e" name="Start of Term" meeting="false" start="2025-09-29" duration="7" complete="100" expand="true">
+                <depend id="48" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="48" uid="2159c2284c2e486ca2e7af8d1da345ae" name="Team Creation" meeting="false" start="2025-10-06" duration="1" complete="100" expand="true">
+                <depend id="50" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="50" uid="1a5424e678c6495b9268e1f83e58a029" name="Scheduling" meeting="false" start="2025-10-07" duration="3" complete="100" expand="true">
+                <depend id="51" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="51" uid="960058f7897b4f62b143f7ee6b781b31" name="Project Ideas" meeting="false" start="2025-10-10" duration="6" complete="100" expand="true">
+                <depend id="52" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="52" uid="21e4599856d3429192f6a18e3e8b43d6" name="Design Specifications" meeting="false" start="2025-10-16" duration="7" complete="100" expand="true">
+                <depend id="54" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="54" uid="2d287aae3e3d4c7a8ac92116d9b735f4" name="Made a Decision" meeting="false" start="2025-10-23" duration="7" complete="100" expand="true">
+                <depend id="55" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="55" uid="591a966ac7f04edbb67ca7cbb89b7672" name="Project Schedule" meeting="false" start="2025-10-30" duration="7" complete="100" expand="true">
+                <depend id="57" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="57" uid="24386abe3c4e4592a6d1504ff7dcd4eb" name="Functional Decomposition" meeting="false" start="2025-11-06" duration="7" complete="100" expand="true"/>
+            <task id="58" uid="d521c7048e304f75a4229dc421b9f2f9" name="Sign up for Paracticum Demo" meeting="false" start="2025-11-27" duration="2" complete="0" expand="true">
+                <depend id="59" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="59" uid="4ecfe70c32da4295b236f513766425aa" name="Test Plan" meeting="false" start="2025-11-29" duration="1" complete="0" expand="true"/>
+            <task id="35" uid="ccf2617a14744988aa2cacd7d9f37954" name="Demo" meeting="false" start="2025-12-08" duration="5" complete="0" expand="true"/>
+            <task id="60" uid="1167a4ebc3924c79a9f3111f3abe00ae" name="CATME Surveys" meeting="false" start="2025-12-12" duration="2" complete="0" expand="true"/>
+        </task>
+        <task id="12" uid="9e7e939cc7d94c65827cfc345b8283b3" name="Order Parts" meeting="false" start="2025-10-22" duration="36" complete="74" expand="true">
+            <task id="14" uid="34be4e711c6e478ea862d037fc912d9a" name="Touch Screens" meeting="false" start="2025-10-22" duration="7" complete="100" expand="true"/>
+            <task id="13" uid="d38b0f760c444a61b31c4d0cc4eb4836" name="STM32 Boards" meeting="false" start="2025-10-25" duration="6" complete="100" expand="true"/>
+            <task id="15" uid="6ab8c7b60d234367bbfa027f3a545d4b" name="DAC Boards" meeting="false" start="2025-10-25" duration="7" complete="100" expand="true"/>
+            <task id="33" uid="dfa0760a946e4b2f93caa4a5fa7784ac" name="Order BOM Components" meeting="false" start="2025-11-20" duration="7" complete="0" expand="true">
+                <depend id="27" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="0" uid="e5eb576df7c3489d959ec708e99381e9" name="Software" meeting="false" start="2025-10-27" duration="36" complete="27" expand="true">
+            <task id="2" uid="c81be02172634caaae09100920d8c649" name="IDE Setup" meeting="false" start="2025-10-27" duration="3" complete="100" expand="true">
+                <depend id="16" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="16" uid="709bee0548f44d2899e9e621fcbdb181" name="Library &amp; Driver Research" meeting="false" start="2025-10-30" duration="7" complete="100" expand="true">
+                <depend id="5" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="5" uid="3661699f72244f6c946ad173797debe3" name="Getting Screen Working" meeting="false" start="2025-11-06" duration="5" complete="0" expand="true">
+                <depend id="7" type="2" difference="0" hardness="Strong"/>
+                <depend id="11" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="7" uid="8c4f6f14ff774b6591b8677b104137b4" name="Graphics" meeting="false" start="2025-11-11" duration="5" complete="0" expand="true">
+                <depend id="20" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="17" uid="4bf5f5b1f6bd4ca480235df77b9c4ab4" name="Connecting DSP with Screen" meeting="false" start="2025-11-26" duration="3" complete="0" expand="true">
+                <depend id="22" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="20" uid="b330b16d59d84a578839c52fecefed7d" name="Drawing Program" meeting="false" start="2025-11-16" duration="5" complete="0" expand="true">
+                <depend id="21" type="2" difference="0" hardness="Strong"/>
+                <depend id="39" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="39" uid="0b18b35182d24668b59587e04a30600b" name="Drawing to Spectrogram" meeting="false" start="2025-11-21" duration="5" complete="0" expand="true">
+                <depend id="17" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="21" uid="dacfdfbca1e24e5c80f3653ee012f42a" name="Improving UX" meeting="false" start="2025-11-21" duration="2" complete="0" expand="true"/>
+            <task id="9" uid="6cf71cc077514e2ea94c43f63e7d7b0f" name="DSP" meeting="false" start="2025-10-30" duration="33" complete="25" expand="true">
+                <task id="10" uid="ba77b5b1421749ab8b214ff32b6e642b" name="Create Test Data" meeting="false" start="2025-10-30" duration="4" complete="100" expand="true">
+                    <depend id="11" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="11" uid="0d4467d6e01145ed9a017ff9aeb21e31" name="Image to Spectrogram" meeting="false" start="2025-11-11" duration="4" complete="0" expand="true">
+                    <depend id="18" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="18" uid="96f4ef5e314446d98ed4faa1ec45a1d4" name="Spectrogram to Signal" meeting="false" start="2025-11-15" duration="5" complete="0" expand="true">
+                    <depend id="17" type="2" difference="0" hardness="Strong"/>
+                    <depend id="22" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="22" uid="ccbadb6692ad403ea3a8cef557229d50" name="Improve Audio Quality" meeting="false" start="2025-11-29" duration="3" complete="0" expand="true"/>
+            </task>
+        </task>
+        <task id="1" uid="dd6f54e561d44038896e9cd7282f993e" name="Hardware" meeting="false" start="2025-10-27" duration="42" complete="16" expand="true">
+            <task id="23" uid="32acb826f7df4e52ab5cc321a966505f" name="Schematic 0" meeting="false" start="2025-10-27" duration="1" complete="100" expand="true"/>
+            <task id="56" uid="0bfbd9922103484baf2e84e38dc4c81e" name="Breadboard Prototype" meeting="false" start="2025-11-05" duration="1" complete="100" expand="true"/>
+            <task id="3" uid="5a09b401c10a42a299c5ebc71716c617" name="Initial Layout" meeting="false" start="2025-11-03" duration="4" complete="100" expand="true">
+                <depend id="4" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="4" uid="1ce57ce2c50c4e9784131fb2844a0a5e" name="CAD Rough Draft" meeting="false" start="2025-11-07" duration="4" complete="0" expand="true">
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+                <depend id="24" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="24" uid="290939b89945418084ca9a6609d1cf84" name="BOM" meeting="false" start="2025-11-11" duration="1" complete="0" expand="true">
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="8" uid="0089206275284f4e94aa1b515c00f8b6" name="Design Review" meeting="false" start="2025-11-12" duration="5" complete="0" expand="true">
+                <depend id="25" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="25" uid="ef02aa08053c4e119277c20b65a083c3" name="Final Layout" meeting="false" start="2025-11-17" duration="3" complete="0" expand="true">
+                <depend id="26" type="2" difference="0" hardness="Strong"/>
+                <depend id="33" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="26" uid="5d2e1ae3bfd24108b1c707b8c4764ee1" name="OSH Park Fabricate Boards" meeting="false" start="2025-11-20" duration="8" complete="0" expand="true">
+                <depend id="27" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="27" uid="4751080b282f41a3a69176021b28be0a" name="Assembly" meeting="false" start="2025-11-28" duration="7" complete="0" expand="true">
+                <depend id="28" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="28" uid="07c41c9c36464b14996cdd32777587bb" name="Debug" meeting="false" start="2025-12-05" duration="3" complete="0" expand="true">
+                <depend id="35" type="2" difference="0" hardness="Strong"/>
+                <depend id="47" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="40" uid="d043da1c654d4e83a0e508b7c8fb16f5" name="Enclosure" meeting="false" start="2025-11-10" duration="30" complete="0" expand="true">
+            <task id="41" uid="ddf79f676d5747829bd5f2bf28e63917" name="Concept Model" meeting="false" start="2025-11-10" duration="5" complete="0" expand="true">
+                <depend id="42" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="42" uid="ef340c65f99e49c3b4c02a6d62504305" name="Initial Measured Design" meeting="false" start="2025-11-15" duration="5" complete="0" expand="true">
+                <depend id="43" type="2" difference="0" hardness="Strong"/>
+                <depend id="44" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="44" uid="29038321d29c43469cfef6d31e3eb69a" name="All Parts Modeled and Scaled" meeting="false" start="2025-11-20" duration="4" complete="0" expand="true">
+                <depend id="45" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="43" uid="ec5835548b774a2d9e15a02e045329dc" name="Assembly of all Parts" meeting="false" start="2025-11-20" duration="5" complete="0" expand="true">
+                <depend id="46" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="45" uid="69577e8dacee4e94bf8ce900b4356a6a" name="Test Print Tolerances" meeting="false" start="2025-11-24" duration="3" complete="0" expand="true">
+                <depend id="46" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="46" uid="7badfb9d810f4966b45017298d7e6800" name="Full Print" meeting="false" start="2025-11-27" duration="5" complete="0" expand="true">
+                <depend id="47" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="47" uid="4810049af5ba46e0b9c47aa972c7d0aa" name="Assemble" meeting="false" start="2025-12-08" duration="2" complete="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Cullen Sharp" function="4" contacts="" phone=""/>
+        <resource id="1" name="Joshua Consenz" function="Default:1" contacts="" phone=""/>
+        <resource id="2" name="Jack McMahon" function="3" contacts="" phone=""/>
+        <resource id="3" name="Edward Tsoi" function="2" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="2" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="16" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="21" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="26" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="14" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="0" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="17" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="18" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="22" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="35" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="39" resource-id="0" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="49" resource-id="0" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="50" resource-id="0" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="51" resource-id="0" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="52" resource-id="0" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="15" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="25" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="26" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="27" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="28" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="33" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="21" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="11" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="18" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="35" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="41" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="42" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="44" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="43" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="45" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="46" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="47" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="49" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="50" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="52" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="54" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="55" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="57" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="20" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="21" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="27" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="28" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="5" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="7" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="17" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="35" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="39" resource-id="2" function="3" responsible="false" load="100.0"/>
+        <allocation task-id="56" resource-id="2" function="3" responsible="true" load="100.0"/>
+        <allocation task-id="49" resource-id="2" function="3" responsible="false" load="100.0"/>
+        <allocation task-id="48" resource-id="2" function="3" responsible="true" load="100.0"/>
+        <allocation task-id="50" resource-id="2" function="3" responsible="false" load="100.0"/>
+        <allocation task-id="51" resource-id="2" function="3" responsible="false" load="100.0"/>
+        <allocation task-id="52" resource-id="2" function="3" responsible="false" load="100.0"/>
+        <allocation task-id="23" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="24" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="3" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="25" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="26" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="27" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="28" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="33" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="35" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="42" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="47" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="49" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="50" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="52" resource-id="3" function="2" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="Software Lead"/>
+        <role id="2" name="Hardware Lead"/>
+        <role id="3" name="Software Assistant"/>
+        <role id="4" name="Hardware Assistant"/>
+    </roles>
+</project>
