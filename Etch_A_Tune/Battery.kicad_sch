@@ -753,6 +753,36 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "800-MA LINEAR BATTERY CHARGER \n"
+		(exclude_from_sim no)
+		(at 140.462 45.974 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0eb7951e-daba-4dfd-9d12-86cd44a68ec7")
+	)
+	(text "Generic 18650 battery holder\n"
+		(exclude_from_sim no)
+		(at 67.564 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4d44012e-ab9d-49a6-b993-3885236bf2ca")
+	)
+	(text "Voltage and Current Protection Integrated Circuit for Single\nCell Li-Ion"
+		(exclude_from_sim no)
+		(at 208.788 50.546 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c83fe38f-6178-4390-a222-bee4da28513b")
+	)
 	(hierarchical_label "Charge"
 		(shape input)
 		(at 46.99 53.34 0)

@@ -752,6 +752,46 @@
 			(embedded_fonts no)
 		)
 	)
+	(text_box "DAC iC will be used to create 3.5mm output and converting digital output from STM32 uC to analog output"
+		(exclude_from_sim no)
+		(at 55.88 81.28 0)
+		(size 50.8 17.78)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "33c20233-f2a6-4b58-aa41-39b9a2de9c35")
+	)
+	(text_box "3.5mm jack?\n"
+		(exclude_from_sim no)
+		(at 193.04 104.14 0)
+		(size 50.8 17.78)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "3c99bef2-c61b-4fe2-9b0d-a017247fa80e")
+	)
 	(symbol
 		(lib_id "SamacSys_Parts:TLV320DAC3100IRHBR")
 		(at 118.11 81.28 0)

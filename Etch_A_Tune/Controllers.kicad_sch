@@ -508,6 +508,46 @@
 			(embedded_fonts no)
 		)
 	)
+	(text_box "5 push button switches for IO control\n"
+		(exclude_from_sim no)
+		(at 195.58 144.78 0)
+		(size 33.02 10.16)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "48a62da8-e7d9-4247-b493-5bdc54b7393a")
+	)
+	(text_box "Rotary encoders for etch a tune functionality"
+		(exclude_from_sim no)
+		(at 187.96 40.64 0)
+		(size 40.64 17.78)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "58f41655-e6ba-4fc8-a3b4-8b2bad36332d")
+	)
 	(hierarchical_label "SW4"
 		(shape input)
 		(at 141.6612 128.9381 0)
