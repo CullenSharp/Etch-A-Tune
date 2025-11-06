@@ -122,7 +122,7 @@ void LCD_IO_DmaRxCpltCallback(SPI_HandleTypeDef *hspi);
 /* DMA TX/RX enable/disable
    - 0: DMA disable
    - 1: DMA enable */
-#define LCD_DMA_TX            0
+#define LCD_DMA_TX            1
 #define LCD_DMA_RX            0
 
 /* In dma mode the bitmap drawing function is completed before the actual drawing.
@@ -142,7 +142,7 @@ void LCD_IO_DmaRxCpltCallback(SPI_HandleTypeDef *hspi);
    Example stm32h743 (the DTCMRAM and ITCMRAM are not DMA capable):
      #define LCD_DMA_UNABLE(addr)  (((addr < 0x24000000) && (addr >= 0x20000000)) || (addr < 0x08000000))
    Note: if we ensure that we do not draw a bitmap from a DMA-capable memory area, it is not necessary to set it (leave it that way) */
-#define LCD_DMA_UNABLE(addr)  0
+#define LCD_DMA_UNABLE(addr)  1
 
 /* RGB565 to RGB888 and RGB888 to RGB565 convert byte order
    - 0: forward direction

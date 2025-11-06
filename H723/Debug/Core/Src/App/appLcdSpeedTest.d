@@ -1,4 +1,4 @@
-Core/Src/App/3d_filled_vector.o: ../Core/Src/App/3d_filled_vector.c \
+Core/Src/App/appLcdSpeedTest.o: ../Core/Src/App/appLcdSpeedTest.c \
  ../Core/Inc/main.h ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../Core/Inc/stm32h7xx_hal_conf.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \
@@ -34,10 +34,9 @@ Core/Src/App/3d_filled_vector.o: ../Core/Src/App/3d_filled_vector.c \
  ../Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.h \
  ../Core/Inc/stm32h7xx_nucleo_conf.h \
  ../Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo_errno.h \
- ../Core/Inc/3d_filled_vector.h ../Core/Inc/stm32_adafruit_lcd.h \
- ../Core/Inc/lcd.h ../Core/Inc/Fonts/fonts.h ../Core/Src/App/pat2.h \
- ../Core/Src/App/pat7.h ../Core/Src/App/pat8.h ../Core/Src/App/gfx3d.h \
- ../Core/Src/App/models3d.h
+ ../Core/Inc/lcd.h ../Core/Inc/bmp.h ../Core/Src/App/appLcdSpeedTest.h \
+ ../Core/Inc/stm32_adafruit_lcd.h ../Core/Inc/lcd.h \
+ ../Core/Inc/Fonts/fonts.h
 ../Core/Inc/main.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../Core/Inc/stm32h7xx_hal_conf.h:
@@ -74,12 +73,9 @@ Core/Src/App/3d_filled_vector.o: ../Core/Src/App/3d_filled_vector.c \
 ../Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.h:
 ../Core/Inc/stm32h7xx_nucleo_conf.h:
 ../Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo_errno.h:
-../Core/Inc/3d_filled_vector.h:
+../Core/Inc/lcd.h:
+../Core/Inc/bmp.h:
+../Core/Src/App/appLcdSpeedTest.h:
 ../Core/Inc/stm32_adafruit_lcd.h:
 ../Core/Inc/lcd.h:
 ../Core/Inc/Fonts/fonts.h:
-../Core/Src/App/pat2.h:
-../Core/Src/App/pat7.h:
-../Core/Src/App/pat8.h:
-../Core/Src/App/gfx3d.h:
-../Core/Src/App/models3d.h:

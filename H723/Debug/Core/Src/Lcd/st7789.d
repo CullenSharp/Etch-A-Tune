@@ -35,7 +35,7 @@ Core/Src/Lcd/st7789.o: ../Core/Src/Lcd/st7789.c ../Core/Inc/main.h \
  ../Core/Inc/stm32h7xx_nucleo_conf.h \
  ../Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo_errno.h \
  ../Core/Inc/lcd.h ../Core/Inc/lcd_io.h ../Core/Inc/lcd.h \
- ../Core/Src/Lcd/bmp.h ../Core/Inc/st7789.h
+ ../Core/Inc/bmp.h ../Core/Inc/st7789.h
 ../Core/Inc/main.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../Core/Inc/stm32h7xx_hal_conf.h:
@@ -75,5 +75,5 @@ Core/Src/Lcd/st7789.o: ../Core/Src/Lcd/st7789.c ../Core/Inc/main.h \
 ../Core/Inc/lcd.h:
 ../Core/Inc/lcd_io.h:
 ../Core/Inc/lcd.h:
-../Core/Src/Lcd/bmp.h:
+../Core/Inc/bmp.h:
 ../Core/Inc/st7789.h:

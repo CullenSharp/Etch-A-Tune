@@ -3,10 +3,12 @@
 ../Core/Src/Lcd/lcd_io_spi_hal.c:184:6:LcdDirWrite	4	static
 ../Core/Src/Lcd/lcd_io_spi_hal.c:196:20:LcdSpiMode8	4	static
 ../Core/Src/Lcd/lcd_io_spi_hal.c:203:20:LcdSpiMode16	4	static
-../Core/Src/Lcd/lcd_io_spi_hal.c:217:10:LCD_IO_DmaBusy	4	static
+../Core/Src/Lcd/lcd_io_spi_hal.c:315:10:LCD_IO_DmaBusy	16	static
 ../Core/Src/Lcd/lcd_io_spi_hal.c:330:6:FillConvert16to24	32	static
 ../Core/Src/Lcd/lcd_io_spi_hal.c:346:6:BitmapConvert16to24	24	static
 ../Core/Src/Lcd/lcd_io_spi_hal.c:361:6:BitmapConvert24to16	32	static
+../Core/Src/Lcd/lcd_io_spi_hal.c:379:13:LCD_IO_DmaTxCpltCallback	16	static
+../Core/Src/Lcd/lcd_io_spi_hal.c:386:6:HAL_SPI_TxCpltCallback	16	static
 ../Core/Src/Lcd/lcd_io_spi_hal.c:433:6:LCDWriteFillMultiData8and16	32	static
 ../Core/Src/Lcd/lcd_io_spi_hal.c:523:6:LCDWriteFillMultiData16to24	32	static
 ../Core/Src/Lcd/lcd_io_spi_hal.c:694:6:LCDReadMultiData8and16	32	static

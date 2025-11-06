@@ -5,13 +5,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Core/Src/App/3d_filled_vector.c 
+../Core/Src/App/appLcdSpeedTest.c \
+../Core/Src/App/beer_60x100_16.c 
 
 OBJS += \
-./Core/Src/App/3d_filled_vector.o 
+./Core/Src/App/appLcdSpeedTest.o \
+./Core/Src/App/beer_60x100_16.o 
 
 C_DEPS += \
-./Core/Src/App/3d_filled_vector.d 
+./Core/Src/App/appLcdSpeedTest.d \
+./Core/Src/App/beer_60x100_16.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -21,7 +24,7 @@ Core/Src/App/%.o Core/Src/App/%.su Core/Src/App/%.cyclo: ../Core/Src/App/%.c Cor
 clean: clean-Core-2f-Src-2f-App
 
 clean-Core-2f-Src-2f-App:
-	-$(RM) ./Core/Src/App/3d_filled_vector.cyclo ./Core/Src/App/3d_filled_vector.d ./Core/Src/App/3d_filled_vector.o ./Core/Src/App/3d_filled_vector.su
+	-$(RM) ./Core/Src/App/appLcdSpeedTest.cyclo ./Core/Src/App/appLcdSpeedTest.d ./Core/Src/App/appLcdSpeedTest.o ./Core/Src/App/appLcdSpeedTest.su ./Core/Src/App/beer_60x100_16.cyclo ./Core/Src/App/beer_60x100_16.d ./Core/Src/App/beer_60x100_16.o ./Core/Src/App/beer_60x100_16.su
 
 .PHONY: clean-Core-2f-Src-2f-App
 

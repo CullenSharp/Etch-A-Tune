@@ -210,7 +210,7 @@ static void MX_SPI5_Init(void)
   hspi5.Instance = SPI5;
   hspi5.Init.Mode = SPI_MODE_MASTER;
   hspi5.Init.Direction = SPI_DIRECTION_2LINES;
-  hspi5.Init.DataSize = SPI_DATASIZE_16BIT;
+  hspi5.Init.DataSize = SPI_DATASIZE_8BIT;
   hspi5.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi5.Init.CLKPhase = SPI_PHASE_1EDGE;
   hspi5.Init.NSS = SPI_NSS_SOFT;
@@ -219,7 +219,7 @@ static void MX_SPI5_Init(void)
   hspi5.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi5.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
   hspi5.Init.CRCPolynomial = 0x0;
-  hspi5.Init.NSSPMode = SPI_NSS_PULSE_ENABLE;
+  hspi5.Init.NSSPMode = SPI_NSS_PULSE_DISABLE;
   hspi5.Init.NSSPolarity = SPI_NSS_POLARITY_LOW;
   hspi5.Init.FifoThreshold = SPI_FIFO_THRESHOLD_01DATA;
   hspi5.Init.TxCRCInitializationPattern = SPI_CRC_INITIALIZATION_ALL_ZERO_PATTERN;
@@ -258,20 +258,24 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOE, LCD_CS_Pin|LCD_RST_Pin|LCD_RS_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOE, LCD_CS_Pin|LCD_RST_Pin, GPIO_PIN_SET);
 
-  /*Configure GPIO pins : LCD_CS_Pin LCD_RST_Pin LCD_RS_Pin */
-  GPIO_InitStruct.Pin = LCD_CS_Pin|LCD_RST_Pin|LCD_RS_Pin;
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(LCD_RS_GPIO_Port, LCD_RS_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pins : LCD_CS_Pin LCD_RS_Pin */
+  GPIO_InitStruct.Pin = LCD_CS_Pin|LCD_RS_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+  HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : LCD_RST_Pin */
+  GPIO_InitStruct.Pin = LCD_RST_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : BT_K0_Pin */
-  GPIO_InitStruct.Pin = BT_K0_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(BT_K0_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(LCD_RST_GPIO_Port, &GPIO_InitStruct);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
 
