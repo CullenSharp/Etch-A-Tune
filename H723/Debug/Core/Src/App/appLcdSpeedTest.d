@@ -34,8 +34,9 @@ Core/Src/App/appLcdSpeedTest.o: ../Core/Src/App/appLcdSpeedTest.c \
  ../Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.h \
  ../Core/Inc/stm32h7xx_nucleo_conf.h \
  ../Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo_errno.h \
- ../Core/Inc/lcd.h ../Core/Inc/bmp.h ../Core/Src/App/appLcdSpeedTest.h \
- ../Core/Inc/stm32_adafruit_lcd.h ../Core/Inc/lcd.h \
+ C:/Users/mrski/Documents/ECE411/Etch-A-Tune/H723/Core/Inc/Lcd/lcd.h \
+ C:/Users/mrski/Documents/ECE411/Etch-A-Tune/H723/Core/Inc/Lcd/bmp.h \
+ ../Core/Src/App/appLcdSpeedTest.h ../Core/Inc/stm32_adafruit_lcd.h \
  ../Core/Inc/Fonts/fonts.h
 ../Core/Inc/main.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
@@ -73,9 +74,8 @@ Core/Src/App/appLcdSpeedTest.o: ../Core/Src/App/appLcdSpeedTest.c \
 ../Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.h:
 ../Core/Inc/stm32h7xx_nucleo_conf.h:
 ../Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo_errno.h:
-../Core/Inc/lcd.h:
-../Core/Inc/bmp.h:
+C:/Users/mrski/Documents/ECE411/Etch-A-Tune/H723/Core/Inc/Lcd/lcd.h:
+C:/Users/mrski/Documents/ECE411/Etch-A-Tune/H723/Core/Inc/Lcd/bmp.h:
 ../Core/Src/App/appLcdSpeedTest.h:
 ../Core/Inc/stm32_adafruit_lcd.h:
-../Core/Inc/lcd.h:
 ../Core/Inc/Fonts/fonts.h:

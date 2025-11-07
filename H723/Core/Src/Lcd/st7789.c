@@ -2,11 +2,11 @@
  * ST7789 LCD driver v2024.11
  */
 
+#include <Lcd/bmp.h>
+#include <Lcd/lcd.h>
+#include <Lcd/lcd_io.h>
+#include <Lcd/st7789.h>
 #include "main.h"
-#include "lcd.h"
-#include "lcd_io.h"
-#include "bmp.h"
-#include "st7789.h"
 
 void     st7789_Init(void);
 uint32_t st7789_ReadID(void);
@@ -68,7 +68,7 @@ union
 #define ST7789_RDMODE         0x0A
 #define ST7789_RDMADCTL       0x0B
 #define ST7789_RDPIXFMT       0x0C
-#define ST7789_RDIMGFMT       0x0A
+#define ST7789_RDIMGFMT       0x0D
 #define ST7789_RDSELFDIAG     0x0F
 
 #define ST7789_SLPIN          0x10
@@ -78,7 +78,7 @@ union
 
 #define ST7789_INVOFF         0x20
 #define ST7789_INVON          0x21
-//#define ST7789_GAMMASET       0x26 //Sus
+#define ST7789_GAMMASET       0x26
 #define ST7789_DISPOFF        0x28
 #define ST7789_DISPON         0x29
 
@@ -93,19 +93,19 @@ union
 #define ST7789_VSCRSADD       0x37      /* Vertical Scrolling Start Address */
 #define ST7789_PIXFMT         0x3A      /* COLMOD: Pixel Format Set */
 
-#define ST7789_RGB_INTERFACE  0xB0      /* RGB Interface Signal Control */ //sus
+#define ST7796_IFMODE  		  0xB0     /* RGB Interface Signal Control */
 #define ST7789_FRMCTR1        0xB1
 #define ST7789_FRMCTR2        0xB2
 #define ST7789_FRMCTR3        0xB3
 #define ST7789_INVCTR         0xB4
+#define ST7796_BPC			  0xB5
 #define ST7789_DFUNCTR        0xB6      /* Display Function Control */
-
-#define ST7789_CSCOM		  0xF0
+#define ST7796_EM			  0xB7
 
 #define ST7789_PWCTR1         0xC0
 #define ST7789_PWCTR2         0xC1
 #define ST7789_PWCTR3         0xC2
-#define ST7789_PWCTR4         0xC3 //sus
+#define ST7789_PWCTR4         0xC3
 #define ST7789_PWCTR5         0xC4
 #define ST7789_VMCTR1         0xC5
 #define ST7789_VMCTR2         0xC7
@@ -120,6 +120,7 @@ union
 
 #define ST7789_PWCTR6         0xFC
 #define ST7789_INTERFACE      0xF6    /* Interface control register */
+#define ST7796_CSCON		  0xF0
 
 /* Extend register commands */
 #define ST7789_POWERA         0xCB    /* Power control A register */
@@ -141,7 +142,7 @@ union
 #define ST7789_MAD_Y_UP       0x00
 #define ST7789_MAD_Y_DOWN     0x80
 
-#if ST7789_PIXFMT == 0
+#if ST7789_COLORMODE == 0
 #define ST7789_MAD_COLORMODE  ST7789_MAD_RGB
 #else
 #define ST7789_MAD_COLORMODE  ST7789_MAD_BGR
@@ -324,104 +325,115 @@ uint32_t st7789_ReadID(void)
 //-----------------------------------------------------------------------------
 void st7789_Init(void)
 {
-	if ((Is_st7789_Initialized & ST7789_LCD_INITIALIZED) == 0) {
-		Is_st7789_Initialized |= ST7789_LCD_INITIALIZED;
-		if ((Is_st7789_Initialized & ST7789_IO_INITIALIZED) == 0)
-			LCD_IO_Init();
-		Is_st7789_Initialized |= ST7789_IO_INITIALIZED;
-	}
+  if((Is_st7789_Initialized & ST7789_LCD_INITIALIZED) == 0)
+  {
+    Is_st7789_Initialized |= ST7789_LCD_INITIALIZED;
+    if((Is_st7789_Initialized & ST7789_IO_INITIALIZED) == 0)
+      LCD_IO_Init();
+    Is_st7789_Initialized |= ST7789_IO_INITIALIZED;
+  }
 
-	LCD_Delay(120);
+  LCD_Delay(50);
+  LCD_IO_WriteCmd8MultipleData8(ST7789_SWRESET, NULL, 0);
+  LCD_Delay(150);
 
-	/* software reset, 0 arguments, no delay */
-	LCD_IO_WriteCmd8MultipleData8(ST7789_SWRESET, NULL, 0);
-	LCD_Delay(120);
+  /* color mode (16 or 24 bit) */
+  #if ST7789_WRITEBITDEPTH == 16
+  // RGB 16 bit depth
+  LCD_IO_WriteCmd8MultipleData8(ST7789_PIXFMT, (uint8_t *)"\x55", 1);
+  #elif ST7789_WRITEBITDEPTH == 24
+  LCD_IO_WriteCmd8MultipleData8(ST7789_PIXFMT, (uint8_t *)"\x66", 1);
+  #endif
+  LCD_Delay(50);
 
-	/* color mode (16 or 24 bit) */
-#if ST7789_WRITEBITDEPTH == 16
-	LCD_IO_WriteCmd8MultipleData8(ST7789_PIXFMT, (uint8_t*) "\x55", 1);
-#elif ST7789_WRITEBITDEPTH == 24
-		LCD_IO_WriteCmd8MultipleData8(ST7789_PIXFMT, (uint8_t *)"\x66", 1);
-	#endif
-	LCD_Delay(50);
+  // begin my code
 
-	LCD_IO_WriteCmd8MultipleData8(ST7789_VSCRSADD, (uint8_t*) "\x00",
-			1);
-	LCD_IO_WriteCmd8MultipleData8(ST7789_MADCTL, &EntryRightThenDown, 1);
+  // write to cscon
+  LCD_IO_WriteCmd8MultipleData8(ST7796_CSCON, (uint8_t *)"\xC3\x96", 1);
 
-	/* Out of sleep mode, 0 arguments, no delay */
-	LCD_IO_WriteCmd8MultipleData8(ST7789_SLPOUT, NULL, 0);
-	LCD_Delay(120);
+  // write to madctl
+  LCD_IO_WriteCmd8MultipleData8(ST7789_MADCTL, (uint8_t *)"\x68",1);
 
-	/* Enable extension command 2, 2 arguments, no delay*/
-	LCD_IO_WriteCmd8MultipleData8(ST7789_CSCOM, (uint8_t*) "\xC3\x96",
-			2);
+  // write interface mode (IFMODE)
+  // 0x80 => spi enable
+  LCD_IO_WriteCmd8MultipleData8(ST7796_IFMODE, (uint8_t *)"\x80",1);
 
-	/* Memory Data Access Control, 1 arguments, no delay  */
-	/*	MX = 0, MY = 0: (0,0) is top left,  (319, 479) is bottom right
-	 * RGB = 0 data is sent in RGB order
-	 **/
-	LCD_IO_WriteCmd8MultipleData8(ST7789_MADCTL, &EntryRightThenDown, 1);
+  // first parameter
+  // RM interface for ram: 0 => system interface
+  // RCM RGB interface selection: 0 => DE mode
+  // Direct memory
+  // Normal scan
+  // V63
+  // second parameter:
+  // GS gate output scan direction:
+  // SS S1 -> S960
+  // SM ISC[3:0]
+  LCD_IO_WriteCmd8MultipleData8(ST7789_DFUNCTR, (uint8_t *)"\x00\x02", 2);
 
-	/* Display Inversion Control, 1 arguments, no delay */
-	/* set 1-dot inversion reduces flicker */
-	LCD_IO_WriteCmd8MultipleData8(ST7789_INVCTR, (uint8_t*) "\x01", 1);
 
-	/* Display Function Control, 3 arguments, no delay */
-	// Bypass
-	//Source Output Scan from S1 to S960, Gate Output scan from G1 to G480, scan cycle=2
-	// LCD Drive Line = 8*(59+1)
-	LCD_IO_WriteCmd8MultipleData8(ST7789_DFUNCTR,
-			(uint8_t*) "\x80\x02\x3B", 3);
+  // blanking porch control
+  LCD_IO_WriteCmd8MultipleData8(ST7796_BPC, (uint8_t *)"\x02\x03\x00\x04", 1);
 
-	/* Display Output Control Adjust, 7 arguments, no delay*/
-	LCD_IO_WriteCmd8MultipleData8(ST7789_DTCA,
-			(uint8_t*) "\x40\x8A\x00\x29\x19\xA5\x33", 8);
+  // frame control 1
+  // first parameter
+  // FRS = 0b100 => frame frequency in full color
+  // Diva = 0 => inversion mode is Fosc
+  // second parameter
+  // RTNA = 0x10 = 16
+  LCD_IO_WriteCmd8MultipleData8(ST7789_FRMCTR1, (uint8_t *)"\x80\x10", 2);
 
-	/* Power Control 2, 1 arguments, no delay */
-	//VAP(GVDD)=3.85+( vcom+vcom offset), VAN(GVCL)=-3.85+( vcom+vcom offset)
-	LCD_IO_WriteCmd8MultipleData8(ST7789_PWCTR2, (uint8_t*) "\x06", 1);
+  // Display Inversion Control
+  // DINV = 00 => Column inversion
+  LCD_IO_WriteCmd8MultipleData8(ST7789_INVCTR, (uint8_t *)"\x00", 1);
 
-	/* Power Control 3, 1 arguments, no delay */
-	// Source driving current level=low, Gamma driving current level=High
-	LCD_IO_WriteCmd8MultipleData8(ST7789_PWCTR3, (uint8_t*) "\xA7", 1);
+  // Entry mode set EM
+  // epf = 0b11 => set data format r(0) = b(0) = G(0)
+  // GON/DTE = 0b11 => normal display
+  // DTSB = 0b0 => deep standby off
+  LCD_IO_WriteCmd8MultipleData8(ST7796_EM, (uint8_t *)"\xC6", 1);
 
-	/* VCOM Control 1, 1 arguments, no delay */
-	// VCOM=0.9
-	LCD_IO_WriteCmd8MultipleData8(ST7789_VMCTR1, (uint8_t*) "\x18",
-			1);
+  // vcom control
+  // VCMP = 36 => VCOM 1.2
+  LCD_IO_WriteCmd8MultipleData8(ST7789_VMCTR1, (uint8_t *)"\x24",1);
 
-	LCD_Delay(120);
 
-	/* Magical unicorn dust, 14 args, no delay */
-	// ST7789 Gamma Sequence
-	LCD_IO_WriteCmd8MultipleData8(ST7789_GMCTRP1,
-			(uint8_t*) "\xF0\x09\x0B\x06\x04\x15\x2F\x54\x42\x3C\x17\x14\x18\x1B",
-			14);
-	LCD_IO_WriteCmd8MultipleData8(ST7789_GMCTRN1,
-			(uint8_t*) "\xE0\x09\x0B\x06\x04\x03\x2B\x43\x42\x3B\x16\x14\x17\x1B",
-			14);
-	LCD_Delay(120);
+  // might be mistake
+  LCD_IO_WriteCmd8MultipleData8(0xE4, (uint8_t *)"\x31",1);
 
-	/* Command Set Control, 1 arguments, no delay */
-	LCD_IO_WriteCmd8MultipleData8(ST7789_CSCOM, (uint8_t*) "\x3C", 1);
-	LCD_IO_WriteCmd8MultipleData8(ST7789_CSCOM, (uint8_t*) "\x69", 1);
+  // Source timing control: 0x09 22.5us
+  // gate start = 0x19 => 25Tclk
+  // gate end = 0x25 => 37Tclk
+  // G_eq = on
+  // tclk = 4/osc
+  LCD_IO_WriteCmd8MultipleData8(ST7789_DTCA, (uint8_t *)"\x40\x8A\x00\x00\x29\x19\xA5\x33", 8);
 
-	LCD_Delay( 120);
 
-	/* Display On, 1 arguments, no delay */
-	/* Normal display on, no args, no delay */
-	LCD_IO_WriteCmd8MultipleData8(ST7789_NORON, NULL, 0);
+  // set current level
+  LCD_IO_WriteCmd8MultipleData8(ST7789_PWCTR3, (uint8_t *)"\xA7", 1);
 
-	/* Main screen turn on, no delay */
-	LCD_IO_WriteCmd8MultipleData8(ST7789_DISPON, NULL, 0);
+  // positive gamma
+  LCD_IO_WriteCmd8MultipleData8(ST7789_GMCTRP1, (uint8_t *)"\xF0\x09\x13\x12\x12\x2B\x3C\x44\x4B\x1B\x18\x17\x1D\x21", 14);
 
-#if st7789_INITCLEAR == 1
-		st7789_FillRect(0, 0, ST7789_SIZE_X, ST7789_SIZE_Y, 0x0000);
-		LCD_Delay(10);
-	#endif
+  // negative gamma
+  LCD_IO_WriteCmd8MultipleData8(ST7789_GMCTRN1, (uint8_t *)"\xF0\x09\x13\x0C\x0D\x27\x3B\x44\x4D\x0B\x17\x17\x1D\x21", 14);
+
+  LCD_IO_WriteCmd8MultipleData8(ST7789_MADCTL, &EntryRightThenDown, 1);
+  LCD_Delay(10);
+
+  LCD_IO_WriteCmd8MultipleData8(ST7796_CSCON, (uint8_t *)"\xC3",1);
+  LCD_IO_WriteCmd8MultipleData8(ST7796_CSCON, (uint8_t *)"\x69",1);
+  LCD_IO_WriteCmd8MultipleData8(ST7789_NORON, NULL, 0);
+  LCD_IO_WriteCmd8MultipleData8(ST7789_SLPOUT, NULL, 0);
+  LCD_IO_WriteCmd8MultipleData8(ST7789_DISPON, NULL, 0);
+
+
+  #if ST7789_INITCLEAR == 1
+  st7789_FillRect(0, 0, ST7789_SIZE_X, ST7789_SIZE_Y, 0x0000);
+  LCD_Delay(10);
+  #endif
+  
+  LCD_Delay(10);
 }
-
 
 //-----------------------------------------------------------------------------
 /**

@@ -34,7 +34,9 @@ Core/Src/Lcd/lcd_io_spi_hal.o: ../Core/Src/Lcd/lcd_io_spi_hal.c \
  ../Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.h \
  ../Core/Inc/stm32h7xx_nucleo_conf.h \
  ../Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo_errno.h \
- ../Core/Inc/lcd.h ../Core/Inc/lcd_io.h ../Core/Inc/lcd.h \
+ C:/Users/mrski/Documents/ECE411/Etch-A-Tune/H723/Core/Inc/Lcd/lcd.h \
+ C:/Users/mrski/Documents/ECE411/Etch-A-Tune/H723/Core/Inc/Lcd/lcd_io.h \
+ C:/Users/mrski/Documents/ECE411/Etch-A-Tune/H723/Core/Inc/Lcd/lcd.h \
  ../Core/Inc/lcd_io_spi_hal.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_gpio.h
 ../Core/Inc/main.h:
@@ -73,8 +75,8 @@ Core/Src/Lcd/lcd_io_spi_hal.o: ../Core/Src/Lcd/lcd_io_spi_hal.c \
 ../Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.h:
 ../Core/Inc/stm32h7xx_nucleo_conf.h:
 ../Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo_errno.h:
-../Core/Inc/lcd.h:
-../Core/Inc/lcd_io.h:
-../Core/Inc/lcd.h:
+C:/Users/mrski/Documents/ECE411/Etch-A-Tune/H723/Core/Inc/Lcd/lcd.h:
+C:/Users/mrski/Documents/ECE411/Etch-A-Tune/H723/Core/Inc/Lcd/lcd_io.h:
+C:/Users/mrski/Documents/ECE411/Etch-A-Tune/H723/Core/Inc/Lcd/lcd.h:
 ../Core/Inc/lcd_io_spi_hal.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_gpio.h:

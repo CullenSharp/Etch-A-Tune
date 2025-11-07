@@ -21,4 +21,3 @@
 // ILI9341 physic resolution (in 0 orientation)
 #define  ST7789_LCD_PIXEL_WIDTH         320
 #define  ST7789_LCD_PIXEL_HEIGHT        480
-
