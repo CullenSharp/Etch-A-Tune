@@ -83,18 +83,18 @@
 /* SPI handle select
    - software SPI (set this macro value: -1, set in CUBEMX the TS_CS, TS_SCK, TS_MISO, TS_MOSI, TS_IRQ pin)
    - hardware SPI handle: see in main.c file (default: hspi1, hspi2 ... hspi6) */
-#define TS_SPI_HANDLE         hspi2
+#define TS_SPI_HANDLE         hspi1
 
 /* SPI write and read speed (if deleted and hardware SPI -> setting in CUBEMX)
    - software SPI: TS_SCK clock delay (see the TS_IO_Delay function)
    - hardware SPI: clock div fPCLK: 0=/2, 1=/4, 2=/8, 3=/16, 4=/32, 5=/64, 6=/128, 7=/256 */
-#define TS_SPI_SPD            4
+#define TS_SPI_SPD            64
 
 /* Wait time before reading xpt2046 (see: TS_IO_Transaction and TS_IO_Delay dunctions) */
-#define XPT2046_READDELAY     0
+#define XPT2046_READDELAY     1
 
 /* The touch value that it still accepts as the same value */
-#define TOUCH_FILTER          40
+#define TOUCH_FILTER          64
 
 /* This is how many times it tries to read the same value */
 #define TOUCH_MAXREPEAT       8

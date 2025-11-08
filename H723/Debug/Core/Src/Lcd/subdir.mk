@@ -7,17 +7,23 @@
 C_SRCS += \
 ../Core/Src/Lcd/lcd_io_spi_hal.c \
 ../Core/Src/Lcd/st7789.c \
-../Core/Src/Lcd/stm32_adafruit_lcd.c 
+../Core/Src/Lcd/stm32_adafruit_lcd.c \
+../Core/Src/Lcd/stm32_adafruit_ts.c \
+../Core/Src/Lcd/ts_xpt2046.c 
 
 OBJS += \
 ./Core/Src/Lcd/lcd_io_spi_hal.o \
 ./Core/Src/Lcd/st7789.o \
-./Core/Src/Lcd/stm32_adafruit_lcd.o 
+./Core/Src/Lcd/stm32_adafruit_lcd.o \
+./Core/Src/Lcd/stm32_adafruit_ts.o \
+./Core/Src/Lcd/ts_xpt2046.o 
 
 C_DEPS += \
 ./Core/Src/Lcd/lcd_io_spi_hal.d \
 ./Core/Src/Lcd/st7789.d \
-./Core/Src/Lcd/stm32_adafruit_lcd.d 
+./Core/Src/Lcd/stm32_adafruit_lcd.d \
+./Core/Src/Lcd/stm32_adafruit_ts.d \
+./Core/Src/Lcd/ts_xpt2046.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -27,7 +33,7 @@ Core/Src/Lcd/%.o Core/Src/Lcd/%.su Core/Src/Lcd/%.cyclo: ../Core/Src/Lcd/%.c Cor
 clean: clean-Core-2f-Src-2f-Lcd
 
 clean-Core-2f-Src-2f-Lcd:
-	-$(RM) ./Core/Src/Lcd/lcd_io_spi_hal.cyclo ./Core/Src/Lcd/lcd_io_spi_hal.d ./Core/Src/Lcd/lcd_io_spi_hal.o ./Core/Src/Lcd/lcd_io_spi_hal.su ./Core/Src/Lcd/st7789.cyclo ./Core/Src/Lcd/st7789.d ./Core/Src/Lcd/st7789.o ./Core/Src/Lcd/st7789.su ./Core/Src/Lcd/stm32_adafruit_lcd.cyclo ./Core/Src/Lcd/stm32_adafruit_lcd.d ./Core/Src/Lcd/stm32_adafruit_lcd.o ./Core/Src/Lcd/stm32_adafruit_lcd.su
+	-$(RM) ./Core/Src/Lcd/lcd_io_spi_hal.cyclo ./Core/Src/Lcd/lcd_io_spi_hal.d ./Core/Src/Lcd/lcd_io_spi_hal.o ./Core/Src/Lcd/lcd_io_spi_hal.su ./Core/Src/Lcd/st7789.cyclo ./Core/Src/Lcd/st7789.d ./Core/Src/Lcd/st7789.o ./Core/Src/Lcd/st7789.su ./Core/Src/Lcd/stm32_adafruit_lcd.cyclo ./Core/Src/Lcd/stm32_adafruit_lcd.d ./Core/Src/Lcd/stm32_adafruit_lcd.o ./Core/Src/Lcd/stm32_adafruit_lcd.su ./Core/Src/Lcd/stm32_adafruit_ts.cyclo ./Core/Src/Lcd/stm32_adafruit_ts.d ./Core/Src/Lcd/stm32_adafruit_ts.o ./Core/Src/Lcd/stm32_adafruit_ts.su ./Core/Src/Lcd/ts_xpt2046.cyclo ./Core/Src/Lcd/ts_xpt2046.d ./Core/Src/Lcd/ts_xpt2046.o ./Core/Src/Lcd/ts_xpt2046.su
 
 .PHONY: clean-Core-2f-Src-2f-Lcd
 

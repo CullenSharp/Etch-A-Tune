@@ -72,10 +72,20 @@ void Error_Handler(void);
 #define LCD_MISO_GPIO_Port GPIOF
 #define LCD_MOSI_Pin GPIO_PIN_9
 #define LCD_MOSI_GPIO_Port GPIOF
+#define TS_CS_Pin GPIO_PIN_4
+#define TS_CS_GPIO_Port GPIOA
+#define TS_IRQ_Pin GPIO_PIN_7
+#define TS_IRQ_GPIO_Port GPIOC
 #define SWDIO_Pin GPIO_PIN_13
 #define SWDIO_GPIO_Port GPIOA
 #define SWCLK_Pin GPIO_PIN_14
 #define SWCLK_GPIO_Port GPIOA
+#define TS_SCK_Pin GPIO_PIN_3
+#define TS_SCK_GPIO_Port GPIOB
+#define TS_MISO_Pin GPIO_PIN_4
+#define TS_MISO_GPIO_Port GPIOB
+#define TS_MOSI_Pin GPIO_PIN_5
+#define TS_MOSI_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
