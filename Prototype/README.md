@@ -16,5 +16,7 @@ We will also be working on the IFFT in order to convert bit maps into waveforms,
 ### Date: 11-7-2025
 The initialization function for the LCD driver chip driver was rewritten by Cullen Sharp. We are able to run an example program and have a framework for how to develop the program in terms of the rest of the code
 
+Touch has been confirmed working with the default ada\_fruit\_ts.h and c. Calibration was added and put into ada\_fruit\_ts.c. Paint is current example code from mcma branch
+
 
 
