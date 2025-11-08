@@ -78,7 +78,6 @@ union
 
 #define ST7796_INVOFF         0x20
 #define ST7796_INVON          0x21
-#define ST7796_GAMMASET       0x26
 #define ST7796_DISPOFF        0x28
 #define ST7796_DISPON         0x29
 
@@ -105,31 +104,20 @@ union
 #define ST7796_PWCTR1         0xC0
 #define ST7796_PWCTR2         0xC1
 #define ST7796_PWCTR3         0xC2
-#define ST7796_PWCTR4         0xC3
-#define ST7796_PWCTR5         0xC4
 #define ST7796_VMCTR1         0xC5
 #define ST7796_VMCTR2         0xC7
 
 #define ST7796_RDID1          0xDA
 #define ST7796_RDID2          0xDB
 #define ST7796_RDID3          0xDC
-#define ST7796_RDID4          0xDD
 
 #define ST7796_GMCTRP1        0xE0
 #define ST7796_GMCTRN1        0xE1
 
-#define ST7796_PWCTR6         0xFC
-#define ST7796_INTERFACE      0xF6    /* Interface control register */
 #define ST7796_CSCON		  0xF0
 
 /* Extend register commands */
-#define ST7796_POWERA         0xCB    /* Power control A register */
-#define ST7796_POWERB         0xCF    /* Power control B register */
 #define ST7796_DTCA           0xE8    /* Driver timing control A */
-#define ST7796_DTCB           0xEA    /* Driver timing control B */
-#define ST7796_POWER_SEQ      0xED    /* Power on sequence register */
-#define ST7796_3GAMMA_EN      0xF2    /* 3 Gamma enable register */
-#define ST7796_PRC            0xF7    /* Pump ratio control register */
 
 //-----------------------------------------------------------------------------
 #define ST7796_MAD_RGB        0x00
