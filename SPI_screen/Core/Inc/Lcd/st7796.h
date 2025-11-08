@@ -19,5 +19,5 @@
 #define  ST7796_READBITDEPTH            24
 
 // ST7796 physical resolution (in 0 orientation)
-#define  ST7796_LCD_PIXEL_WIDTH         480
+#define  ST7796_LCD_PIXEL_WIDTH         320
 #define  ST7796_LCD_PIXEL_HEIGHT        480
