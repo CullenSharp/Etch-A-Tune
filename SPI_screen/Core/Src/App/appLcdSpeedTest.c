@@ -222,13 +222,6 @@ uint32_t BitmapTest(uint32_t n)
   uint16_t y = 0;
 
 //  BSP_LCD_DrawBitmap(x, y, (uint8_t *)&rombitmap);
-  BSP_LCD_SetTextColor(LCD_COLOR_YELLOW);
-  BSP_LCD_SetBackColor(LCD_COLOR_BLUE);
-  BSP_LCD_SetFont(&Font16);
-  BSP_LCD_DisplayChar(0, 0, '1');
-  BSP_LCD_DisplayChar(BSP_LCD_GetXSize() - 12, 0, '2');
-  BSP_LCD_DisplayChar(0, BSP_LCD_GetYSize() - 16, '3');
-  BSP_LCD_DisplayChar(BSP_LCD_GetXSize() - 12, BSP_LCD_GetYSize() - 16, '4');
   return(0);
 }
 
@@ -468,6 +461,18 @@ void mainApp(void)
 
     printf("\r\nrunning bitmap test\r\n");
     t = BitmapTest(1);
+    BSP_LCD_SetTextColor(LCD_COLOR_YELLOW);
+    BSP_LCD_SetBackColor(LCD_COLOR_BLUE);
+    BSP_LCD_SetFont(&Font12);
+    BSP_LCD_DisplayStringAtLine(0,(uint8_t *)"The quick brown fox jumped over the lazy dog.");
+    BSP_LCD_DisplayStringAtLine(1,(uint8_t *)"The quick brown fox jumped over the lazy dog.");
+    BSP_LCD_DisplayStringAtLine(2,(uint8_t *)"The quick brown fox jumped over the lazy dog.");
+    BSP_LCD_DisplayStringAtLine(3,(uint8_t *)"The quick brown fox jumped over the lazy dog.");
+    BSP_LCD_DisplayStringAtLine(4,(uint8_t *)"The quick brown fox jumped over the lazy dog.");
+    BSP_LCD_DisplayStringAtLine(5,(uint8_t *)"The quick brown fox jumped over the lazy dog.");
+    BSP_LCD_DisplayChar(BSP_LCD_GetXSize() - 12, 0, '2');
+    BSP_LCD_DisplayChar(0, BSP_LCD_GetYSize() - 16, '3');
+    BSP_LCD_DisplayChar(BSP_LCD_GetXSize() - 12, BSP_LCD_GetYSize() - 16, '4');
     printf("Bitmap Test (1 bitmap): %d ms", (int)t);
 //    printf("\r\nrunning read pixel test\r\n");
 //    #if READ_TEST == 1

@@ -1,10 +1,10 @@
 
 /*---------------Exported Settings-------------------*/
 /* Orientation
-   - 0: 320x480 portrait (plug on top)
-   - 1: 480x320 landscape (plug on left)
-   - 2: 320x480 portrait (plug on bottom)
-   - 3: 480x320 landscape (plug on right) */
+   - 0: 320x480 portrait 	(pins on top)
+   - 1: 480x320 landscape 	(pins on right)
+   - 2: 320x480 portrait 	(pins on bottom)
+   - 3: 480x320 landscape 	(pins on left) */
 #define  ST7796_ORIENTATION             1
 
 /* To clear the screen before display turning on ?
@@ -32,7 +32,7 @@ void     st7796_DisplayOff(void);
 void     st7796_SetCursor(uint16_t Xpos, uint16_t Ypos);
 void     st7796_WritePixel(uint16_t Xpos, uint16_t Ypos, uint16_t RGB_Code);
 uint16_t st7796_ReadPixel(uint16_t Xpos, uint16_t Ypos);
-void     st7796_SetDisplayWindow(uint16_t Xpos, uint16_t Ypos, uint16_t Width, uint16_t Height);
+void     st7796_SetDrawRegion(uint16_t Xpos, uint16_t Ypos, uint16_t Width, uint16_t Height);
 void     st7796_DrawHLine(uint16_t RGBCode, uint16_t Xpos, uint16_t Ypos, uint16_t Length);
 void     st7796_DrawVLine(uint16_t RGBCode, uint16_t Xpos, uint16_t Ypos, uint16_t Length);
 void     st7796_FillRect(uint16_t Xpos, uint16_t Ypos, uint16_t Xsize, uint16_t Ysize, uint16_t RGBCode);

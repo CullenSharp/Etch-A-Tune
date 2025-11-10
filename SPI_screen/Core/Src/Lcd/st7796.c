@@ -17,7 +17,7 @@ LCD_DrvTypeDef   st7796_drv =
   st7796_SetCursor,
   st7796_WritePixel,
   st7796_ReadPixel,
-  st7796_SetDisplayWindow,
+  st7796_SetDrawRegion,
   st7796_DrawHLine,
   st7796_DrawVLine,
   st7796_GetLcdPixelWidth,
@@ -41,11 +41,16 @@ union
   uint16_t d16[TRANSDATAMAXSIZE / 2];
 }transdata;
 
-#define ST7796_SETWINDOW(x1, x2, y1, y2) \
-  { transdata.d16[0] = __REVSH(x1); transdata.d16[1] = __REVSH(x2); LCD_IO_WriteCmd8MultipleData8(ST7796_CASET, &transdata, 4); \
-    transdata.d16[0] = __REVSH(y1); transdata.d16[1] = __REVSH(y2); LCD_IO_WriteCmd8MultipleData8(ST7796_PASET, &transdata, 4); }
+static inline void st7796_WriteAddrWindow(uint16_t x1, uint16_t x2, uint16_t y1, uint16_t y2)
+{
+    transdata.d16[0] = __REVSH(x1);
+    transdata.d16[1] = __REVSH(x2);
+    LCD_IO_WriteCmd8MultipleData8(ST7796_CASET, &transdata, 4);
 
-#define ST7796_SETCURSOR(x, y)            ST7796_SETWINDOW(x, x, y, y)
+    transdata.d16[0] = __REVSH(y1);
+    transdata.d16[1] = __REVSH(y2);
+    LCD_IO_WriteCmd8MultipleData8(ST7796_PASET, &transdata, 4);
+}
 
 //-----------------------------------------------------------------------------
 #define ST7796_LCD_INITIALIZED    0x01
@@ -302,9 +307,8 @@ void st7796_Init(void)
   * @param  Ypos: specifies the Y position.
   * @retval None
   */
-void st7796_SetCursor(uint16_t Xpos, uint16_t Ypos)
-{
-  ST7796_SETCURSOR(Xpos, Ypos);
+void st7796_SetCursor(uint16_t x, uint16_t y) {
+	st7796_WriteAddrWindow(x, x, y, y);
 }
 
 //-----------------------------------------------------------------------------
@@ -322,7 +326,7 @@ void st7796_WritePixel(uint16_t Xpos, uint16_t Ypos, uint16_t RGBCode)
     LastEntry = ST7796_MAD_DATA_RIGHT_THEN_DOWN;
     LCD_IO_WriteCmd8MultipleData8(ST7796_MADCTL, &EntryRightThenDown, 1);
   }
-  ST7796_SETCURSOR(Xpos, Ypos);
+  st7796_SetCursor(Xpos, Ypos);
   LCD_IO_DrawFill(RGBCode, 1);
 }
 
@@ -341,24 +345,23 @@ uint16_t st7796_ReadPixel(uint16_t Xpos, uint16_t Ypos)
     LastEntry = ST7796_MAD_DATA_RIGHT_THEN_DOWN;
     LCD_IO_WriteCmd8MultipleData8(ST7796_MADCTL, &EntryRightThenDown, 1);
   }
-  ST7796_SETCURSOR(Xpos, Ypos);
+  st7796_SetCursor(Xpos, Ypos);
   LCD_IO_ReadBitmap(&ret, 1);
   return(ret);
 }
 
 //-----------------------------------------------------------------------------
 /**
-  * @brief  Sets a display window
-  * @param  Xpos:   specifies the X bottom left position.
-  * @param  Ypos:   specifies the Y bottom left position.
-  * @param  Height: display window height.
-  * @param  Width:  display window width.
-  * @retval None
-  */
-void st7796_SetDisplayWindow(uint16_t Xpos, uint16_t Ypos, uint16_t Width, uint16_t Height)
+ * @brief Define the active drawing region on the display.
+ * @param x: Left coordinate of the region.
+ * @param y: Top coordinate of the region.
+ * @param width: Width of the region in pixels.
+ * @param height: Height of the region in pixels.
+ */
+void st7796_SetDrawRegion(uint16_t Xpos, uint16_t Ypos, uint16_t Width, uint16_t Height)
 {
   yStart = Ypos; yEnd = Ypos + Height - 1;
-  ST7796_SETWINDOW(Xpos, Xpos + Width - 1, Ypos, Ypos + Height - 1);
+  st7796_WriteAddrWindow(Xpos, Xpos + Width - 1, Ypos, Ypos + Height - 1);
 }
 
 //-----------------------------------------------------------------------------
@@ -377,7 +380,8 @@ void st7796_DrawHLine(uint16_t RGBCode, uint16_t Xpos, uint16_t Ypos, uint16_t L
     LastEntry = ST7796_MAD_DATA_RIGHT_THEN_DOWN;
     LCD_IO_WriteCmd8MultipleData8(ST7796_MADCTL, &EntryRightThenDown, 1);
   }
-  ST7796_SETWINDOW(Xpos, Xpos + Length - 1, Ypos, Ypos);
+
+  st7796_WriteAddrWindow(Xpos, Xpos + Length - 1, Ypos, Ypos);
   LCD_IO_DrawFill(RGBCode, Length);
 }
 
@@ -397,7 +401,7 @@ void st7796_DrawVLine(uint16_t RGBCode, uint16_t Xpos, uint16_t Ypos, uint16_t L
     LastEntry = ST7796_MAD_DATA_RIGHT_THEN_DOWN;
     LCD_IO_WriteCmd8MultipleData8(ST7796_MADCTL, &EntryRightThenDown, 1);
   }
-  ST7796_SETWINDOW(Xpos, Xpos, Ypos, Ypos + Length - 1);
+  st7796_WriteAddrWindow(Xpos, Xpos, Ypos, Ypos + Length - 1);
   LCD_IO_DrawFill(RGBCode, Length);
 }
 
@@ -418,7 +422,7 @@ void st7796_FillRect(uint16_t Xpos, uint16_t Ypos, uint16_t Xsize, uint16_t Ysiz
     LastEntry = ST7796_MAD_DATA_RIGHT_THEN_DOWN;
     LCD_IO_WriteCmd8MultipleData8(ST7796_MADCTL, &EntryRightThenDown, 1);
   }
-  ST7796_SETWINDOW(Xpos, Xpos + Xsize - 1, Ypos, Ypos + Ysize - 1);
+  st7796_WriteAddrWindow(Xpos, Xpos + Xsize - 1, Ypos, Ypos + Ysize - 1);
   LCD_IO_DrawFill(RGBCode, Xsize * Ysize);
 }
 
@@ -470,7 +474,7 @@ void st7796_DrawRGBImage(uint16_t Xpos, uint16_t Ypos, uint16_t Xsize, uint16_t 
     LastEntry = ST7796_MAD_DATA_RIGHT_THEN_DOWN;
     LCD_IO_WriteCmd8MultipleData8(ST7796_MADCTL, &EntryRightThenDown, 1);
   }
-  st7796_SetDisplayWindow(Xpos, Ypos, Xsize, Ysize);
+  st7796_SetDrawRegion(Xpos, Ypos, Xsize, Ysize);
   LCD_IO_DrawBitmap(pData, Xsize * Ysize);
 }
 
@@ -492,7 +496,7 @@ void st7796_ReadRGBImage(uint16_t Xpos, uint16_t Ypos, uint16_t Xsize, uint16_t 
     LastEntry = ST7796_MAD_DATA_RIGHT_THEN_DOWN;
     LCD_IO_WriteCmd8MultipleData8(ST7796_MADCTL, &EntryRightThenDown, 1);
   }
-  st7796_SetDisplayWindow(Xpos, Ypos, Xsize, Ysize);
+  st7796_SetDrawRegion(Xpos, Ypos, Xsize, Ysize);
   LCD_IO_ReadBitmap(pData, Xsize * Ysize);
 }
 
