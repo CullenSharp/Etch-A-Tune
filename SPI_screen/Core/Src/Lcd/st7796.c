@@ -41,112 +41,6 @@ union
   uint16_t d16[TRANSDATAMAXSIZE / 2];
 }transdata;
 
-#define ST7796_NOP            0x00
-#define ST7796_SWRESET        0x01
-
-#define ST7796_RDDID          0x04
-#define ST7796_RDDST          0x09
-#define ST7796_RDMODE         0x0A
-#define ST7796_RDMADCTL       0x0B
-#define ST7796_RDPIXFMT       0x0C
-#define ST7796_RDIMGFMT       0x0D
-#define ST7796_RDSELFDIAG     0x0F
-
-#define ST7796_SLPIN          0x10
-#define ST7796_SLPOUT         0x11
-#define ST7796_PTLON          0x12
-#define ST7796_NORON          0x13
-
-#define ST7796_INVOFF         0x20
-#define ST7796_INVON          0x21
-#define ST7796_DISPOFF        0x28
-#define ST7796_DISPON         0x29
-
-#define ST7796_CASET          0x2A
-#define ST7796_PASET          0x2B
-#define ST7796_RAMWR          0x2C
-#define ST7796_RAMRD          0x2E
-
-#define ST7796_PTLAR          0x30
-#define ST7796_VSCRDEF        0x33
-#define ST7796_MADCTL         0x36
-#define ST7796_VSCRSADD       0x37      /* Vertical Scrolling Start Address */
-#define ST7796_PIXFMT         0x3A      /* COLMOD: Pixel Format Set */
-
-#define ST7796_IFMODE  		  0xB0     /* RGB Interface Signal Control */
-#define ST7796_FRMCTR1        0xB1
-#define ST7796_FRMCTR2        0xB2
-#define ST7796_FRMCTR3        0xB3
-#define ST7796_INVCTR         0xB4
-#define ST7796_BPC			  0xB5
-#define ST7796_DFUNCTR        0xB6      /* Display Function Control */
-#define ST7796_EM			  0xB7
-
-#define ST7796_PWCTR1         0xC0
-#define ST7796_PWCTR2         0xC1
-#define ST7796_PWCTR3         0xC2
-#define ST7796_VMCTR1         0xC5
-#define ST7796_VMCTR2         0xC7
-
-#define ST7796_RDID1          0xDA
-#define ST7796_RDID2          0xDB
-#define ST7796_RDID3          0xDC
-
-#define ST7796_GMCTRP1        0xE0
-#define ST7796_GMCTRN1        0xE1
-
-#define ST7796_CSCON		  0xF0
-
-/* Extend register commands */
-#define ST7796_DTCA           0xE8    /* Driver timing control A */
-
-//-----------------------------------------------------------------------------
-#define ST7796_MAD_RGB        0x00
-#define ST7796_MAD_BGR        0x08
-
-#define ST7796_MAD_VERTICAL   0x20
-#define ST7796_MAD_HORIZONTAL 0x00
-#define ST7796_MAD_X_LEFT     0x00
-#define ST7796_MAD_X_RIGHT    0x40
-#define ST7796_MAD_Y_UP       0x00
-#define ST7796_MAD_Y_DOWN     0x80
-
-#if ST7796_COLORMODE == 0
-#define ST7796_MAD_COLORMODE  ST7796_MAD_RGB
-#else
-#define ST7796_MAD_COLORMODE  ST7796_MAD_BGR
-#endif
-
-#if (ST7796_ORIENTATION == 0)
-#define ST7796_SIZE_X                     ST7796_LCD_PIXEL_WIDTH
-#define ST7796_SIZE_Y                     ST7796_LCD_PIXEL_HEIGHT
-#define ST7796_MAD_DATA_RIGHT_THEN_UP     (ST7796_MAD_COLORMODE | ST7796_MAD_X_RIGHT | ST7796_MAD_Y_UP | ST7796_MAD_HORIZONTAL)
-#define ST7796_MAD_DATA_RIGHT_THEN_DOWN   (ST7796_MAD_COLORMODE | ST7796_MAD_X_RIGHT | ST7796_MAD_Y_DOWN | ST7796_MAD_HORIZONTAL)
-#define XSIZE                              Xsize
-#define YSIZE                              Ysize
-#elif (ST7796_ORIENTATION == 1)
-#define ST7796_SIZE_X                     ST7796_LCD_PIXEL_HEIGHT
-#define ST7796_SIZE_Y                     ST7796_LCD_PIXEL_WIDTH
-#define ST7796_MAD_DATA_RIGHT_THEN_UP     (ST7796_MAD_COLORMODE | ST7796_MAD_X_RIGHT | ST7796_MAD_Y_DOWN | ST7796_MAD_VERTICAL)
-#define ST7796_MAD_DATA_RIGHT_THEN_DOWN   (ST7796_MAD_COLORMODE | ST7796_MAD_X_LEFT  | ST7796_MAD_Y_DOWN | ST7796_MAD_VERTICAL)
-#define XSIZE                              Ysize
-#define YSIZE                              Xsize
-#elif (ST7796_ORIENTATION == 2)
-#define ST7796_SIZE_X                     ST7796_LCD_PIXEL_WIDTH
-#define ST7796_SIZE_Y                     ST7796_LCD_PIXEL_HEIGHT
-#define ST7796_MAD_DATA_RIGHT_THEN_UP     (ST7796_MAD_COLORMODE | ST7796_MAD_X_LEFT  | ST7796_MAD_Y_DOWN | ST7796_MAD_HORIZONTAL)
-#define ST7796_MAD_DATA_RIGHT_THEN_DOWN   (ST7796_MAD_COLORMODE | ST7796_MAD_X_LEFT  | ST7796_MAD_Y_UP | ST7796_MAD_HORIZONTAL)
-#define XSIZE                              Xsize
-#define YSIZE                              Ysize
-#elif (ST7796_ORIENTATION == 3)
-#define ST7796_SIZE_X                     ST7796_LCD_PIXEL_HEIGHT
-#define ST7796_SIZE_Y                     ST7796_LCD_PIXEL_WIDTH
-#define ST7796_MAD_DATA_RIGHT_THEN_UP     (ST7796_MAD_COLORMODE | ST7796_MAD_X_LEFT  | ST7796_MAD_Y_UP | ST7796_MAD_VERTICAL)
-#define ST7796_MAD_DATA_RIGHT_THEN_DOWN   (ST7796_MAD_COLORMODE | ST7796_MAD_X_RIGHT | ST7796_MAD_Y_UP | ST7796_MAD_VERTICAL)
-#define XSIZE                              Ysize
-#define YSIZE                              Xsize
-#endif
-
 #define ST7796_SETWINDOW(x1, x2, y1, y2) \
   { transdata.d16[0] = __REVSH(x1); transdata.d16[1] = __REVSH(x2); LCD_IO_WriteCmd8MultipleData8(ST7796_CASET, &transdata, 4); \
     transdata.d16[0] = __REVSH(y1); transdata.d16[1] = __REVSH(y2); LCD_IO_WriteCmd8MultipleData8(ST7796_PASET, &transdata, 4); }
@@ -315,13 +209,11 @@ void st7796_Init(void)
   #endif
   LCD_Delay(50);
 
-  // begin my code
-
   // write to cscon
   LCD_IO_WriteCmd8MultipleData8(ST7796_CSCON, (uint8_t *)"\xC3\x96", 1);
 
   // write to madctl
-  LCD_IO_WriteCmd8MultipleData8(ST7796_MADCTL, (uint8_t *)"\x68",1);
+//  LCD_IO_WriteCmd8MultipleData8(ST7796_MADCTL, (uint8_t *)"\x68",1);
 
   // write interface mode (IFMODE)
   // 0x80 => spi enable
@@ -375,7 +267,6 @@ void st7796_Init(void)
   // G_eq = on
   // tclk = 4/osc
   LCD_IO_WriteCmd8MultipleData8(ST7796_DTCA, (uint8_t *)"\x40\x8A\x00\x00\x29\x19\xA5\x33", 8);
-
 
   // set current level
   LCD_IO_WriteCmd8MultipleData8(ST7796_PWCTR3, (uint8_t *)"\xA7", 1);
