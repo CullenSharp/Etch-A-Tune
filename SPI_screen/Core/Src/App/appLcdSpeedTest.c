@@ -20,9 +20,9 @@
 
 /* Test photo */
 #if BITMAP_TEST == 1
-#define rombitmap             beer_60x100_16
-#define ROMBITMAP_WIDTH       60
-#define ROMBITMAP_HEIGHT      100
+#define rombitmap             hurricane_480x320_16
+#define ROMBITMAP_WIDTH       320
+#define ROMBITMAP_HEIGHT      480
 #endif
 
 #define GPIO_Port_(a)         a ## _GPIO_Port
@@ -39,11 +39,6 @@
 /* no freertos */
 #define Delay(t)              HAL_Delay(t)
 #define GetTime()             HAL_GetTick()
-
-#define POWERMETER_START
-#define POWERMETER_STOP
-#define POWERMETER_REF
-#define POWERMETER_PRINT      Delay(10); printf("\r\n")
 
 #else
 /* freertos */
@@ -71,14 +66,6 @@ const osThreadAttr_t t2_attributes = {.name = "Task2", .stack_size = 256, .prior
 
 #endif
 /* common freertos V1 and freertos V2 */
-
-#if     POWERMETER == 1
-#define POWERMETER_START      {task02_count = 0; task02_run = 1;}
-#define POWERMETER_STOP       task02_run = 0
-
-#define POWERMETER_REF        {task02_run = 1; refcpuusage = task02_count / t;}
-#define POWERMETER_PRINT      {Delay(10); if(t) printf(", cpu usage:%d%%\r\n", (int)cpuusage_calc(t)); else printf("\r\n");}
-#endif
 
 uint32_t cpuusage_calc(uint32_t t)
 {
@@ -292,16 +279,12 @@ uint32_t ColorTest(void)
 #if BITMAP_TEST == 1
 uint32_t BitmapTest(uint32_t n)
 {
-  extern const BITMAPSTRUCT beer_60x100_16;
-  uint16_t x, y;
+  extern const BITMAPSTRUCT hurricane_480x320_16;
+  uint16_t x = 0;
+  uint16_t y = 0;
 
   uint32_t ctStartT = GetTime();
-  for(uint32_t i = 0; i < n; i++)
-  {
-    x = random() % (BSP_LCD_GetXSize() - rombitmap.infoHeader.biWidth);
-    y = random() % (BSP_LCD_GetYSize() - rombitmap.infoHeader.biHeight);
-    BSP_LCD_DrawBitmap(x, y, (uint8_t *)&rombitmap);
-  }
+  BSP_LCD_DrawBitmap(x, y, (uint8_t *)&rombitmap);
   return(GetTime() - ctStartT);
 }
 
@@ -502,118 +485,87 @@ void mainApp(void)
     _impure_ptr->_r48->_rand_next = 0;
     #endif
 
-    Delay(100);
-    t = 300;
-    POWERMETER_START;
-    Delay(t);
-    POWERMETER_STOP;
-    POWERMETER_REF;
-    printf("Delay 300\r\n");
-    Delay(DELAY_CHAPTER);
+//    Delay(100);
+//    t = 300;
+//    Delay(t);
+//    printf("Delay %d\r\n");
+//    Delay(DELAY_CHAPTER);
 
-    POWERMETER_START;
-    t = ClearTest(10);
-    POWERMETER_STOP;
-    printf("Clear Test (10x): %d ms", (int)t);
-    POWERMETER_PRINT;
-    Delay(DELAY_CHAPTER);
+//    printf("\r\nrunning clear test\r\n");
+//    t = ClearTest(1);
+//    printf("Clear Test (1x): %d ms", (int)t);
 
-    POWERMETER_START;
-    t = PixelTest(100000);
-    POWERMETER_STOP;
-    printf("Pixel Test (100000 pixel): %d ms", (int)t);
-    POWERMETER_PRINT;
-    Delay(DELAY_CHAPTER);
+//    Delay(DELAY_CHAPTER);
 
-    BSP_LCD_Clear(LCD_COLOR_BLACK);
-    POWERMETER_START;
-    t = LineTest(1000);
-    POWERMETER_STOP;
-    printf("Line Test (1000 lines): %d ms", (int)t);
-    POWERMETER_PRINT;
-    Delay(DELAY_CHAPTER);
+//    t = PixelTest(100000);
+//    printf("Pixel Test (100000 pixel): %d ms", (int)t);
+//
+//    Delay(DELAY_CHAPTER);
 
-    BSP_LCD_Clear(LCD_COLOR_BLACK);
-    POWERMETER_START;
-    t = FillRectTest(250);
-    POWERMETER_STOP;
-    printf("Fill Rect Test (250 rect): %d ms", (int)t);
-    POWERMETER_PRINT;
-    Delay(DELAY_CHAPTER);
+//    BSP_LCD_Clear(LCD_COLOR_BLACK);
+//    t = LineTest(1000);
+//    printf("Line Test (1000 lines): %d ms", (int)t);
+//
+//    Delay(DELAY_CHAPTER);
 
-    BSP_LCD_Clear(LCD_COLOR_BLACK);
-    POWERMETER_START;
-    t = CircleTest(1000);
-    POWERMETER_STOP;
-    printf("Circle Test (1000 circles): %d ms", (int)t);
-    POWERMETER_PRINT;
-    Delay(DELAY_CHAPTER);
+//    BSP_LCD_Clear(LCD_COLOR_BLACK);
+//    t = FillRectTest(250);
+//    printf("Fill Rect Test (250 rect): %d ms", (int)t);
+//
+//    Delay(DELAY_CHAPTER);
 
-    BSP_LCD_Clear(LCD_COLOR_BLACK);
-    POWERMETER_START;
-    t = FillCircleTest(250);
-    POWERMETER_STOP;
-    printf("Fill Circle Test (250 circles): %d ms", (int)t);
-    POWERMETER_PRINT;
-    Delay(DELAY_CHAPTER);
+//    BSP_LCD_Clear(LCD_COLOR_BLACK);
+//    t = CircleTest(1000);
+//    printf("Circle Test (1000 circles): %d ms", (int)t);
+//
+//    Delay(DELAY_CHAPTER);
+
+//    BSP_LCD_Clear(LCD_COLOR_BLACK);
+//    t = FillCircleTest(250);
+//    printf("Fill Circle Test (250 circles): %d ms", (int)t);
+//
+//    Delay(DELAY_CHAPTER);
 
     #if BITMAP_TEST == 1
-    BSP_LCD_Clear(LCD_COLOR_BLACK);
-    POWERMETER_START;
-    t = CharTest(5000);
-    POWERMETER_STOP;
-    printf("Char Test (5000 char): %d ms", (int)t);
-    POWERMETER_PRINT;
+//    BSP_LCD_Clear(LCD_COLOR_BLACK);
+//    t = CharTest(5000);
+//    printf("Char Test (5000 char): %d ms", (int)t);
+//    Delay(DELAY_CHAPTER);
+
+    printf("\r\nrunning bitmap test\r\n");
+//    BSP_LCD_Clear(LCD_COLOR_BLACK);
+    t = BitmapTest(1);
+    printf("Bitmap Test (1 bitmap): %d ms", (int)t);
+
     Delay(DELAY_CHAPTER);
 
-    BSP_LCD_Clear(LCD_COLOR_BLACK);
-    POWERMETER_START;
-    t = BitmapTest(100);
-    POWERMETER_STOP;
-    printf("Bitmap Test (100 bitmap): %d ms", (int)t);
-    POWERMETER_PRINT;
-    Delay(DELAY_CHAPTER);
+//    printf("\r\nrunning read pixel test\r\n");
+//    #if READ_TEST == 1
+//    BSP_LCD_Clear(LCD_COLOR_BLACK);
+//    t = ReadPixelTest(20);
+//    printf("ReadPixel Test (20x bitmap read): %d ms", (int)t);
+//
+//    Delay(DELAY_CHAPTER);
+//
+//    printf("\r\nrunning read image test\r\n");
+//    BSP_LCD_Clear(LCD_COLOR_BLACK);
+//    t = ReadImageTest(20);
+//    printf("ReadImage Test (20x bitmap read): %d ms", (int)t);
 
-    #if READ_TEST == 1
-    BSP_LCD_Clear(LCD_COLOR_BLACK);
-    POWERMETER_START;
-    t = ReadPixelTest(20);
-    POWERMETER_STOP;
-    printf("ReadPixel Test (20x bitmap read): %d ms", (int)t);
-    POWERMETER_PRINT;
-    Delay(DELAY_CHAPTER);
+//    Delay(DELAY_CHAPTER);
+//    #endif
 
-    BSP_LCD_Clear(LCD_COLOR_BLACK);
-    POWERMETER_START;
-    t = ReadImageTest(20);
-    POWERMETER_STOP;
-    printf("ReadImage Test (20x bitmap read): %d ms", (int)t);
-    POWERMETER_PRINT;
-    Delay(DELAY_CHAPTER);
-    #endif
-
-    BSP_LCD_Clear(LCD_COLOR_BLACK);
-    POWERMETER_START;
-    t = ScrollTest(0);
-    POWERMETER_STOP;
-    printf("Scroll Test: %d ms", (int)t);
-    POWERMETER_PRINT;
-    Delay(DELAY_CHAPTER);
+//    BSP_LCD_Clear(LCD_COLOR_BLACK);
+//    t = ScrollTest(0);
+//    printf("Scroll Test: %d ms", (int)t);
+//    Delay(DELAY_CHAPTER);
 
     #endif /* #if BITMAP_TEST == 1 */
 
-    BSP_LCD_Clear(LCD_COLOR_BLACK);
-    POWERMETER_START;
-    t = ColorTest();
-    POWERMETER_STOP;
-    printf("Color Test: %d ms", (int)t);
-    POWERMETER_PRINT;
-    Delay(3 * DELAY_CHAPTER);
-
-    BSP_LCD_DisplayOff();
-    Delay(DELAY_CHAPTER);
-    BSP_LCD_DisplayOn();
-    Delay(DELAY_CHAPTER);
+//    BSP_LCD_DisplayOff();
+//    Delay(DELAY_CHAPTER);
+//    BSP_LCD_DisplayOn();
+//    Delay(DELAY_CHAPTER);
 
     printf("\r\n");
   }
