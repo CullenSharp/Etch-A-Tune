@@ -41,6 +41,7 @@ union
   uint16_t d16[TRANSDATAMAXSIZE / 2];
 }transdata;
 
+// Sets the
 static inline void st7796_WriteAddrWindow(uint16_t x1, uint16_t x2, uint16_t y1, uint16_t y2)
 {
     transdata.d16[0] = __REVSH(x1);

@@ -77,7 +77,6 @@ typedef struct
   void     (*SetCursor)(uint16_t, uint16_t);
   void     (*WritePixel)(uint16_t, uint16_t, uint16_t);
   uint16_t (*ReadPixel)(uint16_t, uint16_t);
-  
   void     (*SetDisplayWindow)(uint16_t, uint16_t, uint16_t, uint16_t);
   void     (*DrawHLine)(uint16_t, uint16_t, uint16_t, uint16_t);
   void     (*DrawVLine)(uint16_t, uint16_t, uint16_t, uint16_t);
