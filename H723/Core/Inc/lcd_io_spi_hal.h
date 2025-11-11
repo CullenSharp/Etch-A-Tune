@@ -109,15 +109,15 @@ void LCD_IO_DmaRxCpltCallback(SPI_HandleTypeDef *hspi);
 
 /* SPI write and read speed (if deleted -> setting in CUBE)
    - hardware SPI clock div fPCLK: 0=/2, 1=/4, 2=/8, 3=/16, 4=/32, 5=/64, 6=/128, 7=/256 */
-#define LCD_SPI_SPD_WRITE     1
-#define LCD_SPI_SPD_READ      4
+#define LCD_SPI_SPD_WRITE     0
+#define LCD_SPI_SPD_READ      0
 
 /* Backlight control (the logical level of the active state) */
 #define LCD_BLON              0
 
 /* When data direction change (OUT->IN) there is a display that requires extra clock
    example ST7735: 1, ILI9341: 0, ILI9488: 0 */
-#define LCD_SCK_EXTRACLK      0
+#define LCD_SCK_EXTRACLK      1
 
 /* DMA TX/RX enable/disable
    - 0: DMA disable
