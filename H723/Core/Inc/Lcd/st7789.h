@@ -3,7 +3,7 @@
    - 1: 320x240 landscape (plug in left)
    - 2: 240x320 portrait (plug in botton)
    - 3: 320x240 landscape (plug in right) */
-#define  ST7789_ORIENTATION             0
+#define  ST7789_ORIENTATION             1
 
 /* To clear the screen before display turning on ?
    - 0: does not clear

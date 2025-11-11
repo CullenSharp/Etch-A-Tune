@@ -537,7 +537,7 @@ void mainApp(void)
 //    BSP_LCD_Clear(LCD_COLOR_BLACK);
     t = BitmapTest(1);
     printf("Bitmap Test (1 bitmap): %d ms", (int)t);
-
+    //ClearTest(1);
     Delay(DELAY_CHAPTER);
 
 //    printf("\r\nrunning read pixel test\r\n");
