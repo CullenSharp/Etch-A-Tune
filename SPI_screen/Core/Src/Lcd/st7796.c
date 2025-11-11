@@ -84,13 +84,13 @@ static inline void LCD_IO_SetWriteDir(void)
 		#if ST7796_WRITEDEPTH == 16
 			/* 16-bit write */
 			if (lastdir != 0) {
-				LCD_IO_WriteCmd8MultipleData8(ST7796_PIXFMT, "\55", 1);
+				LCD_IO_WriteCmd8MultipleData8(ST7796_PIXFMT, "\x55", 1);
 				lastdir = 0;
 			}
 		#elif ST7796_WRITEDEPTH == 24
 			/* 24-bit write */
 			if (lastdir != 0) {
-				LCD_IO_WriteCmd8MultipleData8(ST7796_PIXFMT, "\66", 1);
+				LCD_IO_WriteCmd8MultipleData8(ST7796_PIXFMT, "\x66", 1);
 				lastdir = 0;
 			}
 		#endif
@@ -106,13 +106,13 @@ static inline void LCD_IO_SetReadDir(void) {
 	#if ST7796_WRITEDEPTH == 16
 		/* 16-bit write */
 		if (lastdir != 0) {
-			LCD_IO_WriteCmd8MultipleData8(ST7796_PIXFMT, "\55", 1);
+			LCD_IO_WriteCmd8MultipleData8(ST7796_PIXFMT, "\x55", 1);
 			lastdir = 0;
 		}
 	#elif ST7796_WRITEDEPTH == 24
 		/* 24-bit write */
 		if (lastdir != 0) {
-			LCD_IO_WriteCmd8MultipleData8(ST7796_PIXFMT, "\66", 1);
+			LCD_IO_WriteCmd8MultipleData8(ST7796_PIXFMT, "\x66", 1);
 			lastdir = 0;
 		}
 	#endif
@@ -122,7 +122,7 @@ static inline void LCD_IO_SetReadDir(void) {
 
 #if ST7796_WRITEBITDEPTH == 16
 
-static inline void LCD_IO_DrawFill(uint8_t Color, uint32_t Size) {
+static inline void LCD_IO_DrawFill(uint16_t Color, uint32_t Size) {
 	LCD_IO_SetWriteDir();
 	LCD_IO_WriteCmd8DataFill16(ST7796_RAMWR, Color, Size);
 }
@@ -134,7 +134,7 @@ static inline void LCD_IO_DrawBitmap(const uint8_t *pData, uint32_t Size) {
 
 #elif ST7796_WRITEBITDEPTH == 24
 
-static inline void LCD_IO_DrawFill(uint8_t Color, uint32_t Size) {
+static inline void LCD_IO_DrawFill(uint16_t Color, uint32_t Size) {
 	LCD_IO_SetWriteDir();
 	LCD_IO_WriteCmd8DataFill16to24(ST7796_RAMWR, Color, Size);
 }

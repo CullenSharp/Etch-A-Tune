@@ -13,7 +13,7 @@
 #define  ST7796_INITCLEAR               1
 
 /* Color order (0 = RGB, 1 = BGR) */
-#define  ST7796_COLORMODE               2
+#define  ST7796_COLORMODE               1
 
 /* Draw and read bit-depth (16: RGB565, 24: RGB888)
    note: my SPI ST7796 LCD only readable if ST7796_READBITDEPTH 24 */
