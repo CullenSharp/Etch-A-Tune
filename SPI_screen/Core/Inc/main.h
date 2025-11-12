@@ -60,12 +60,18 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define TS_SCK_Pin GPIO_PIN_2
+#define TS_SCK_GPIO_Port GPIOE
+#define TS_CS_Pin GPIO_PIN_4
+#define TS_CS_GPIO_Port GPIOE
+#define TS_MISO_Pin GPIO_PIN_5
+#define TS_MISO_GPIO_Port GPIOE
+#define TS_MOSI_Pin GPIO_PIN_6
+#define TS_MOSI_GPIO_Port GPIOE
 #define OSC32_IN_Pin GPIO_PIN_14
 #define OSC32_IN_GPIO_Port GPIOC
 #define OSC32_OUT_Pin GPIO_PIN_15
 #define OSC32_OUT_GPIO_Port GPIOC
-#define TS_CS_Pin GPIO_PIN_7
-#define TS_CS_GPIO_Port GPIOF
 #define LCD_CS_Pin GPIO_PIN_9
 #define LCD_CS_GPIO_Port GPIOF
 #define PH0_MCU_Pin GPIO_PIN_0

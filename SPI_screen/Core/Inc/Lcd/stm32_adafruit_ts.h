@@ -12,7 +12,7 @@
 /* Setting section (please set the necessary things in this section) */
 
 /* These values can be created using appTouchCalib */
-#define  TS_CINDEX            {-1350650, -134489, 521, 71073115, 348, -104248, 44767250}
+#define  TS_CINDEX			  {-985076, -4073, -132316, 45158109, 85265, -1733, -327023414}
 
 //=============================================================================
 /* Interface section */

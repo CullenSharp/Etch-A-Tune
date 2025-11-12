@@ -95,12 +95,12 @@
 /* SPI handle select
    - software SPI (set this macro value: -1, set in CUBEMX the TS_CS, TS_SCK, TS_MISO, TS_MOSI, TS_IRQ pin)
    - hardware SPI handle: see in main.c file (default: hspi1, hspi2 ... hspi6) */
-#define TS_SPI_HANDLE         hspi1
+#define TS_SPI_HANDLE         hspi4
 
 /* SPI CS mode (only hardware SPI)
    - 0: software CS operation (hardware NSS signal: disabled)
    - 1: hardware CS operation (hardware NSS signal: enabled) */
-#define TS_CS_MODE            1
+#define TS_CS_MODE            0
 
 /* SPI write and read speed (if deleted and hardware SPI -> setting in CUBEMX)
    - software SPI: TS_SCK clock delay (see the TS_IO_Delay function)
