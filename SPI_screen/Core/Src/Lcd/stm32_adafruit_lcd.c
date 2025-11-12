@@ -1101,20 +1101,6 @@ void BSP_LCD_DrawRGB16Image(uint16_t Xpos, uint16_t Ypos, uint16_t Xsize, uint16
 }
 
 /**
-  * @brief  Read RGB565 image (draw direction: right then down)
-  * @param  Xpos: LCD X position
-  * @param  Ypos: LCD Y position
-  * @param  Width: image width
-  * @param  Height: image height
-  * @param  *pData: image data pointer
-  * @retval *pData
-  */
-void BSP_LCD_ReadRGB16Image(uint16_t Xpos, uint16_t Ypos, uint16_t Xsize, uint16_t Ysize, uint16_t *pData)
-{
-  lcd_drv->ReadRGBImage(Xpos, Ypos, Xsize, Ysize, pData);
-}
-
-/**
   * @brief  Set display scroll parameters
   * @param  Scroll    : Scroll size [pixel]
   * @param  TopFix    : Top fix size [pixel]

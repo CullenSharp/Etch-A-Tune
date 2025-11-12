@@ -497,10 +497,10 @@ void st7796_DrawBitmap(uint16_t Xpos, uint16_t Ypos, uint8_t *pbmp)
   */
 void st7796_DrawRGBImage(uint16_t Xpos, uint16_t Ypos, uint16_t Xsize, uint16_t Ysize, uint16_t *pData)
 {
-  if(LastEntry != ST7796_MAD_DATA_RIGHT_THEN_DOWN)
+  if(LastEntry != ST7796_MAD_DATA_RIGHT_THEN_UP)
   {
-    LastEntry = ST7796_MAD_DATA_RIGHT_THEN_DOWN;
-    LCD_IO_WriteCmd8MultipleData8(ST7796_MADCTL, &EntryRightThenDown, 1);
+    LastEntry = ST7796_MAD_DATA_RIGHT_THEN_UP;
+    LCD_IO_WriteCmd8MultipleData8(ST7796_MADCTL, &EntryRightThenUp, 1);
   }
   st7796_SetDrawRegion(Xpos, Ypos, Xsize, Ysize);
   LCD_IO_DrawBitmap((uint8_t *) pData, Xsize * Ysize);
