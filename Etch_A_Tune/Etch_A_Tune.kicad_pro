@@ -447,7 +447,10 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "Library",
+      "BQ25170DSGR"
+    ],
     "pinned_symbol_libs": [
       "SamacSys_Parts"
     ]
@@ -625,12 +628,12 @@
       "Power"
     ],
     [
-      "31dba59d-3b10-48f7-a0aa-6c11aac8825f",
-      "DAC"
-    ],
-    [
       "85ce9e3c-81ec-4c89-ba57-7d8ff70f58fc",
       "Controllers"
+    ],
+    [
+      "bdf5df61-f93b-4da5-86af-6fa833da55c4",
+      "Microcontroller"
     ]
   ],
   "text_variables": {}

@@ -5,330 +5,42 @@
 	(uuid "b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2")
 	(paper "A2")
 	(lib_symbols
-		(symbol "SamacSys_Parts:450404015514"
+		(symbol "2171790001:2171790001"
 			(pin_names
-				(offset 0.762)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "S"
-				(at 21.59 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "450404015514"
-				(at 21.59 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "450404015514"
-				(at 21.59 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://katalog.we-online.de/em/datasheet/450404015514.pdf"
-				(at 21.59 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "Slide Switch SPDT Surface Mount"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "Slide Switch SPDT Surface Mount"
-				(at 21.59 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Height" "1.4"
-				(at 21.59 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "Wurth Elektronik"
-				(at 21.59 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "450404015514"
-				(at 21.59 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "710-450404015514"
-				(at 21.59 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/450404015514?qs=sPbYRqrBIVk21%2FxsES2IZA%3D%3D"
-				(at 21.59 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Arrow Part Number" ""
-				(at 21.59 -17.78 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Arrow Price/Stock" ""
-				(at 21.59 -20.32 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(symbol "450404015514_0_0"
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 0)
-					(length 5.08)
-					(name "MP1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "MP1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 25.4 0 180)
-					(length 5.08)
-					(name "MP2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "MP2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 25.4 -2.54 180)
-					(length 5.08)
-					(name "MP3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "MP3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 25.4 -5.08 180)
-					(length 5.08)
-					(name "MP4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "MP4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "450404015514_0_1"
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 20.32 2.54) (xy 20.32 -10.16) (xy 5.08 -10.16) (xy 5.08 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "SamacSys_Parts:TSM-108-01-L-DV-A-P-TR"
-			(pin_names
-				(offset 0.762)
+				(offset 1.016)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 19.05 7.62 0)
+				(at -12.7 16.002 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify left bottom)
 				)
 			)
-			(property "Value" "TSM-108-01-L-DV-A-P-TR"
-				(at 19.05 5.08 0)
+			(property "Value" "2171790001"
+				(at -12.7 -18.542 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify left top)
 				)
 			)
-			(property "Footprint" "TSM-108-YY-ZZZ-DV-A-P-TR"
-				(at 19.05 2.54 0)
+			(property "Footprint" "2171790001:MOLEX_2171790001"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.samtec.com/partnumber/TSM-108-01-L-DV-A-P-TR"
-				(at 19.05 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" ".100\" Surface Mount Terminal Strip"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -337,2804 +49,626 @@
 					(hide yes)
 				)
 			)
-			(property "Description_1" ".100\" Surface Mount Terminal Strip"
-				(at 19.05 -2.54 0)
+			(property "Description" ""
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Height" ""
-				(at 19.05 -5.08 0)
+			(property "PARTREV" "A1"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "SAMTEC"
-				(at 19.05 -7.62 0)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "TSM-108-01-L-DV-A-P-TR"
-				(at 19.05 -10.16 0)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "3.16 mm"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Mouser Part Number" "200-TSM10801LDVAPTR"
-				(at 19.05 -12.7 0)
+			(property "MANUFACTURER" "Molex"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Samtec/TSM-108-01-L-DV-A-P-TR?qs=0lQeLiL1qyZb3SiKyQNeMw%3D%3D"
-				(at 19.05 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Arrow Part Number" ""
-				(at 19.05 -17.78 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Arrow Price/Stock" ""
-				(at 19.05 -20.32 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(symbol "TSM-108-01-L-DV-A-P-TR_0_0"
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 0)
-					(length 5.08)
-					(name "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -10.16 0)
-					(length 5.08)
-					(name "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -12.7 0)
-					(length 5.08)
-					(name "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -15.24 0)
-					(length 5.08)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -17.78 0)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 0 180)
-					(length 5.08)
-					(name "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -2.54 180)
-					(length 5.08)
-					(name "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -5.08 180)
-					(length 5.08)
-					(name "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -7.62 180)
-					(length 5.08)
-					(name "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -10.16 180)
-					(length 5.08)
-					(name "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -12.7 180)
-					(length 5.08)
-					(name "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -15.24 180)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -17.78 180)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "TSM-108-01-L-DV-A-P-TR_0_1"
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 17.78 2.54) (xy 17.78 -20.32) (xy 5.08 -20.32) (xy 5.08 2.54)
-					)
+			(symbol "2171790001_0_0"
+				(rectangle
+					(start -12.7 -17.78)
+					(end 12.7 15.24)
 					(stroke
-						(width 0.1524)
-						(type solid)
+						(width 0.254)
+						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "SamacSys_Parts:TSM-110-01-T-DV-P"
-			(pin_names
-				(offset 0.762)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 19.05 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "TSM-110-01-T-DV-P"
-				(at 19.05 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "TSM-110-YY-ZZZ-DV-P"
-				(at 19.05 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://suddendocs.samtec.com/prints/tsm-1xx-xx-xxx-xx-x-xxx-x-mkt.pdf"
-				(at 19.05 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "20 Position, Dual-Row, .100&quot; Surface Mount Terminal Strip"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "20 Position, Dual-Row, .100&quot; Surface Mount Terminal Strip"
-				(at 19.05 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Height" ""
-				(at 19.05 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "SAMTEC"
-				(at 19.05 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "TSM-110-01-T-DV-P"
-				(at 19.05 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "200-TSM11001TDVP"
-				(at 19.05 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Samtec/TSM-110-01-T-DV-P?qs=0lQeLiL1qyb8RoOdRMR4FA%3D%3D"
-				(at 19.05 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Arrow Part Number" "TSM-110-01-T-DV-P"
-				(at 19.05 -17.78 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Arrow Price/Stock" "https://www.arrow.com/en/products/tsm-110-01-t-dv-p/samtec?utm_currency=USD&region=nac"
-				(at 19.05 -20.32 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(symbol "TSM-110-01-T-DV-P_0_0"
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 0)
-					(length 5.08)
-					(name "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -10.16 0)
-					(length 5.08)
-					(name "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -12.7 0)
-					(length 5.08)
-					(name "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -15.24 0)
-					(length 5.08)
-					(name "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -17.78 0)
-					(length 5.08)
-					(name "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -20.32 0)
-					(length 5.08)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -22.86 0)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 0 180)
-					(length 5.08)
-					(name "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -2.54 180)
-					(length 5.08)
-					(name "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -5.08 180)
-					(length 5.08)
-					(name "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -7.62 180)
-					(length 5.08)
-					(name "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -10.16 180)
-					(length 5.08)
-					(name "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -12.7 180)
-					(length 5.08)
-					(name "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -15.24 180)
-					(length 5.08)
-					(name "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -17.78 180)
-					(length 5.08)
-					(name "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -20.32 180)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -22.86 180)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "TSM-110-01-T-DV-P_0_1"
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 17.78 2.54) (xy 17.78 -25.4) (xy 5.08 -25.4) (xy 5.08 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "SamacSys_Parts:TSM-115-01-T-DV-P-TR"
-			(pin_names
-				(offset 0.762)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 19.05 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "TSM-115-01-T-DV-P-TR"
-				(at 19.05 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "TSM-115-YY-ZZZ-DV-P-TR"
-				(at 19.05 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://suddendocs.samtec.com/prints/tsm-1xx-xx-xxx-xx-x-xxx-x-mkt.pdf"
-				(at 19.05 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "30 Position, Dual-Row, .100&quot; Surface Mount Terminal Strip"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "30 Position, Dual-Row, .100&quot; Surface Mount Terminal Strip"
-				(at 19.05 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Height" ""
-				(at 19.05 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "SAMTEC"
-				(at 19.05 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "TSM-115-01-T-DV-P-TR"
-				(at 19.05 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" ""
-				(at 19.05 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" ""
-				(at 19.05 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Arrow Part Number" ""
-				(at 19.05 -17.78 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Arrow Price/Stock" ""
-				(at 19.05 -20.32 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(symbol "TSM-115-01-T-DV-P-TR_0_0"
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "30"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "30"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "28"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "28"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "26"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "26"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 0)
-					(length 5.08)
-					(name "24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -10.16 0)
-					(length 5.08)
-					(name "22"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "22"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -12.7 0)
-					(length 5.08)
-					(name "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -15.24 0)
-					(length 5.08)
-					(name "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -17.78 0)
-					(length 5.08)
-					(name "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -20.32 0)
-					(length 5.08)
-					(name "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -22.86 0)
-					(length 5.08)
-					(name "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -25.4 0)
-					(length 5.08)
-					(name "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -27.94 0)
-					(length 5.08)
-					(name "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -30.48 0)
-					(length 5.08)
-					(name "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -33.02 0)
-					(length 5.08)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -35.56 0)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 0 180)
-					(length 5.08)
-					(name "29"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "29"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -2.54 180)
-					(length 5.08)
-					(name "27"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "27"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -5.08 180)
-					(length 5.08)
-					(name "25"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "25"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -7.62 180)
-					(length 5.08)
-					(name "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -10.16 180)
-					(length 5.08)
-					(name "21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -12.7 180)
-					(length 5.08)
-					(name "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -15.24 180)
-					(length 5.08)
-					(name "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -17.78 180)
-					(length 5.08)
-					(name "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -20.32 180)
-					(length 5.08)
-					(name "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -22.86 180)
-					(length 5.08)
-					(name "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -25.4 180)
-					(length 5.08)
-					(name "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -27.94 180)
-					(length 5.08)
-					(name "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -30.48 180)
-					(length 5.08)
-					(name "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -33.02 180)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -35.56 180)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "TSM-115-01-T-DV-P-TR_0_1"
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 17.78 2.54) (xy 17.78 -38.1) (xy 5.08 -38.1) (xy 5.08 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "SamacSys_Parts:TSM-117-01-F-DV-P-TR"
-			(pin_names
-				(offset 0.762)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 19.05 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "TSM-117-01-F-DV-P-TR"
-				(at 19.05 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "TSM-117-YY-ZZZ-DV-P-TR"
-				(at 19.05 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://suddendocs.samtec.com/prints/tsm-1xx-xx-xxx-xx-x-xxx-x-mkt.pdf"
-				(at 19.05 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "34 Position, Dual-Row, .100&quot; Surface Mount Terminal Strip"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "34 Position, Dual-Row, .100&quot; Surface Mount Terminal Strip"
-				(at 19.05 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Height" ""
-				(at 19.05 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "SAMTEC"
-				(at 19.05 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "TSM-117-01-F-DV-P-TR"
-				(at 19.05 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" ""
-				(at 19.05 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" ""
-				(at 19.05 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Arrow Part Number" ""
-				(at 19.05 -17.78 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Arrow Price/Stock" ""
-				(at 19.05 -20.32 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(symbol "TSM-117-01-F-DV-P-TR_0_0"
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "34"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "34"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "32"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "32"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "30"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "30"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 0)
-					(length 5.08)
-					(name "28"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "28"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -10.16 0)
-					(length 5.08)
-					(name "26"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "26"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -12.7 0)
-					(length 5.08)
-					(name "24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -15.24 0)
-					(length 5.08)
-					(name "22"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "22"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -17.78 0)
-					(length 5.08)
-					(name "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -20.32 0)
-					(length 5.08)
-					(name "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -22.86 0)
-					(length 5.08)
-					(name "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -25.4 0)
-					(length 5.08)
-					(name "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -27.94 0)
-					(length 5.08)
-					(name "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -30.48 0)
-					(length 5.08)
-					(name "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -33.02 0)
-					(length 5.08)
-					(name "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -35.56 0)
-					(length 5.08)
-					(name "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -38.1 0)
-					(length 5.08)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -40.64 0)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 0 180)
-					(length 5.08)
-					(name "33"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "33"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -2.54 180)
-					(length 5.08)
-					(name "31"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "31"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -5.08 180)
-					(length 5.08)
-					(name "29"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "29"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -7.62 180)
-					(length 5.08)
-					(name "27"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "27"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -10.16 180)
-					(length 5.08)
-					(name "25"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "25"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -12.7 180)
-					(length 5.08)
-					(name "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -15.24 180)
-					(length 5.08)
-					(name "21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -17.78 180)
-					(length 5.08)
-					(name "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -20.32 180)
-					(length 5.08)
-					(name "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -22.86 180)
-					(length 5.08)
-					(name "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -25.4 180)
-					(length 5.08)
-					(name "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -27.94 180)
-					(length 5.08)
-					(name "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -30.48 180)
-					(length 5.08)
-					(name "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -33.02 180)
-					(length 5.08)
-					(name "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -35.56 180)
-					(length 5.08)
-					(name "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -38.1 180)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -40.64 180)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "TSM-117-01-F-DV-P-TR_0_1"
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 17.78 2.54) (xy 17.78 -43.18) (xy 5.08 -43.18) (xy 5.08 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "SamacSys_Parts:UJ20-C-H-G-MSMT-2-P16-TR"
-			(pin_names
-				(offset 0.762)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 21.59 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "UJ20-C-H-G-MSMT-2-P16-TR"
-				(at 21.59 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "UJ20CHGMSMT2P16TR"
-				(at 21.59 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://cz.mouser.com/ProductDetail/Same-Sky/UJ20-C-H-G-MSMT-2-P16-TR?qs=IKkN%2F947nfBldcIwp9d6BA%3D%3D"
-				(at 21.59 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "Type C, USB 2.0, 480 Mbps, 48 Vac, 5 A, Horizontal, Gold plated 3u, Mid Surface Mount 0.8mm, 16 pin, USB Receptacle"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "Type C, USB 2.0, 480 Mbps, 48 Vac, 5 A, Horizontal, Gold plated 3u, Mid Surface Mount 0.8mm, 16 pin, USB Receptacle"
-				(at 21.59 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Height" "3.36"
-				(at 21.59 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "Same Sky"
-				(at 21.59 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "UJ20-C-H-G-MSMT-2-P16-TR"
-				(at 21.59 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "179-UJ20CHGMSMT2P16T"
-				(at 21.59 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Same-Sky/UJ20-C-H-G-MSMT-2-P16-TR?qs=IKkN%2F947nfBldcIwp9d6BA%3D%3D"
-				(at 21.59 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Arrow Part Number" ""
-				(at 21.59 -17.78 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Arrow Price/Stock" ""
-				(at 21.59 -20.32 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(symbol "UJ20-C-H-G-MSMT-2-P16-TR_0_0"
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "A4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
+				(pin bidirectional line
+					(at -17.78 12.7 0)
 					(length 5.08)
-					(name "A5"
+					(name "CC1"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "A5"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -7.62 0)
+				(pin bidirectional line
+					(at -17.78 10.16 0)
 					(length 5.08)
-					(name "A6"
+					(name "DP1"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "A6"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -10.16 0)
+				(pin bidirectional line
+					(at -17.78 7.62 0)
 					(length 5.08)
-					(name "A7"
+					(name "DN1"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "A7"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -12.7 0)
+				(pin bidirectional line
+					(at -17.78 5.08 0)
 					(length 5.08)
-					(name "A8"
+					(name "SBU1"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "A8"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -15.24 0)
+				(pin power_in line
+					(at -17.78 0 0)
 					(length 5.08)
-					(name "B1"
+					(name "VBUS1"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "B1"
+					(number "A4B9"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -17.78 0)
+				(pin power_in line
+					(at -17.78 -2.54 0)
 					(length 5.08)
-					(name "B4"
+					(name "VBUS2"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "B4"
+					(number "B4A9"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
-				(pin passive line
-					(at 25.4 0 180)
+				(pin bidirectional line
+					(at 17.78 12.7 180)
 					(length 5.08)
-					(name "B5"
+					(name "SBU2"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 25.4 -2.54 180)
-					(length 5.08)
-					(name "B6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 25.4 -5.08 180)
-					(length 5.08)
-					(name "B7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 25.4 -7.62 180)
-					(length 5.08)
-					(name "B8"
-						(effects
-							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "B8"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 17.78 10.16 180)
+					(length 5.08)
+					(name "DN2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "B7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 17.78 7.62 180)
+					(length 5.08)
+					(name "DP2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "B6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 17.78 5.08 180)
+					(length 5.08)
+					(name "CC2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "B5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 0 180)
+					(length 5.08)
+					(name "GND1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "A1B12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 -2.54 180)
+					(length 5.08)
+					(name "GND2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "B1A12"
+						(effects
+							(font
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
 				(pin passive line
-					(at 25.4 -10.16 180)
+					(at 17.78 -7.62 180)
 					(length 5.08)
-					(name "MH1"
+					(name "SHIELD1"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "MH1"
+					(number "SH1"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
 				(pin passive line
-					(at 25.4 -12.7 180)
+					(at 17.78 -10.16 180)
 					(length 5.08)
-					(name "MH2"
+					(name "SHIELD2"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "MH2"
+					(number "SH2"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
 				(pin passive line
-					(at 25.4 -15.24 180)
+					(at 17.78 -12.7 180)
 					(length 5.08)
-					(name "MH3"
+					(name "SHIELD3"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "MH3"
+					(number "SH3"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
 				(pin passive line
-					(at 25.4 -17.78 180)
+					(at 17.78 -15.24 180)
 					(length 5.08)
-					(name "MH4"
+					(name "SHIELD4"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "MH4"
+					(number "SH4"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
 			)
-			(symbol "UJ20-C-H-G-MSMT-2-P16-TR_0_1"
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 20.32 2.54) (xy 20.32 -20.32) (xy 5.08 -20.32) (xy 5.08 2.54)
+			(embedded_fonts no)
+		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
 					(stroke
-						(width 0.1524)
-						(type solid)
+						(width 0)
+						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
 			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:Earth"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "Earth"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"Earth\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global ground gnd"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Earth_0_1"
+				(polyline
+					(pts
+						(xy -0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.127 -2.54) (xy 0.127 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Earth_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
 			(embedded_fonts no)
 		)
 	)
-	(text_box "Right angle slide switch"
+	(text_box "Things I need to do\nSWD PIN OUT\nDouble check battery circuitry\n\nFinish wiring microcontroller\n\nuse both big ugly connector\nand ribbon cable connector\nSD CARD READER"
 		(exclude_from_sim no)
-		(at 398.78 266.7 0)
+		(at 76.2 281.94 0)
+		(size 38.1 38.1)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "3f96f7f8-0a1c-4b10-8d62-11097cb94605")
+	)
+	(text_box "need 1x14 connector to connect to screen\n"
+		(exclude_from_sim no)
+		(at 99.06 228.6 0)
 		(size 38.1 15.24)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -3150,31 +684,11 @@
 			)
 			(justify left top)
 		)
-		(uuid "720d3119-dee8-44fe-ab6c-7d6e493fa76b")
+		(uuid "8f3ef78e-1a36-4303-94fb-88320f46f22f")
 	)
-	(text_box "Connectors to connect to eval board"
+	(text_box "NEED TO PICK NEW USB C CONNECTOR\n"
 		(exclude_from_sim no)
-		(at 429.26 137.16 0)
-		(size 33.02 15.24)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "996f7125-358b-488e-bd16-88a5d9969ed1")
-	)
-	(text_box "USB-c connector may or may not have USB bootloading, will be used to charge device"
-		(exclude_from_sim no)
-		(at 129.54 73.66 0)
+		(at 63.5 43.18 0)
 		(size 63.5 22.86)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -3192,9 +706,9 @@
 		)
 		(uuid "dac3fecb-ddfe-46a1-9fbf-6fd9abf5a428")
 	)
-	(text_box "touch screen connector?\n"
+	(text_box "3.5mm output\n"
 		(exclude_from_sim no)
-		(at 129.54 241.3 0)
+		(at 525.78 134.62 0)
 		(size 38.1 15.24)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -3212,54 +726,416 @@
 		)
 		(uuid "f80096cd-6720-41ad-b63f-dd7e75963794")
 	)
+	(junction
+		(at 99.06 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "77a45548-e0de-49da-90e8-4c50ca3949a9")
+	)
+	(junction
+		(at 113.03 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a39890ab-3b09-4ad0-a2f8-6b3488099940")
+	)
+	(junction
+		(at 43.18 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "baab025d-c1c2-41bb-95f4-1fffe24f6808")
+	)
+	(junction
+		(at 43.18 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f174d405-07d4-4259-8dc3-dfdcc47715ff")
+	)
+	(no_connect
+		(at 82.55 83.82)
+		(uuid "1104f0d1-f685-4750-beb9-ce48f2a4ce40")
+	)
+	(no_connect
+		(at 46.99 101.6)
+		(uuid "110aec75-cbbe-4c27-941c-b97f5798596e")
+	)
+	(no_connect
+		(at 46.99 76.2)
+		(uuid "2ec8a97c-8c39-49a9-8c0d-9e0862eaf0ee")
+	)
+	(no_connect
+		(at 46.99 83.82)
+		(uuid "371f97ee-f0b9-4afb-9b32-1720140b7671")
+	)
+	(no_connect
+		(at 82.55 81.28)
+		(uuid "419e1e88-6191-4eb4-acf2-b4c7b7c69b0b")
+	)
+	(no_connect
+		(at 46.99 104.14)
+		(uuid "551407c8-61aa-4e39-af43-eb0700a4f68f")
+	)
+	(no_connect
+		(at 82.55 78.74)
+		(uuid "7031fcad-28ff-424e-bc70-d3325302998c")
+	)
+	(no_connect
+		(at 46.99 78.74)
+		(uuid "9ae137a1-622f-4d9f-9ea4-f87d4e67eb97")
+	)
+	(no_connect
+		(at 46.99 96.52)
+		(uuid "caea78ea-0a46-469d-8725-038d19b8ce9c")
+	)
+	(no_connect
+		(at 82.55 76.2)
+		(uuid "d04ccc5f-0747-47de-a4e6-237952d053ce")
+	)
+	(no_connect
+		(at 46.99 81.28)
+		(uuid "ec3c3911-8bc9-4d20-acf2-6a648841e477")
+	)
+	(no_connect
+		(at 46.99 99.06)
+		(uuid "f9181c46-4f8d-4131-aa61-d5e4e7359a69")
+	)
+	(wire
+		(pts
+			(xy 322.58 181.61) (xy 337.82 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08847e88-4c73-47bd-a81d-6648e461abc3")
+	)
+	(wire
+		(pts
+			(xy 82.55 91.44) (xy 113.03 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1751dca6-06c8-476e-9269-09ca828e5186")
+	)
+	(wire
+		(pts
+			(xy 210.82 119.38) (xy 210.82 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "178531c9-a0fe-4d87-ba58-f027c3625228")
+	)
+	(wire
+		(pts
+			(xy 275.59 110.49) (xy 283.21 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c57cb3c-4d9d-4f9b-9451-69825b783f7f")
+	)
+	(wire
+		(pts
+			(xy 43.18 88.9) (xy 43.18 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bf4b556-ee2b-411d-b249-3c813110b2c9")
+	)
+	(wire
+		(pts
+			(xy 99.06 88.9) (xy 113.03 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34787740-2f68-4555-a2fc-c1d8f547ec35")
+	)
+	(wire
+		(pts
+			(xy 224.79 119.38) (xy 210.82 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35b5dbbe-6696-4f7f-915d-d27b4f5c3877")
+	)
+	(wire
+		(pts
+			(xy 113.03 104.14) (xy 113.03 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39ce9744-c55d-4c41-9fdc-3cafac02d3c4")
+	)
+	(wire
+		(pts
+			(xy 283.21 85.09) (xy 290.83 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b11f672-1ea8-4535-b4c8-639512823479")
+	)
+	(wire
+		(pts
+			(xy 322.58 179.07) (xy 337.82 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4364dc53-7d82-432f-9abf-371b4cc428f7")
+	)
+	(wire
+		(pts
+			(xy 82.55 88.9) (xy 99.06 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49361130-ee12-4322-8480-18a639de859f")
+	)
+	(wire
+		(pts
+			(xy 322.58 189.23) (xy 337.82 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49a3ca07-de74-4418-89d9-ba7e67c353b4")
+	)
+	(wire
+		(pts
+			(xy 322.58 186.69) (xy 337.82 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60b95042-fe01-488e-a2f2-adedc9112e18")
+	)
+	(wire
+		(pts
+			(xy 322.58 212.09) (xy 337.82 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65aacb26-11f6-4403-a230-8e05ec6d20e9")
+	)
+	(wire
+		(pts
+			(xy 210.82 161.29) (xy 241.3 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "692bc23c-7728-43e2-b1b8-c5f970d9b376")
+	)
+	(wire
+		(pts
+			(xy 283.21 110.49) (xy 283.21 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78e38587-4675-4489-b725-77c9703e56bb")
+	)
+	(wire
+		(pts
+			(xy 224.79 121.92) (xy 213.36 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d5a7cb3-59ec-4e4f-8975-871c163d9d45")
+	)
+	(wire
+		(pts
+			(xy 224.79 104.14) (xy 113.03 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e8db96f-f812-4b3e-95fb-801087790de1")
+	)
+	(wire
+		(pts
+			(xy 46.99 88.9) (xy 43.18 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f1d0533-aabd-429f-a91a-68df19e2e9ab")
+	)
+	(wire
+		(pts
+			(xy 322.58 203.2) (xy 337.82 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85016d7d-7f8a-4c86-bce0-2e02e2869cb4")
+	)
+	(wire
+		(pts
+			(xy 322.58 214.63) (xy 337.82 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87f28b2d-a1b7-408b-8644-02eaee5c8261")
+	)
+	(wire
+		(pts
+			(xy 46.99 91.44) (xy 43.18 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9833ce76-1990-4d9c-8d83-8cd26f742e2d")
+	)
+	(wire
+		(pts
+			(xy 213.36 121.92) (xy 213.36 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9dcef9cf-d92f-486e-afbb-1f90e3a1572f")
+	)
+	(wire
+		(pts
+			(xy 322.58 198.12) (xy 337.82 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a626fa72-716c-4e0d-91d1-1e2214d12d8d")
+	)
+	(wire
+		(pts
+			(xy 322.58 217.17) (xy 337.82 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ade9fab4-04d1-482e-989c-e831250a3255")
+	)
+	(wire
+		(pts
+			(xy 113.03 91.44) (xy 113.03 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b092773c-287d-4d35-846f-d3e5dfdeee6f")
+	)
+	(wire
+		(pts
+			(xy 322.58 184.15) (xy 337.82 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba0715e9-9f3f-494d-86aa-63fc5a16d8e0")
+	)
+	(wire
+		(pts
+			(xy 213.36 158.75) (xy 241.3 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdf4db44-72d4-4a45-af17-ad2ae1a90b3e")
+	)
+	(wire
+		(pts
+			(xy 322.58 200.66) (xy 337.82 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e55360fe-4ee2-4729-ba9a-7e97b4e4784c")
+	)
+	(wire
+		(pts
+			(xy 322.58 176.53) (xy 337.82 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed7110b7-5628-4b71-8e92-d2f3592e3999")
+	)
 	(symbol
-		(lib_id "SamacSys_Parts:TSM-117-01-F-DV-P-TR")
-		(at 388.62 120.65 0)
+		(lib_id "2171790001:2171790001")
+		(at 64.77 88.9 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "37c2aae7-f96f-4774-b776-1e5fff855eda")
+		(uuid "1c0a9369-78fc-4ad4-8b94-78deab43a9f9")
 		(property "Reference" "J2"
-			(at 400.05 113.03 0)
+			(at 64.77 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "TSM-117-01-F-DV-P-TR"
-			(at 400.05 115.57 0)
+		(property "Value" "2171790001"
+			(at 64.77 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "TSM-117-YY-ZZZ-DV-P-TR"
-			(at 407.67 118.11 0)
+		(property "Footprint" "BQ25170DSGR:MOLEX_2171790001"
+			(at 64.77 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://suddendocs.samtec.com/prints/tsm-1xx-xx-xxx-xx-x-xxx-x-mkt.pdf"
-			(at 407.67 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "34 Position, Dual-Row, .100&quot; Surface Mount Terminal Strip"
-			(at 388.62 120.65 0)
+		(property "Datasheet" ""
+			(at 64.77 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3267,187 +1143,102 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "34 Position, Dual-Row, .100&quot; Surface Mount Terminal Strip"
-			(at 407.67 123.19 0)
+		(property "Description" ""
+			(at 64.77 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Height" ""
-			(at 407.67 125.73 0)
+		(property "PARTREV" "A1"
+			(at 64.77 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "SAMTEC"
-			(at 407.67 128.27 0)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 64.77 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "TSM-117-01-F-DV-P-TR"
-			(at 407.67 130.81 0)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "3.16 mm"
+			(at 64.77 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" ""
-			(at 407.67 133.35 0)
+		(property "MANUFACTURER" "Molex"
+			(at 64.77 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" ""
-			(at 407.67 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
+		(pin "B5"
+			(uuid "7c88776b-f724-46a5-bd00-e5a89ca50930")
 		)
-		(property "Arrow Part Number" ""
-			(at 407.67 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
+		(pin "B7"
+			(uuid "2ee512c3-0996-4c79-8755-6f8f0dd7e624")
 		)
-		(property "Arrow Price/Stock" ""
-			(at 407.67 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
+		(pin "SH4"
+			(uuid "11765fc9-403a-4f5b-a474-ecd7648a2593")
 		)
-		(pin "26"
-			(uuid "4ed16a1d-2070-4c56-b9b5-37cd862f1bdd")
+		(pin "SH3"
+			(uuid "b57a90ef-1048-42a3-af4c-39f866dcfb50")
 		)
-		(pin "14"
-			(uuid "0ad2307e-c234-468a-8321-16352b501a72")
+		(pin "A1B12"
+			(uuid "c8030d07-9d1b-4e61-ac3c-920974a0dcac")
 		)
-		(pin "24"
-			(uuid "e6ca0e9f-a261-487d-8f1a-0a62f328854f")
+		(pin "B4A9"
+			(uuid "4054b674-a7c0-4360-84d3-55c6f2a30b14")
 		)
-		(pin "4"
-			(uuid "27d08e3a-aa24-49c9-9450-179afc207161")
+		(pin "B8"
+			(uuid "d129bd1b-de11-4de8-a21a-2f0504e371cf")
 		)
-		(pin "31"
-			(uuid "c0eafb89-23f0-4215-9c62-7f9b9960d734")
+		(pin "B6"
+			(uuid "eb102d73-74b0-47a4-83ee-a4ad81c85916")
 		)
-		(pin "28"
-			(uuid "25c6c92c-51d7-41d6-a936-2a44ac47f746")
+		(pin "SH1"
+			(uuid "9018c349-9a02-4682-a04d-a3891af4ef16")
 		)
-		(pin "16"
-			(uuid "a29f240b-5ee3-4d2c-a3a2-04ccd534602e")
+		(pin "B1A12"
+			(uuid "19976136-f83b-49bc-93e8-e555a1544a85")
 		)
-		(pin "18"
-			(uuid "56148172-8d0c-4648-aa82-a678c01f4453")
+		(pin "SH2"
+			(uuid "2e279d6f-c6b1-4579-9317-6dfb14f50423")
 		)
-		(pin "12"
-			(uuid "e48e0de8-1c7b-4941-a7e8-697954a423bf")
+		(pin "A8"
+			(uuid "9d4c4565-e00a-46a5-a032-2bccbf84f14d")
 		)
-		(pin "20"
-			(uuid "ca3eceb4-08fa-42aa-af71-f05950ebf8ac")
+		(pin "A7"
+			(uuid "50a44629-bd17-40d6-8f7b-327cc9ad753e")
 		)
-		(pin "8"
-			(uuid "d7c81bcb-79e5-4966-9f46-e947673a5769")
+		(pin "A4B9"
+			(uuid "40e9e95b-f561-4669-8cb5-e78d4b437b2b")
 		)
-		(pin "33"
-			(uuid "2fbd3457-bcae-4d16-a8d3-edbfe50dce70")
+		(pin "A6"
+			(uuid "3352b3d1-ecb1-4b7a-89c7-6e7b0ce1424b")
 		)
-		(pin "9"
-			(uuid "fef9978a-06e1-440d-bea0-e9a1f615b2e3")
-		)
-		(pin "5"
-			(uuid "8a622688-74d9-4f59-bf41-a98aa9fb5d28")
-		)
-		(pin "34"
-			(uuid "2bd0be46-8282-4fa9-9a1f-a4aac314a63d")
-		)
-		(pin "32"
-			(uuid "7495b024-0f60-4059-97b4-389953de7493")
-		)
-		(pin "30"
-			(uuid "5640f5b1-e9b6-450f-ac5e-63bf52fefe6a")
-		)
-		(pin "22"
-			(uuid "de199433-798c-4230-a316-57f3ca75cf5c")
-		)
-		(pin "10"
-			(uuid "5a6b431b-a658-456d-8801-28a3afbc228a")
-		)
-		(pin "6"
-			(uuid "1c07f967-a502-44d0-aa63-e56e113b9693")
-		)
-		(pin "2"
-			(uuid "6e09c64b-2824-48db-96f4-2c515537e73c")
-		)
-		(pin "29"
-			(uuid "6f7f9aed-ebed-46c4-800a-8e42169d2ddb")
-		)
-		(pin "27"
-			(uuid "b0714f49-5f54-4859-a19b-de0395ab8950")
-		)
-		(pin "25"
-			(uuid "ec63d9e5-0834-4567-9c8e-bfd48418b2d3")
-		)
-		(pin "23"
-			(uuid "93c7800e-6e13-4c70-899b-7c5e1660c314")
-		)
-		(pin "21"
-			(uuid "477e758a-7e9d-4837-b68c-6dfd9fd7f09a")
-		)
-		(pin "19"
-			(uuid "0a80c7af-14d3-4232-96ac-5617ccb4140d")
-		)
-		(pin "17"
-			(uuid "ce85549d-e66c-4432-89f0-fde808d1946b")
-		)
-		(pin "15"
-			(uuid "2166646c-8c4f-4de7-ac85-33df62d5a1be")
-		)
-		(pin "13"
-			(uuid "a69b39c1-7ebe-4347-ad5b-d8693e9d6eaf")
-		)
-		(pin "11"
-			(uuid "983b7ee3-35e3-457c-af57-f9c380c0dad4")
-		)
-		(pin "7"
-			(uuid "17ec1ff3-059c-415f-9b54-0d66bfb000a4")
-		)
-		(pin "1"
-			(uuid "aa6ea4c5-901f-4761-b709-81876428134e")
-		)
-		(pin "3"
-			(uuid "087af6b4-379e-472c-9b44-b08e6286cc03")
+		(pin "A5"
+			(uuid "cf7e7862-7bae-4b3e-b5f6-8bba1681a158")
 		)
 		(instances
 			(project ""
@@ -3459,53 +1250,18 @@
 		)
 	)
 	(symbol
-		(lib_id "SamacSys_Parts:TSM-115-01-T-DV-P-TR")
-		(at 389.89 71.12 0)
+		(lib_id "power:Earth")
+		(at 43.18 91.44 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4c7decf2-e4c0-4bf2-8657-c7e0182ccca4")
-		(property "Reference" "J3"
-			(at 401.32 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TSM-115-01-T-DV-P-TR"
-			(at 401.32 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TSM-115-YY-ZZZ-DV-P-TR"
-			(at 408.94 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://suddendocs.samtec.com/prints/tsm-1xx-xx-xxx-xx-x-xxx-x-mkt.pdf"
-			(at 408.94 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "30 Position, Dual-Row, .100&quot; Surface Mount Terminal Strip"
-			(at 389.89 71.12 0)
+		(uuid "30a768da-1978-457f-a815-06d8a665e416")
+		(property "Reference" "#PWR03"
+			(at 43.18 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3513,982 +1269,190 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "30 Position, Dual-Row, .100&quot; Surface Mount Terminal Strip"
-			(at 408.94 73.66 0)
+		(property "Value" "GND"
+			(at 43.18 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
-				(hide yes)
 			)
 		)
-		(property "Height" ""
-			(at 408.94 76.2 0)
+		(property "Footprint" ""
+			(at 43.18 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "SAMTEC"
-			(at 408.94 78.74 0)
+		(property "Datasheet" "~"
+			(at 43.18 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "TSM-115-01-T-DV-P-TR"
-			(at 408.94 81.28 0)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 43.18 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
-		)
-		(property "Mouser Part Number" ""
-			(at 408.94 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 408.94 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 408.94 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 408.94 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(pin "28"
-			(uuid "609ab30e-5c66-4fac-9b64-805ff4e213c8")
-		)
-		(pin "30"
-			(uuid "1a27e486-c23d-4036-a36e-8037b59cfa20")
-		)
-		(pin "24"
-			(uuid "95fad6da-dbd3-472a-8a91-5f01d24f3a22")
-		)
-		(pin "20"
-			(uuid "c72777ee-af06-4a68-90c7-dcd4b9d0b623")
-		)
-		(pin "14"
-			(uuid "1ce07b47-447d-4d22-a3ed-ddb873851226")
-		)
-		(pin "26"
-			(uuid "88c0254d-0236-4df1-b1d1-83356270a110")
-		)
-		(pin "10"
-			(uuid "a5eb3d12-3084-42f3-ac37-0e68c5468ea8")
-		)
-		(pin "18"
-			(uuid "1b06b010-d900-4f0c-aa53-3c48574b3065")
-		)
-		(pin "22"
-			(uuid "d234bdb2-b7eb-4ccd-ab33-481ada8b4564")
-		)
-		(pin "16"
-			(uuid "b5a7c6fe-6492-460c-9d9b-3f5bb4c1cd02")
-		)
-		(pin "12"
-			(uuid "f9236dac-1da4-4548-be38-183719416d40")
-		)
-		(pin "8"
-			(uuid "895054ef-1d9f-4657-9502-36a40f9b0e2a")
-		)
-		(pin "6"
-			(uuid "f4d1d080-47f0-458c-bb4f-703be3ea338b")
-		)
-		(pin "2"
-			(uuid "f5bc8de9-c810-46fb-b1f1-9286ec4647d4")
-		)
-		(pin "4"
-			(uuid "a5fa55ee-02ee-4090-960b-fca89ffe24b0")
-		)
-		(pin "29"
-			(uuid "96fd0669-820a-4e34-89ca-97462ef88506")
-		)
-		(pin "17"
-			(uuid "b170423e-4fc0-46e6-8e37-3ccc03d439a8")
-		)
-		(pin "7"
-			(uuid "345d011c-19a8-4c9a-a284-8cf03113ee12")
-		)
-		(pin "23"
-			(uuid "f66bd61c-1cbd-4bbe-85b9-435a1ee20486")
-		)
-		(pin "15"
-			(uuid "9efc04fe-95e9-49b6-8ee0-ef0ce5d564c5")
-		)
-		(pin "13"
-			(uuid "2127c84f-ef79-4aed-8106-01a25d3275fd")
 		)
 		(pin "1"
-			(uuid "d0795e9e-d198-48c3-8dab-644642be0501")
-		)
-		(pin "27"
-			(uuid "73acee35-1457-4072-97dd-1253de81edf8")
-		)
-		(pin "25"
-			(uuid "37189e54-d033-4203-b496-1a54b1b513a6")
-		)
-		(pin "19"
-			(uuid "7496df7a-8734-4d3c-8f81-b2f2b9985327")
-		)
-		(pin "11"
-			(uuid "98d72f9c-f7b6-42f0-9252-7aebfddda15f")
-		)
-		(pin "21"
-			(uuid "7977dbfc-2207-4a36-9f5e-1938d3034b21")
-		)
-		(pin "9"
-			(uuid "c005c043-5bd9-4072-8bab-385ee68807da")
-		)
-		(pin "5"
-			(uuid "61e99b76-92e5-4436-a697-6aa8a8c6b784")
-		)
-		(pin "3"
-			(uuid "8e451188-1984-4110-8dfb-4bba7f2c0f51")
-		)
-		(instances
-			(project ""
-				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SamacSys_Parts:450404015514")
-		(at 386.08 247.65 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9cdb6733-78dd-4106-a367-556c7e9e4d16")
-		(property "Reference" "S6"
-			(at 398.78 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "450404015514"
-			(at 398.78 242.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "450404015514"
-			(at 407.67 245.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://katalog.we-online.de/em/datasheet/450404015514.pdf"
-			(at 407.67 247.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "Slide Switch SPDT Surface Mount"
-			(at 386.08 247.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "Slide Switch SPDT Surface Mount"
-			(at 407.67 250.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.4"
-			(at 407.67 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Wurth Elektronik"
-			(at 407.67 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "450404015514"
-			(at 407.67 257.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "710-450404015514"
-			(at 407.67 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/450404015514?qs=sPbYRqrBIVk21%2FxsES2IZA%3D%3D"
-			(at 407.67 262.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 407.67 265.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 407.67 267.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(pin "MP4"
-			(uuid "6d9d2aba-2227-4e18-aaa9-86bb859f9bac")
-		)
-		(pin "MP3"
-			(uuid "6845b4cd-cb9b-4331-a2c1-71d7d509ec5f")
-		)
-		(pin "2"
-			(uuid "3fee41f5-1b1d-4b8f-80d5-6ec4e7f2f25a")
-		)
-		(pin "MP1"
-			(uuid "e6d8ab23-0b53-4b26-b585-95c4315706cb")
-		)
-		(pin "3"
-			(uuid "f37ca294-b8aa-40bb-a962-0fcf2af7cf15")
-		)
-		(pin "MP2"
-			(uuid "0f822dea-6d1f-4ecc-ae98-375c62c3357b")
-		)
-		(pin "1"
-			(uuid "fdf91700-2fb6-4689-a34f-d8b6f50bc578")
-		)
-		(instances
-			(project ""
-				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2"
-					(reference "S6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SamacSys_Parts:TSM-110-01-T-DV-P")
-		(at 387.35 176.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dd5f8d5c-82aa-4485-9699-56220d04557b")
-		(property "Reference" "J4"
-			(at 398.78 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TSM-110-01-T-DV-P"
-			(at 398.78 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TSM-110-YY-ZZZ-DV-P"
-			(at 406.4 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://suddendocs.samtec.com/prints/tsm-1xx-xx-xxx-xx-x-xxx-x-mkt.pdf"
-			(at 406.4 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "20 Position, Dual-Row, .100&quot; Surface Mount Terminal Strip"
-			(at 387.35 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "20 Position, Dual-Row, .100&quot; Surface Mount Terminal Strip"
-			(at 406.4 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Height" ""
-			(at 406.4 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "SAMTEC"
-			(at 406.4 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "TSM-110-01-T-DV-P"
-			(at 406.4 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "200-TSM11001TDVP"
-			(at 406.4 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Samtec/TSM-110-01-T-DV-P?qs=0lQeLiL1qyb8RoOdRMR4FA%3D%3D"
-			(at 406.4 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Arrow Part Number" "TSM-110-01-T-DV-P"
-			(at 406.4 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/tsm-110-01-t-dv-p/samtec?utm_currency=USD&region=nac"
-			(at 406.4 196.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(pin "11"
-			(uuid "2712adfe-a179-49cd-ba26-0746a4998d3e")
-		)
-		(pin "10"
-			(uuid "aadf0a9d-c35e-46f8-96dc-03967e596b32")
-		)
-		(pin "16"
-			(uuid "558459b6-c64d-4e44-a77b-a98e3b0b70f1")
-		)
-		(pin "9"
-			(uuid "f3b4b7fe-5169-4f98-b30e-193ddbb80ba8")
-		)
-		(pin "1"
-			(uuid "689f1956-74b8-4047-b8a2-9090a3bbf81f")
-		)
-		(pin "14"
-			(uuid "c5ed6ee6-9da6-485b-a61a-ee8422570df6")
-		)
-		(pin "20"
-			(uuid "792fcdaf-3b77-463d-858c-ab1ec833725b")
-		)
-		(pin "4"
-			(uuid "6aa7b454-3413-43db-bbaf-faa299e623ee")
-		)
-		(pin "12"
-			(uuid "726f0411-8e6f-4f2b-a9da-b6ee1374fc7a")
-		)
-		(pin "2"
-			(uuid "c92e0023-5bf1-486a-9b83-12edf0a408ac")
-		)
-		(pin "17"
-			(uuid "1db28ea1-5223-471c-9193-0502bf1a3660")
-		)
-		(pin "6"
-			(uuid "e913099d-166d-4f59-b6d2-622b82067dce")
-		)
-		(pin "19"
-			(uuid "ad4556fc-4612-48a4-9bd4-1aeb4cb6f476")
-		)
-		(pin "15"
-			(uuid "c8812762-b555-4bb8-95a7-995f9e1d1c6d")
-		)
-		(pin "13"
-			(uuid "56d897d2-c2c3-4f3f-8eda-146b49b1dbf1")
-		)
-		(pin "3"
-			(uuid "3026c742-f08b-40d8-b762-a7a72b4cc5b7")
-		)
-		(pin "8"
-			(uuid "f3d9401f-21d5-4177-9ff9-4ca4b72269c7")
-		)
-		(pin "18"
-			(uuid "c08b8876-74a7-490b-82ec-d77ee3bbb2ad")
-		)
-		(pin "5"
-			(uuid "cf7e9bb4-f2bc-458c-bb19-55a4df892d4b")
-		)
-		(pin "7"
-			(uuid "6ef77331-87d3-4e2c-972b-aae70c5a2e5f")
-		)
-		(instances
-			(project ""
-				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2"
-					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SamacSys_Parts:UJ20-C-H-G-MSMT-2-P16-TR")
-		(at 139.7 115.57 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e1ad25c7-b9c7-48b7-97dc-0f1073e8f19c")
-		(property "Reference" "J1"
-			(at 152.4 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "UJ20-C-H-G-MSMT-2-P16-TR"
-			(at 152.4 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "UJ20CHGMSMT2P16TR"
-			(at 161.29 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cz.mouser.com/ProductDetail/Same-Sky/UJ20-C-H-G-MSMT-2-P16-TR?qs=IKkN%2F947nfBldcIwp9d6BA%3D%3D"
-			(at 161.29 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "Type C, USB 2.0, 480 Mbps, 48 Vac, 5 A, Horizontal, Gold plated 3u, Mid Surface Mount 0.8mm, 16 pin, USB Receptacle"
-			(at 139.7 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "Type C, USB 2.0, 480 Mbps, 48 Vac, 5 A, Horizontal, Gold plated 3u, Mid Surface Mount 0.8mm, 16 pin, USB Receptacle"
-			(at 161.29 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Height" "3.36"
-			(at 161.29 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Same Sky"
-			(at 161.29 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "UJ20-C-H-G-MSMT-2-P16-TR"
-			(at 161.29 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "179-UJ20CHGMSMT2P16T"
-			(at 161.29 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Same-Sky/UJ20-C-H-G-MSMT-2-P16-TR?qs=IKkN%2F947nfBldcIwp9d6BA%3D%3D"
-			(at 161.29 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 161.29 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 161.29 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(pin "A7"
-			(uuid "efed853a-4279-460b-ae0b-95433abf6e16")
-		)
-		(pin "A5"
-			(uuid "9577e24c-23e0-4e9a-afde-a795c6ce091b")
-		)
-		(pin "A4"
-			(uuid "933ed8e3-fc84-4e3c-b79e-3f507574beca")
-		)
-		(pin "A6"
-			(uuid "5643d2aa-fc00-461c-8259-2d577a4e7763")
-		)
-		(pin "A1"
-			(uuid "9df7f766-c11d-4936-9d9f-16df805b4c09")
-		)
-		(pin "A8"
-			(uuid "e72fe9d2-e379-49c1-9aeb-60019956d82e")
-		)
-		(pin "B1"
-			(uuid "1321df88-69b2-463b-9e0f-177c4403b928")
-		)
-		(pin "B5"
-			(uuid "904b6694-8ac2-4022-bcdf-90dc2f8b093c")
-		)
-		(pin "B8"
-			(uuid "26767057-9ee1-46e1-90f1-fc669f0f2eea")
-		)
-		(pin "MH2"
-			(uuid "9399d526-18e1-4358-87b4-204a971cb72c")
-		)
-		(pin "MH3"
-			(uuid "cb656707-b6f2-48d7-a58b-cbf923119498")
-		)
-		(pin "MH4"
-			(uuid "446636db-5a3b-4712-978e-3be243c44d67")
-		)
-		(pin "B7"
-			(uuid "1f7db11a-e5f8-4003-ab08-d0005875990b")
-		)
-		(pin "MH1"
-			(uuid "e6633ed1-0540-4e94-9745-84039f050342")
-		)
-		(pin "B4"
-			(uuid "e103519f-7cb4-46fc-bd28-2f98a6271551")
-		)
-		(pin "B6"
-			(uuid "ae86d398-8a00-491e-bee4-84cf96ba96c0")
-		)
-		(instances
-			(project ""
-				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SamacSys_Parts:TSM-108-01-L-DV-A-P-TR")
-		(at 391.16 213.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e41392b3-7162-4424-a930-88da1308a4de")
-		(property "Reference" "J5"
-			(at 402.59 205.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TSM-108-01-L-DV-A-P-TR"
-			(at 402.59 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TSM-108-YY-ZZZ-DV-A-P-TR"
-			(at 410.21 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.samtec.com/partnumber/TSM-108-01-L-DV-A-P-TR"
-			(at 410.21 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" ".100\" Surface Mount Terminal Strip"
-			(at 391.16 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ".100\" Surface Mount Terminal Strip"
-			(at 410.21 215.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Height" ""
-			(at 410.21 218.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "SAMTEC"
-			(at 410.21 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "TSM-108-01-L-DV-A-P-TR"
-			(at 410.21 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "200-TSM10801LDVAPTR"
-			(at 410.21 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Samtec/TSM-108-01-L-DV-A-P-TR?qs=0lQeLiL1qyZb3SiKyQNeMw%3D%3D"
-			(at 410.21 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 410.21 231.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 410.21 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "969cf6fc-8bcd-4e3d-9313-2c85283b412d")
-		)
-		(pin "2"
-			(uuid "30ec535e-ef39-4631-85a7-50e6c18e77d2")
-		)
-		(pin "13"
-			(uuid "64a5926a-bebc-4cca-90b7-834ca93dd745")
-		)
-		(pin "7"
-			(uuid "dfe5b947-0107-4f62-a95e-90edf260f9a6")
-		)
-		(pin "12"
-			(uuid "173730f1-5919-4dab-be2f-b92dedf3abed")
-		)
-		(pin "11"
-			(uuid "31a0c58e-8b67-41d8-980d-757531fe7421")
-		)
-		(pin "1"
-			(uuid "b0301510-3056-49b3-a32a-ff0c1829a6a7")
-		)
-		(pin "16"
-			(uuid "af682a14-e259-40b3-a639-efdb34b30af5")
-		)
-		(pin "10"
-			(uuid "ba743f1d-2055-4109-a9b7-2236bb809f7a")
-		)
-		(pin "14"
-			(uuid "2aa880c4-d9a9-4e9f-bb76-9e9fae4eb015")
-		)
-		(pin "6"
-			(uuid "1ba376c6-9500-40c3-89af-a26d7e978944")
-		)
-		(pin "4"
-			(uuid "d0323b74-67ed-4b2f-975b-608080f85917")
-		)
-		(pin "15"
-			(uuid "9f991970-5b24-45c6-bea4-ab5df844205d")
-		)
-		(pin "9"
-			(uuid "fee71397-c75d-4e7d-8143-13de157e7d89")
-		)
-		(pin "3"
-			(uuid "839e2b1f-d38c-45a4-b919-d138b04052be")
-		)
-		(pin "5"
-			(uuid "765e764c-ced6-4e45-9ad8-667dc83aae80")
-		)
-		(instances
-			(project ""
-				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2"
-					(reference "J5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(sheet
-		(at 224.79 176.53)
-		(size 50.8 50.8)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "31dba59d-3b10-48f7-a0aa-6c11aac8825f")
-		(property "Sheetname" "DAC"
-			(at 224.79 175.8184 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "DAC.kicad_sch"
-			(at 224.79 227.9146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
+			(uuid "5281f509-5b42-4f0e-8371-c15a70c5b3cd")
 		)
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2"
-					(page "4")
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 99.06 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3255c228-d90e-4897-b486-b104b5d5679e")
+		(property "Reference" "TP1"
+			(at 101.6 84.3279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 101.6 86.8679 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 104.14 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 99.06 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ac3be3a5-4f76-43a8-a061-9f4c02df08fd")
+		)
+		(instances
+			(project ""
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 43.18 88.9 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b873984b-3f76-4a1a-b064-1644fd852c3b")
+		(property "Reference" "TP4"
+			(at 40.64 84.3279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 40.64 86.8679 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 38.1 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 43.18 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c35c418c-0840-4b10-b610-1a8e71cb7304")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2"
+					(reference "TP4")
+					(unit 1)
 				)
 			)
 		)
 	)
 	(sheet
-		(at 148.59 176.53)
+		(at 337.82 171.45)
 		(size 49.53 50.8)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4504,7 +1468,7 @@
 		)
 		(uuid "85ce9e3c-81ec-4c89-ba57-7d8ff70f58fc")
 		(property "Sheetname" "Controllers"
-			(at 148.59 175.8184 0)
+			(at 337.82 170.7384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4513,7 +1477,7 @@
 			)
 		)
 		(property "Sheetfile" "Controllers.kicad_sch"
-			(at 148.59 227.9146 0)
+			(at 337.82 222.8346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4521,9 +1485,9 @@
 				(justify left top)
 			)
 		)
-		(pin "SW3" input
-			(at 148.59 189.23 180)
-			(uuid "d240a240-aac6-464c-8d85-ee0c44d28d8a")
+		(pin "ROTB2" output
+			(at 337.82 200.66 180)
+			(uuid "504ad395-0439-4b6e-b1ee-213f0a970ae5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4531,9 +1495,9 @@
 				(justify left)
 			)
 		)
-		(pin "ROT2" input
-			(at 148.59 200.66 180)
-			(uuid "3bf33e4f-a2ff-4025-b181-0ea672c99f30")
+		(pin "SlideSwitch" output
+			(at 337.82 176.53 180)
+			(uuid "a06c8f8c-19c6-4073-bd76-54785b547b9f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4541,9 +1505,261 @@
 				(justify left)
 			)
 		)
-		(pin "SW4" input
-			(at 148.59 191.77 180)
-			(uuid "68801981-0a11-442f-ae69-80592fcecc5f")
+		(pin "ROTP1" output
+			(at 337.82 212.09 180)
+			(uuid "fc569575-7053-4efb-8479-4b0db6df1082")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ROTA1" output
+			(at 337.82 217.17 180)
+			(uuid "2c342464-7d86-4658-98fa-a1a8d2b5a466")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ROTA2" output
+			(at 337.82 198.12 180)
+			(uuid "a0789732-fd33-46f8-a183-c98f3523602b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ROTP2" output
+			(at 337.82 203.2 180)
+			(uuid "f70b39c8-fbe8-4fd4-a621-e72cefc48898")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ROTB1" output
+			(at 337.82 214.63 180)
+			(uuid "3ddb6eee-32a0-485b-b3e8-65c86b8bed61")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SW5" output
+			(at 337.82 189.23 180)
+			(uuid "57708e1f-f4eb-4473-8a7d-4290e5727c78")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SW3" output
+			(at 337.82 184.15 180)
+			(uuid "f4c85f78-9b3e-4d66-b05c-52d20c8a06b9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SW4" output
+			(at 337.82 186.69 180)
+			(uuid "36cd48e1-c76d-4599-8582-2d127fb5aca3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SW2" output
+			(at 337.82 181.61 180)
+			(uuid "fb0e7bde-4476-408a-b864-d8b5e9b6251c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SW1" output
+			(at 337.82 179.07 180)
+			(uuid "f0d3e95e-542f-46a5-b6fa-be38eaaeacc8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 241.3 154.94)
+		(size 81.28 101.6)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bdf5df61-f93b-4da5-86af-6fa833da55c4")
+		(property "Sheetname" "Microcontroller"
+			(at 241.3 154.2284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Microcontroller.kicad_sch"
+			(at 241.3 257.1246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "ROTB1" input
+			(at 322.58 214.63 0)
+			(uuid "78e2a9a8-dbe7-4738-9825-cecc353a5177")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ROTP1" input
+			(at 322.58 212.09 0)
+			(uuid "96a2a769-0129-4950-b89b-e6a9e850a62b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ROTP2" input
+			(at 322.58 203.2 0)
+			(uuid "81cea61a-9efa-48f6-a559-eb6e84120f47")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ROTA1" input
+			(at 322.58 217.17 0)
+			(uuid "d490f077-0ccf-4c3e-95d8-0697052dd5b1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ROTA2" input
+			(at 322.58 198.12 0)
+			(uuid "05864620-cc7e-4a9d-9e0e-d463d5dd3a92")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ROTB2" input
+			(at 322.58 200.66 0)
+			(uuid "cd0fc646-36d5-4806-9325-c35cfe1a96c2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SPI5_MISO" input
+			(at 241.3 175.26 180)
+			(uuid "2024a4cd-c7c0-48a9-b478-82b7c6b88e18")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI5_MOSI" input
+			(at 241.3 177.8 180)
+			(uuid "df236e6c-e433-4c09-8a89-9918416f94b3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BAT_DIAG" input
+			(at 241.3 161.29 180)
+			(uuid "7dfed3c5-48fd-42d7-b3fd-7b8e47fcdda4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SlideSwitch" input
+			(at 322.58 176.53 0)
+			(uuid "561aae00-c507-4840-862d-d60e6e184207")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SPI5_SS" input
+			(at 241.3 172.72 180)
+			(uuid "cbd3ca9c-868a-4e6b-8a34-3e615d4d5e30")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI5_SCK" input
+			(at 241.3 170.18 180)
+			(uuid "8c92e54c-3832-4798-ad6d-90a27091c31a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4552,38 +1768,58 @@
 			)
 		)
 		(pin "SW5" input
-			(at 148.59 194.31 180)
-			(uuid "04c62f1e-a34d-4a65-89e6-dab771ddb330")
+			(at 322.58 189.23 0)
+			(uuid "ec0b464a-61dd-47a6-b7e8-12e4f789d770")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
-			)
-		)
-		(pin "ROT1" input
-			(at 148.59 198.12 180)
-			(uuid "63e8f03e-c2cc-4b83-9f77-f86d7be6a7b2")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "SW2" input
-			(at 148.59 186.69 180)
-			(uuid "90f8845e-9278-4367-947b-5fd6822f1d5d")
+			(at 322.58 181.61 0)
+			(uuid "7c9cd1eb-0e9e-46b6-8a4b-bd0155580733")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
+			)
+		)
+		(pin "SW3" input
+			(at 322.58 184.15 0)
+			(uuid "7af498b2-8cba-4eff-a97c-9bd842bbccf2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SW4" input
+			(at 322.58 186.69 0)
+			(uuid "76595e2c-2657-4fb6-b8fb-91a63bb80ead")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(pin "SW1" input
-			(at 148.59 184.15 180)
-			(uuid "c1f79da9-fa88-4ad1-8a8f-48dc496cc70d")
+			(at 322.58 179.07 0)
+			(uuid "71212858-eb89-49f5-ae3d-d3e655a19bfb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PG" input
+			(at 241.3 158.75 180)
+			(uuid "baa73dc0-3d94-42d9-818b-dbe062eb95b1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4633,7 +1869,7 @@
 				(justify left top)
 			)
 		)
-		(pin "Power" input
+		(pin "Power" output
 			(at 275.59 110.49 0)
 			(uuid "21623c9f-142c-41d6-89d8-1c9139daf649")
 			(effects
@@ -4643,9 +1879,29 @@
 				(justify right)
 			)
 		)
-		(pin "Charge" input
+		(pin "USB_Power" input
 			(at 224.79 104.14 180)
 			(uuid "66bd184d-d4af-4f60-a990-932c59b4c4f4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BAT_DIAG" output
+			(at 224.79 119.38 180)
+			(uuid "dfebe1e3-0b55-4418-b572-cd0786253d10")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PG" output
+			(at 224.79 121.92 180)
+			(uuid "5781565d-d19c-4143-863d-53ca3f91756e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4662,7 +1918,7 @@
 		)
 	)
 	(sheet
-		(at 300.99 176.53)
+		(at 290.83 80.01)
 		(size 53.34 50.8)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4678,7 +1934,7 @@
 		)
 		(uuid "e5e22929-d6f1-4829-905c-a53e6965babb")
 		(property "Sheetname" "Power"
-			(at 300.99 175.8184 0)
+			(at 290.83 79.2984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4687,7 +1943,7 @@
 			)
 		)
 		(property "Sheetfile" "Power.kicad_sch"
-			(at 300.99 227.9146 0)
+			(at 290.83 131.3946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4695,24 +1951,14 @@
 				(justify left top)
 			)
 		)
-		(pin "5v" input
-			(at 354.33 181.61 0)
-			(uuid "d0bce2c9-82af-4255-bc42-b3c9d27c9e35")
+		(pin "Power" input
+			(at 290.83 85.09 180)
+			(uuid "d9cf756c-7835-4648-bd0e-daf122d80ffa")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
-			)
-		)
-		(pin "3.3V" input
-			(at 354.33 184.15 0)
-			(uuid "d580d1ab-bb24-4958-bca7-2b4922f97425")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(instances
