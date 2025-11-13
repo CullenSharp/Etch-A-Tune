@@ -17,7 +17,6 @@
 #include "main.h"
 
 #include "App/appLcdSpeedTest.h"
-
 /* BSP_LCD_... */
 
 /* Test photo */
@@ -53,11 +52,12 @@
 
 extern  TS_DrvTypeDef         *ts_drv;
 
-
 //-----------------------------------------------------------------------------
+
 extern const BITMAPSTRUCT hurricane_480x320_16;
 uint16_t front[ROMBITMAP_WIDTH * ROMBITMAP_HEIGHT];
 uint16_t back[ROMBITMAP_WIDTH * ROMBITMAP_HEIGHT];
+
 //-----------------------------------------------------------------------------
 
 void mainApp(void)
@@ -69,12 +69,12 @@ void mainApp(void)
   HAL_Delay(100);
   printf("\r\nDisplay ID = %X\r\n", (unsigned int)BSP_LCD_ReadID());
   HAL_Delay(100);
+
+  printf("\r\nWidth: %ld, Height: %ld\r\n", hurricane_480x320_16.infoHeader.biWidth, hurricane_480x320_16.infoHeader.biHeight);
+  memcpy(front, hurricane_480x320_16.data, sizeof front);
+  BSP_LCD_DrawRGB16Image(0, 0, 480, 320, front);
   while(1)
   {
-	  printf("\r\nWidth: %ld, Height: %ld\r\n", hurricane_480x320_16.infoHeader.biWidth, hurricane_480x320_16.infoHeader.biHeight);
-	  memcpy(front, hurricane_480x320_16.data, sizeof front);
-//	  BSP_LCD_DrawBitmap(0, 0, (uint8_t *)&rombitmap);
-	  BSP_LCD_DrawRGB16Image(0, 0, 480, 320, front);
-	  HAL_Delay(100);
+
   }
 }
