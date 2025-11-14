@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-sfrviewstate={"fFavorites"\:{"fLists"\:{}},"fProperties"\:{"fNodeProperties"\:{"STM32H7A3/SPI3/TXDR"\:{"fNodeProperties"\:{"autoupdate"\:"false"}}}}}
+sfrviewstate={"fFavorites"\:{"fLists"\:{}},"fProperties"\:{"fNodeProperties"\:{"STM32H7A3/SPI3/TXDR"\:{"fNodeProperties"\:{"autoupdate"\:"false"}},"STM32H7A3/TIM6/CNT"\:{"fNodeProperties"\:{"autoupdate"\:"true"}}}}}
