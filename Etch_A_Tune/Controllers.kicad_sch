@@ -1312,6 +1312,12 @@
 		(uuid "58f41655-e6ba-4fc8-a3b4-8b2bad36332d")
 	)
 	(junction
+		(at 72.39 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0dc9e28f-30d1-486c-a79d-6d12759f0c1f")
+	)
+	(junction
 		(at 19.05 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1358,6 +1364,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8dc31a74-b4e4-4eb4-84e2-e0f02b24a945")
+	)
+	(junction
+		(at 119.38 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9e04a53b-0ae8-4adf-847e-d6faa917ff52")
 	)
 	(junction
 		(at 180.34 53.34)
@@ -1493,7 +1505,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 119.38) (xy 80.01 119.38)
+			(xy 67.31 119.38) (xy 72.39 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1610,6 +1622,16 @@
 			(type default)
 		)
 		(uuid "32b81a07-c9bd-44de-99e4-16346472ed89")
+	)
+	(wire
+		(pts
+			(xy 72.39 119.38) (xy 80.01 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "350f9b36-9c6b-4d5b-9d2d-f2c587bb3583")
 	)
 	(wire
 		(pts
@@ -1770,6 +1792,16 @@
 			(type default)
 		)
 		(uuid "68f963c7-b72f-4703-a165-296c34311a27")
+	)
+	(wire
+		(pts
+			(xy 119.38 120.65) (xy 121.92 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d844bdf-831e-46d0-94a3-0301d3344afa")
 	)
 	(wire
 		(pts
@@ -2073,7 +2105,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 120.65) (xy 113.03 120.65)
+			(xy 110.49 120.65) (xy 119.38 120.65)
 		)
 		(stroke
 			(width 0)
@@ -2319,7 +2351,7 @@
 	)
 	(hierarchical_label "SW2"
 		(shape output)
-		(at 113.03 120.65 0)
+		(at 121.92 120.65 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3367,6 +3399,73 @@
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/85ce9e3c-81ec-4c89-ba57-7d8ff70f58fc"
 					(reference "TP12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 119.38 120.65 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "56ea04f0-aacd-4d68-90e2-e7c425daba33")
+		(property "Reference" "TP15"
+			(at 121.92 118.6181 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 121.92 116.0781 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 114.3 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 119.38 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c6f9d86-2489-4e37-b7b3-8d118d3afeb0")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/85ce9e3c-81ec-4c89-ba57-7d8ff70f58fc"
+					(reference "TP15")
 					(unit 1)
 				)
 			)
@@ -5131,6 +5230,73 @@
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/85ce9e3c-81ec-4c89-ba57-7d8ff70f58fc"
 					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 72.39 119.38 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d4bcb5a0-9920-4a61-8bcf-974d481d0984")
+		(property "Reference" "TP14"
+			(at 74.93 117.3481 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 74.93 114.8081 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 67.31 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 72.39 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "16e1aa8b-4b76-45db-8a7e-c7a3d0e25987")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/85ce9e3c-81ec-4c89-ba57-7d8ff70f58fc"
+					(reference "TP14")
 					(unit 1)
 				)
 			)
