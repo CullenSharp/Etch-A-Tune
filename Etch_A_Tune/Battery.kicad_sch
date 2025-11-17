@@ -2175,12 +2175,6 @@
 		(uuid "044bdd2a-a371-45b4-9ac9-39ab129eef12")
 	)
 	(junction
-		(at 245.11 215.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "04e6a60c-d5d1-4a68-b4ef-7a1034ffe1e9")
-	)
-	(junction
 		(at 320.04 213.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4803,72 +4797,6 @@
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
 					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 245.11 215.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fb9b2b64-6b1c-4839-8715-f6fe59d68060")
-		(property "Reference" "#PWR06"
-			(at 245.11 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 245.11 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 245.11 215.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 245.11 215.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 245.11 215.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9b1945b4-964e-4231-946e-1fe4429b82a3")
-		)
-		(instances
-			(project "Etch_A_Tune"
-				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
-					(reference "#PWR06")
 					(unit 1)
 				)
 			)

@@ -737,6 +737,189 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -1678,13 +1861,23 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 83.82) (xy 177.8 83.82)
+			(xy 168.91 83.82) (xy 180.34 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "849cad39-6564-4bb3-a852-edeb771f8abb")
+	)
+	(wire
+		(pts
+			(xy 223.52 92.71) (xy 223.52 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88015a04-4321-45ca-9da5-d9bdc8beaa79")
 	)
 	(wire
 		(pts
@@ -1695,6 +1888,16 @@
 			(type default)
 		)
 		(uuid "8da924dc-db23-4bb5-bdd9-04a2e3eaad9f")
+	)
+	(wire
+		(pts
+			(xy 223.52 104.14) (xy 223.52 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e6e83c7-887c-47ca-bd38-79e85d9469bd")
 	)
 	(wire
 		(pts
@@ -1715,6 +1918,16 @@
 			(type default)
 		)
 		(uuid "958b9bf9-ade0-4f1d-9048-405754f47a23")
+	)
+	(wire
+		(pts
+			(xy 223.52 81.28) (xy 223.52 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b54f870-4fe7-47a4-909a-e508e6601d8f")
 	)
 	(wire
 		(pts
@@ -2109,6 +2322,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 223.52 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e5d9a39-c89e-478f-92b6-e37aed26c7d8")
+		(property "Reference" "R20"
+			(at 226.06 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R"
+			(at 226.06 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 221.742 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 223.52 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 223.52 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f3814e98-39ab-4bd0-99b1-d1cf3080c8a9")
+		)
+		(pin "2"
+			(uuid "cf08e3df-8635-46a9-b652-73b6f8a45e6d")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/e5e22929-d6f1-4829-905c-a53e6965babb"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "TPS62063DSGR:TPS62063DSGR")
 		(at 125.73 93.98 0)
 		(unit 1)
@@ -2260,6 +2543,72 @@
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/e5e22929-d6f1-4829-905c-a53e6965babb"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 223.52 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "595f4f44-f7d1-45d7-ba0b-1da5cb26e9d2")
+		(property "Reference" "#PWR032"
+			(at 223.52 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 223.52 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 223.52 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 223.52 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ea5b8482-d90e-4342-9c54-e40a85abc72f")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/e5e22929-d6f1-4829-905c-a53e6965babb"
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -2545,7 +2894,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 177.8 83.82 0)
+		(at 180.34 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2554,7 +2903,7 @@
 		(fields_autoplaced yes)
 		(uuid "83f349b2-10c1-4152-8033-1a6357b5b772")
 		(property "Reference" "#PWR09"
-			(at 177.8 87.63 0)
+			(at 180.34 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2563,7 +2912,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 177.8 78.74 0)
+			(at 180.34 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2571,7 +2920,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 177.8 83.82 0)
+			(at 180.34 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2580,7 +2929,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 177.8 83.82 0)
+			(at 180.34 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2589,7 +2938,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 177.8 83.82 0)
+			(at 180.34 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2604,6 +2953,85 @@
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/e5e22929-d6f1-4829-905c-a53e6965babb"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 223.52 100.33 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "84b01356-0e59-487f-9557-7b9ef62e880c")
+		(property "Reference" "D1"
+			(at 227.33 100.6474 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "150060GS75000"
+			(at 227.33 103.1874 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 223.52 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 223.52 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 223.52 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6dca75fb-301c-48ae-abfd-9c04b6e64d5c")
+		)
+		(pin "2"
+			(uuid "c4f0f7fa-4233-481f-bc7f-a1b32764a397")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/e5e22929-d6f1-4829-905c-a53e6965babb"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -2742,6 +3170,72 @@
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/e5e22929-d6f1-4829-905c-a53e6965babb"
 					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 223.52 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9c82f75-99ae-4337-97af-19f47b373468")
+		(property "Reference" "#PWR06"
+			(at 223.52 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 223.52 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 223.52 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "16f805cd-134c-465d-97ad-d7c94ad6dcd0")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/e5e22929-d6f1-4829-905c-a53e6965babb"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
