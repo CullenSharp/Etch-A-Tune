@@ -2124,7 +2124,7 @@
 	)
 	(text "800-MA LINEAR BATTERY CHARGER \n"
 		(exclude_from_sim no)
-		(at 36.83 19.05 0)
+		(at 62.23 90.678 0)
 		(effects
 			(font
 				(size 1.27 1.27)
