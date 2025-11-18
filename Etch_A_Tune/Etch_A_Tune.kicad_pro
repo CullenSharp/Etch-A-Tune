@@ -801,7 +801,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "Etch_a_Sketch_Schematic_V0.2",
+    "plot_directory": "Etch_a_Sketch_Schematic_V0.4",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
