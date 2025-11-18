@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Etch-A-Tune Gantt" company="" webLink="http://" view-date="2025-11-20" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.3.3316" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Etch-A-Tune Gantt" company="" webLink="http://" view-date="2025-11-02" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.3.3316" locale="en_US">
     <description/>
     <view zooming-state="default:2" id="gantt-chart">
         <field id="tpd3" name="Name" width="200" order="0"/>
@@ -76,14 +76,14 @@
                 <depend id="27" type="2" difference="0" hardness="Strong"/>
             </task>
         </task>
-        <task id="0" uid="e5eb576df7c3489d959ec708e99381e9" name="Software" meeting="false" start="2025-10-27" duration="36" complete="27" expand="true">
+        <task id="0" uid="e5eb576df7c3489d959ec708e99381e9" name="Software" meeting="false" start="2025-10-27" duration="36" complete="32" expand="true">
             <task id="2" uid="c81be02172634caaae09100920d8c649" name="IDE Setup" meeting="false" start="2025-10-27" duration="3" complete="100" expand="true">
                 <depend id="16" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="16" uid="709bee0548f44d2899e9e621fcbdb181" name="Library &amp; Driver Research" meeting="false" start="2025-10-30" duration="7" complete="100" expand="true">
                 <depend id="5" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="5" uid="3661699f72244f6c946ad173797debe3" name="Getting Screen Working" meeting="false" start="2025-11-06" duration="5" complete="0" expand="true">
+            <task id="5" uid="3661699f72244f6c946ad173797debe3" name="Getting Screen Working" meeting="false" start="2025-11-06" duration="5" complete="50" expand="true">
                 <depend id="7" type="2" difference="0" hardness="Strong"/>
                 <depend id="11" type="2" difference="0" hardness="Strong"/>
             </task>
@@ -115,13 +115,13 @@
                 <task id="22" uid="ccbadb6692ad403ea3a8cef557229d50" name="Improve Audio Quality" meeting="false" start="2025-11-29" duration="3" complete="0" expand="true"/>
             </task>
         </task>
-        <task id="1" uid="dd6f54e561d44038896e9cd7282f993e" name="Hardware" meeting="false" start="2025-10-27" duration="42" complete="16" expand="true">
+        <task id="1" uid="dd6f54e561d44038896e9cd7282f993e" name="Hardware" meeting="false" start="2025-10-27" duration="42" complete="21" expand="true">
             <task id="23" uid="32acb826f7df4e52ab5cc321a966505f" name="Schematic 0" meeting="false" start="2025-10-27" duration="1" complete="100" expand="true"/>
             <task id="56" uid="0bfbd9922103484baf2e84e38dc4c81e" name="Breadboard Prototype" meeting="false" start="2025-11-05" duration="1" complete="100" expand="true"/>
             <task id="3" uid="5a09b401c10a42a299c5ebc71716c617" name="Initial Layout" meeting="false" start="2025-11-03" duration="4" complete="100" expand="true">
                 <depend id="4" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="4" uid="1ce57ce2c50c4e9784131fb2844a0a5e" name="CAD Rough Draft" meeting="false" start="2025-11-07" duration="4" complete="0" expand="true">
+            <task id="4" uid="1ce57ce2c50c4e9784131fb2844a0a5e" name="CAD Rough Draft" meeting="false" start="2025-11-07" duration="4" complete="50" expand="true">
                 <depend id="8" type="2" difference="0" hardness="Strong"/>
                 <depend id="24" type="2" difference="0" hardness="Strong"/>
             </task>
