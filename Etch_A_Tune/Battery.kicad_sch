@@ -2134,7 +2134,7 @@
 	)
 	(text "Generic 18650 battery holder\n"
 		(exclude_from_sim no)
-		(at 212.09 128.524 0)
+		(at 209.804 137.668 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2199,12 +2199,6 @@
 		(uuid "43503452-a24d-4c26-a9d3-2aca481f0174")
 	)
 	(junction
-		(at 57.15 140.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4783d2e7-7d67-4afe-a5c4-ad627dc09a1a")
-	)
-	(junction
 		(at 340.36 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2259,12 +2253,6 @@
 		(uuid "a36c41ac-9258-4853-a8fc-721ad555b6a6")
 	)
 	(junction
-		(at 43.18 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "adb0d962-f734-4252-a2e0-82c0fc9d74aa")
-	)
-	(junction
 		(at 227.33 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2275,6 +2263,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b3db428f-5702-40d2-90f5-7eaa0a8358e4")
+	)
+	(junction
+		(at 48.26 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b55c4cb0-f921-419e-abcb-cc3e57f9f5ed")
 	)
 	(junction
 		(at 340.36 175.26)
@@ -2323,6 +2317,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f28bd985-321e-403f-81fe-501e7e669d9e")
+	)
+	(junction
+		(at 59.69 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fe623fef-dafe-4475-9af1-09e9eb3e996f")
 	)
 	(junction
 		(at 320.04 175.26)
@@ -2412,7 +2412,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 125.73) (xy 227.33 125.73)
+			(xy 198.12 125.73) (xy 205.74 125.73)
 		)
 		(stroke
 			(width 0)
@@ -2422,7 +2422,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 101.6) (xy 43.18 101.6)
+			(xy 22.86 101.6) (xy 38.1 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2432,13 +2432,23 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 140.97) (xy 227.33 153.67)
+			(xy 227.33 147.32) (xy 227.33 153.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2352bdf0-d174-4968-8ac7-9bba66491388")
+	)
+	(wire
+		(pts
+			(xy 213.36 125.73) (xy 227.33 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26a4713e-3180-4a91-a82e-e8a5e5fc3933")
 	)
 	(wire
 		(pts
@@ -2452,7 +2462,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 140.97) (xy 57.15 140.97)
+			(xy 62.23 140.97) (xy 59.69 140.97)
 		)
 		(stroke
 			(width 0)
@@ -2499,16 +2509,6 @@
 			(type default)
 		)
 		(uuid "37e404d4-49b2-449b-8653-9932536d652f")
-	)
-	(wire
-		(pts
-			(xy 43.18 101.6) (xy 86.36 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e2f656d-79b2-4164-ab4a-0fd50e73bcc9")
 	)
 	(wire
 		(pts
@@ -2632,7 +2632,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 140.97) (xy 43.18 140.97)
+			(xy 48.26 140.97) (xy 59.69 140.97)
 		)
 		(stroke
 			(width 0)
@@ -2672,7 +2672,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 104.14) (xy 57.15 118.11)
+			(xy 59.69 104.14) (xy 59.69 118.11)
 		)
 		(stroke
 			(width 0)
@@ -2742,7 +2742,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 125.73) (xy 57.15 140.97)
+			(xy 59.69 125.73) (xy 59.69 140.97)
 		)
 		(stroke
 			(width 0)
@@ -2759,16 +2759,6 @@
 			(type default)
 		)
 		(uuid "a8bc4212-0df3-46ce-b6c2-1a0d81e30065")
-	)
-	(wire
-		(pts
-			(xy 227.33 101.6) (xy 227.33 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0b14a9a-477f-4027-8419-221b9c51f5a9")
 	)
 	(wire
 		(pts
@@ -2832,6 +2822,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 101.6) (xy 227.33 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfeacb37-63ad-4186-b27d-d6b7fd6719e1")
+	)
+	(wire
+		(pts
 			(xy 267.97 138.43) (xy 280.67 138.43)
 		)
 		(stroke
@@ -2842,7 +2842,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 118.11) (xy 43.18 101.6)
+			(xy 48.26 118.11) (xy 48.26 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2932,6 +2932,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 101.6) (xy 48.26 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e67a12f1-1a63-453d-8a30-238875a1b21e")
+	)
+	(wire
+		(pts
 			(xy 340.36 190.5) (xy 340.36 208.28)
 		)
 		(stroke
@@ -2952,13 +2962,23 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 140.97) (xy 43.18 125.73)
+			(xy 48.26 140.97) (xy 48.26 125.73)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ee1c42d1-afb8-456b-85ea-1fcc78760673")
+	)
+	(wire
+		(pts
+			(xy 48.26 101.6) (xy 86.36 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eebe544b-5d47-48a8-9785-705b6c079089")
 	)
 	(wire
 		(pts
@@ -2992,13 +3012,23 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 104.14) (xy 57.15 104.14)
+			(xy 86.36 104.14) (xy 59.69 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fe02f5c8-7a2c-4702-bbd2-3c85d86401a4")
+	)
+	(wire
+		(pts
+			(xy 227.33 132.08) (xy 227.33 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff8870fb-a73f-4e23-9cda-cc32d28485b6")
 	)
 	(label "DISCHARGE_GATE"
 		(at 320.04 138.43 180)
@@ -3021,7 +3051,7 @@
 		(uuid "238c2684-9057-4d3f-9016-97c015ca0bce")
 	)
 	(label "USB_POWER"
-		(at 29.21 101.6 0)
+		(at 24.13 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3096,7 +3126,7 @@
 	)
 	(hierarchical_label "USB_Power"
 		(shape input)
-		(at 27.94 101.6 180)
+		(at 22.86 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3345,6 +3375,144 @@
 			(project ""
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 41.91 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05f0932e-6cb9-4885-83db-4e8a6fa4a8b6")
+		(property "Reference" "R28"
+			(at 41.91 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 41.91 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 41.91 103.378 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 41.91 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RC0603JR-070RL"
+			(at 41.91 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4448b88f-542d-425a-9ef3-32c9b2dbeb48")
+		)
+		(pin "2"
+			(uuid "afda233d-06ab-4a66-993d-5b1356f7bbf7")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
+					(reference "R28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 71.12 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "08f2166c-8252-4288-9c09-92629fdeb339")
+		(property "Reference" "R2"
+			(at 73.66 120.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "604"
+			(at 73.66 123.1899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 69.342 121.92 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C307.pdf"
+			(at 71.12 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "ERA-3AEB6040V"
+			(at 71.12 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "93e001ed-f58d-42d2-8f76-f64278c5686b")
+		)
+		(pin "2"
+			(uuid "d652adbd-986f-476d-8ef5-dfbccad46069")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -3614,7 +3782,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" ".1uF"
 			(at 248.92 148.5899 0)
 			(effects
 				(font
@@ -3623,7 +3791,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 246.0752 151.13 0)
 			(effects
 				(font
@@ -3632,7 +3800,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageogroup.com/download/specsheet/CC0603KRX7R7BB104"
 			(at 245.11 147.32 0)
 			(effects
 				(font
@@ -3641,7 +3809,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "CC0603KRX7R7BB104"
 			(at 245.11 147.32 0)
 			(effects
 				(font
@@ -3813,7 +3981,7 @@
 	)
 	(symbol
 		(lib_id "1042P:1042P")
-		(at 227.33 133.35 270)
+		(at 227.33 139.7 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3822,7 +3990,7 @@
 		(fields_autoplaced yes)
 		(uuid "77ee4a2a-50d6-4de5-8583-c0d0a0b65f6d")
 		(property "Reference" "BT1"
-			(at 231.14 131.4449 90)
+			(at 231.14 137.7949 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3831,7 +3999,7 @@
 			)
 		)
 		(property "Value" "1042P"
-			(at 231.14 133.9849 90)
+			(at 231.14 140.3349 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3840,7 +4008,7 @@
 			)
 		)
 		(property "Footprint" "BQ25170DSGR:BAT_1042P"
-			(at 227.33 133.35 0)
+			(at 227.33 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3850,7 +4018,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 227.33 133.35 0)
+			(at 227.33 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3859,7 +4027,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 227.33 133.35 0)
+			(at 227.33 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3868,7 +4036,7 @@
 			)
 		)
 		(property "MF" "Keystone Electronics"
-			(at 227.33 133.35 0)
+			(at 227.33 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3878,7 +4046,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "15.11mm"
-			(at 227.33 133.35 0)
+			(at 227.33 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3888,7 +4056,7 @@
 			)
 		)
 		(property "Package" "None"
-			(at 227.33 133.35 0)
+			(at 227.33 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3898,7 +4066,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 227.33 133.35 0)
+			(at 227.33 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3908,7 +4076,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/1042P/Keystone/view-part/?ref=eda"
-			(at 227.33 133.35 0)
+			(at 227.33 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3918,7 +4086,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 227.33 133.35 0)
+			(at 227.33 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3928,7 +4096,7 @@
 			)
 		)
 		(property "PARTREV" "E"
-			(at 227.33 133.35 0)
+			(at 227.33 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3938,7 +4106,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/1042P/Keystone/view-part/?ref=snap"
-			(at 227.33 133.35 0)
+			(at 227.33 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3948,7 +4116,7 @@
 			)
 		)
 		(property "MP" "1042P"
-			(at 227.33 133.35 0)
+			(at 227.33 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3958,7 +4126,7 @@
 			)
 		)
 		(property "Description_1" "SMT Polarized Battery Holder for 18650 Battery | Keystone Electronics 1042P"
-			(at 227.33 133.35 0)
+			(at 227.33 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3968,7 +4136,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" "1042"
-			(at 227.33 133.35 0)
+			(at 227.33 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3978,7 +4146,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 227.33 133.35 0)
+			(at 227.33 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3988,7 +4156,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Keystone"
-			(at 227.33 133.35 0)
+			(at 227.33 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4014,16 +4182,16 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 57.15 121.92 0)
+		(at 59.69 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "80a92103-eea9-428c-966a-73ffe41b3291")
+		(uuid "7be0b151-e63a-478e-ad22-a5c70f6a583c")
 		(property "Reference" "R1"
-			(at 59.69 120.6499 0)
+			(at 62.23 120.6499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4031,8 +4199,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
-			(at 59.69 123.1899 0)
+		(property "Value" "24k"
+			(at 62.23 123.1899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4040,8 +4208,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 55.372 121.92 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 57.912 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4049,8 +4217,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 57.15 121.92 0)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 59.69 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4058,8 +4226,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 57.15 121.92 0)
+		(property "Description" "RMCF0603FG24K0"
+			(at 59.69 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4068,10 +4236,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "d358c76e-8c39-43be-965d-c0235caf1890")
+			(uuid "a37c1d12-d8e9-4f5b-b2ce-9330f67cca6f")
 		)
 		(pin "2"
-			(uuid "7adeb883-41e9-412f-b60e-f7ec1193da66")
+			(uuid "41ea988b-2ad6-4fcf-91a1-44685db4958c")
 		)
 		(instances
 			(project "Etch_A_Tune"
@@ -4150,78 +4318,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 71.12 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8bb77382-ef2b-41b1-916c-4566bc476b3c")
-		(property "Reference" "R2"
-			(at 73.66 120.6499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R"
-			(at 73.66 123.1899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 69.342 121.92 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 71.12 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 71.12 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "906da9a3-23da-41be-8337-24b38828a0a7")
-		)
-		(pin "2"
-			(uuid "882441f2-10f9-4cb5-afd6-9c877e06c683")
-		)
-		(instances
-			(project "Etch_A_Tune"
-				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
-		(at 43.18 121.92 0)
+		(at 48.26 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4230,7 +4328,7 @@
 		(fields_autoplaced yes)
 		(uuid "8f301747-00b9-4667-858c-c43ba5e4ff29")
 		(property "Reference" "C1"
-			(at 46.99 120.6499 0)
+			(at 52.07 120.6499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4238,8 +4336,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
-			(at 46.99 123.1899 0)
+		(property "Value" "1uF"
+			(at 52.07 123.1899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4247,8 +4345,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 44.1452 125.73 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 49.2252 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4256,8 +4354,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 43.18 121.92 0)
+		(property "Datasheet" "https://www.yageogroup.com/browse/products?search=upy-gphc_x5r_4v-to-50v.pdf"
+			(at 48.26 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4265,8 +4363,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 43.18 121.92 0)
+		(property "Description" "CC0603KRX5R8BB105"
+			(at 48.26 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4358,6 +4456,74 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 209.55 125.73 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a64bc488-d4a6-40f9-af93-18a989ee9810")
+		(property "Reference" "R26"
+			(at 209.55 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 209.55 121.92 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 209.55 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 209.55 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RC0603JR-070RL"
+			(at 209.55 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3aed6bf5-04b4-4c96-9215-2b8c3c50e80d")
+		)
+		(pin "2"
+			(uuid "195b87ed-3589-4b42-ba01-478f7f83041b")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
+					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 267.97 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4365,7 +4531,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b8fe06e1-36ea-451b-a5dd-6ea2bb713232")
+		(uuid "b94ad6c6-9ded-4c04-ad13-73165f4a7f54")
 		(property "Reference" "R4"
 			(at 270.51 163.8299 0)
 			(effects
@@ -4375,7 +4541,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "2.2k"
 			(at 270.51 166.3699 0)
 			(effects
 				(font
@@ -4384,7 +4550,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 266.192 165.1 90)
 			(effects
 				(font
@@ -4393,7 +4559,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 267.97 165.1 0)
 			(effects
 				(font
@@ -4402,7 +4568,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "RC0603JR-072K2L"
 			(at 267.97 165.1 0)
 			(effects
 				(font
@@ -4412,10 +4578,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "bf4a50fe-6992-43c6-b6f3-b67ca45cac68")
+			(uuid "f2b05b4b-650c-4207-98c7-37620a2f91cc")
 		)
 		(pin "2"
-			(uuid "c5e30e0f-bae8-49e0-9575-199d4579407b")
+			(uuid "3dbc7901-38cb-4ca9-b32e-ed2fc82e3302")
 		)
 		(instances
 			(project "Etch_A_Tune"
@@ -4663,76 +4829,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 245.11 123.19 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cd212959-989e-44c6-aa13-8595a80e8f1e")
-		(property "Reference" "R3"
-			(at 247.65 121.9199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R"
-			(at 247.65 124.4599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 243.332 123.19 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 245.11 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 245.11 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dad3fcab-09f4-4a23-9867-50cd8c168ba8")
-		)
-		(pin "2"
-			(uuid "5e72022b-37e3-4fac-9718-5bae8bec0bc5")
-		)
-		(instances
-			(project "Etch_A_Tune"
-				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 137.16 118.11 0)
 		(unit 1)
@@ -4741,7 +4837,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e06c60a3-f7c1-498c-bd27-7dbad8e582ee")
+		(uuid "ce74400b-8c34-4ffc-8faa-840bdbf77685")
 		(property "Reference" "C2"
 			(at 140.97 116.8399 0)
 			(effects
@@ -4751,7 +4847,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "1uF"
 			(at 140.97 119.3799 0)
 			(effects
 				(font
@@ -4760,7 +4856,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 138.1252 121.92 0)
 			(effects
 				(font
@@ -4769,7 +4865,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageogroup.com/browse/products?search=upy-gphc_x5r_4v-to-50v.pdf"
 			(at 137.16 118.11 0)
 			(effects
 				(font
@@ -4778,7 +4874,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "CC0603KRX5R8BB105"
 			(at 137.16 118.11 0)
 			(effects
 				(font
@@ -4788,15 +4884,85 @@
 			)
 		)
 		(pin "1"
-			(uuid "d884283a-1661-474e-af68-1f6595167dce")
+			(uuid "ed853917-7d84-4a80-adc1-43a6f2519a3f")
 		)
 		(pin "2"
-			(uuid "b03815d3-8d7b-413d-b403-e9baaab4c62d")
+			(uuid "48052b2d-c2d8-4c18-bc3e-a8fa8ee48a19")
 		)
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 245.11 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d64b8584-cd20-464d-90f5-0f1e2e2f5fd6")
+		(property "Reference" "R3"
+			(at 247.65 121.9199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "330"
+			(at 247.65 124.4599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 243.332 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 245.11 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RC0603JR-07330RL"
+			(at 245.11 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d483b0b8-3e62-4b86-a869-661163155c45")
+		)
+		(pin "2"
+			(uuid "8f84ce92-8662-49ae-a7b0-91f7f2da4296")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
+					(reference "R3")
 					(unit 1)
 				)
 			)
