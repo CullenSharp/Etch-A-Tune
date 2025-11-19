@@ -17393,7 +17393,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "014a213c-bd72-4278-b1ed-d5f8d0af71c9")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR040"
 			(at 313.69 41.91 0)
 			(effects
 				(font
@@ -17443,7 +17443,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "#PWR041")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -17459,7 +17459,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "032bf455-3213-4787-b65e-9fbec73c2cec")
-		(property "Reference" "R38"
+		(property "Reference" "R39"
 			(at 119.38 162.5599 0)
 			(effects
 				(font
@@ -17513,7 +17513,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "R38")
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -17529,7 +17529,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "040e5a91-ff6b-40cb-a1f9-02c456f96a5e")
-		(property "Reference" "C22"
+		(property "Reference" "C15"
 			(at 280.67 139.6999 0)
 			(effects
 				(font
@@ -17583,7 +17583,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C22")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -17599,7 +17599,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b9d4a95-ef4a-4f3f-a7d8-4a0305499065")
-		(property "Reference" "C8"
+		(property "Reference" "C6"
 			(at 87.63 134.6199 0)
 			(effects
 				(font
@@ -17653,7 +17653,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C8")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -17669,7 +17669,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0c4d4c93-4977-4a56-b48e-f92769f6dec0")
-		(property "Reference" "C13"
+		(property "Reference" "C12"
 			(at 114.3 129.5399 0)
 			(effects
 				(font
@@ -17723,7 +17723,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C13")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -17739,7 +17739,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "105b029e-53dc-4c48-8324-c12e8ddc2c3f")
-		(property "Reference" "C24"
+		(property "Reference" "C36"
 			(at 293.37 53.34 90)
 			(effects
 				(font
@@ -17791,7 +17791,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C24")
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -17806,7 +17806,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "10e99d4a-c79f-4349-9f4b-e59009f34241")
-		(property "Reference" "C36"
+		(property "Reference" "C27"
 			(at 542.29 157.4799 0)
 			(effects
 				(font
@@ -17860,7 +17860,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C36")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -17956,7 +17956,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1ca94e47-00a4-49d6-aff1-da8caaf3e4d0")
-		(property "Reference" "C20"
+		(property "Reference" "C16"
 			(at 271.78 107.9499 0)
 			(effects
 				(font
@@ -18010,7 +18010,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C20")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -18026,7 +18026,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "20f66a8a-4e2b-4801-a11b-bed7b2aa3641")
-		(property "Reference" "C33"
+		(property "Reference" "C24"
 			(at 520.7 187.9599 0)
 			(effects
 				(font
@@ -18080,7 +18080,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C33")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -18161,7 +18161,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2c697f9e-011a-40b4-8ca3-a394e695c99c")
-		(property "Reference" "R39"
+		(property "Reference" "R19"
 			(at 472.44 116.8399 0)
 			(effects
 				(font
@@ -18215,7 +18215,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "R39")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -18231,7 +18231,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2ce2e24f-34a1-4437-a353-d2ef53f40678")
-		(property "Reference" "U6"
+		(property "Reference" "U5"
 			(at 190.5 93.98 0)
 			(effects
 				(font
@@ -18711,7 +18711,7 @@
 		(instances
 			(project ""
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "U6")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -18728,7 +18728,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2e8162e2-9430-47fe-9732-15508a43171c")
-		(property "Reference" "C30"
+		(property "Reference" "C20"
 			(at 359.41 153.6699 0)
 			(effects
 				(font
@@ -18782,7 +18782,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C30")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -18798,7 +18798,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3de30697-4949-4b83-bd21-5ea69036abb6")
-		(property "Reference" "C19"
+		(property "Reference" "C13"
 			(at 266.7 139.6999 0)
 			(effects
 				(font
@@ -18852,7 +18852,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C19")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -18868,7 +18868,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "40ab1188-f229-4b55-acfe-8fefa4c478ce")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR029"
 			(at 88.9 123.19 0)
 			(effects
 				(font
@@ -18918,7 +18918,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "#PWR034")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -18934,7 +18934,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "44e75c8e-6da0-4f3f-a27c-037a74bca48c")
-		(property "Reference" "C21"
+		(property "Reference" "C14"
 			(at 274.32 139.6999 0)
 			(effects
 				(font
@@ -18988,7 +18988,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C21")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -19004,7 +19004,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "486988e5-82b4-4a82-9d1d-c7388dc79ff1")
-		(property "Reference" "U6"
+		(property "Reference" "U5"
 			(at 431.8 111.76 0)
 			(effects
 				(font
@@ -19484,7 +19484,7 @@
 		(instances
 			(project ""
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "U6")
+					(reference "U5")
 					(unit 2)
 				)
 			)
@@ -19500,7 +19500,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "497ef71b-f665-4015-8eaa-64c366db151c")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR0101"
 			(at 133.35 196.85 0)
 			(effects
 				(font
@@ -19550,7 +19550,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "#PWR037")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -19566,7 +19566,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4e57ef03-9110-47bb-8c46-c3100e1e3c7e")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR031"
 			(at 116.84 184.15 0)
 			(effects
 				(font
@@ -19616,7 +19616,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "#PWR036")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -19632,7 +19632,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "557cc866-a1c1-4e45-8e7f-03fa1936fb9b")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR044"
 			(at 495.3 209.55 0)
 			(effects
 				(font
@@ -19682,7 +19682,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "#PWR046")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -19764,7 +19764,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58540ac2-5874-4661-aa8a-fa7159e765bb")
-		(property "Reference" "C10"
+		(property "Reference" "C6"
 			(at 101.6 134.6199 0)
 			(effects
 				(font
@@ -19818,7 +19818,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C10")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -19835,7 +19835,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b28a047-8d5c-4efc-a571-151d9a5ff82a")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR030"
 			(at 116.84 161.29 0)
 			(effects
 				(font
@@ -19885,7 +19885,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "#PWR035")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -19970,7 +19970,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7603ea85-e1ec-4c2b-9b52-6e0298063864")
-		(property "Reference" "Y1"
+		(property "Reference" "Y2"
 			(at 325.12 54.5398 0)
 			(effects
 				(font
@@ -20028,7 +20028,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "Y1")
+					(reference "Y2")
 					(unit 1)
 				)
 			)
@@ -20045,7 +20045,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7763fa7d-8bd7-40c7-8aa9-a9a282b6baba")
-		(property "Reference" "C12"
+		(property "Reference" "C7"
 			(at 114.5159 172.7841 0)
 			(effects
 				(font
@@ -20135,7 +20135,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C12")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -20151,7 +20151,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7e9ffed5-2f35-42aa-ae4c-121f836e9796")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR034"
 			(at 373.38 210.82 0)
 			(effects
 				(font
@@ -20201,7 +20201,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "#PWR044")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -20217,7 +20217,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7eb6e8ad-7c60-47ee-9923-8debad9d0562")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR0102"
 			(at 501.65 125.73 0)
 			(effects
 				(font
@@ -20267,7 +20267,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "#PWR047")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -20350,7 +20350,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8151e651-7d8e-4470-a31a-0b7a07561267")
-		(property "Reference" "C32"
+		(property "Reference" "C17"
 			(at 518.16 125.7299 0)
 			(effects
 				(font
@@ -20404,7 +20404,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C32")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -20420,7 +20420,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "89d2bc3f-e75d-46c9-a52c-3e6c3cf53599")
-		(property "Reference" "C31"
+		(property "Reference" "C25"
 			(at 505.46 187.9599 0)
 			(effects
 				(font
@@ -20474,7 +20474,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C31")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -20490,7 +20490,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8bd294bf-345d-40f6-b56c-f7676c8e7b3d")
-		(property "Reference" "C9"
+		(property "Reference" "C7"
 			(at 93.98 134.6199 0)
 			(effects
 				(font
@@ -20544,7 +20544,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C9")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -20560,7 +20560,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8f14fed7-0388-4058-ba3f-14343cdeaaf2")
-		(property "Reference" "C11"
+		(property "Reference" "C10"
 			(at 107.95 134.6199 0)
 			(effects
 				(font
@@ -20614,7 +20614,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C11")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -20631,7 +20631,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9468307e-8204-4a92-a668-9111c8489335")
-		(property "Reference" "C28"
+		(property "Reference" "C21"
 			(at 351.79 153.6699 0)
 			(effects
 				(font
@@ -20685,7 +20685,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C28")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -20702,7 +20702,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94961df5-f735-42ea-8854-d75b086582f8")
-		(property "Reference" "C26"
+		(property "Reference" "C23"
 			(at 339.09 153.6699 0)
 			(effects
 				(font
@@ -20756,7 +20756,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C26")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -20772,7 +20772,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "954d82d4-c201-4fd1-ae8c-1c387b87725e")
-		(property "Reference" "R37"
+		(property "Reference" "R21"
 			(at 114.3 60.9599 0)
 			(effects
 				(font
@@ -20826,7 +20826,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "R37")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -20843,7 +20843,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9575825a-a5e6-41a8-a557-2ee1bdd8e647")
-		(property "Reference" "C34"
+		(property "Reference" "C26"
 			(at 515.62 157.4799 0)
 			(effects
 				(font
@@ -20897,7 +20897,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C34")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -20913,7 +20913,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "95d8ac99-cc82-471b-a1cc-4aa59daa167e")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR027"
 			(at 256.54 208.28 0)
 			(effects
 				(font
@@ -20963,7 +20963,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "#PWR039")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -20979,7 +20979,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ded1b4a-7ea9-45ff-a8a5-5d5f09d065d0")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR043"
 			(at 256.54 110.49 0)
 			(effects
 				(font
@@ -21029,7 +21029,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "#PWR038")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -21044,7 +21044,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ad18882e-00ff-4be8-87ea-893f97645581")
-		(property "Reference" "C17"
+		(property "Reference" "C33"
 			(at 149.86 200.6662 0)
 			(effects
 				(font
@@ -21134,7 +21134,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C17")
+					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -21150,7 +21150,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b81e148f-fe28-4b53-bd5f-81667f65d1c5")
-		(property "Reference" "TP39"
+		(property "Reference" "TP35"
 			(at 396.748 160.02 90)
 			(effects
 				(font
@@ -21199,7 +21199,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "TP39")
+					(reference "TP35")
 					(unit 1)
 				)
 			)
@@ -21216,7 +21216,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bd6bfd41-6324-41ca-887d-1c8d534c4c23")
-		(property "Reference" "C27"
+		(property "Reference" "C22"
 			(at 345.44 153.6699 0)
 			(effects
 				(font
@@ -21270,7 +21270,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C27")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -21286,7 +21286,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c0142131-da3c-4e20-89a7-7e9569a2682e")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR041"
 			(at 346.71 60.96 0)
 			(effects
 				(font
@@ -21337,7 +21337,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "#PWR043")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -21420,7 +21420,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cf1e8e9d-d6ad-47cb-bfca-e3c348ad2382")
-		(property "Reference" "C25"
+		(property "Reference" "C37"
 			(at 331.47 68.58 90)
 			(effects
 				(font
@@ -21472,7 +21472,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C25")
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -21489,7 +21489,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d5c1ba44-385b-4635-bb89-42af2a225f3a")
-		(property "Reference" "C35"
+		(property "Reference" "C28"
 			(at 521.97 157.4799 0)
 			(effects
 				(font
@@ -21543,7 +21543,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C35")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -21559,7 +21559,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d6f7347f-a507-4100-8ec1-06b0fa5afeaa")
-		(property "Reference" "C23"
+		(property "Reference" "C19"
 			(at 287.02 139.6999 0)
 			(effects
 				(font
@@ -21613,7 +21613,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C23")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -21628,7 +21628,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dc7e31ca-4a4d-4033-8d4c-1a7fbe36b77c")
-		(property "Reference" "C18"
+		(property "Reference" "C34"
 			(at 159.8041 200.7241 0)
 			(effects
 				(font
@@ -21718,7 +21718,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C18")
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -21733,7 +21733,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e384d2c8-e62b-4e2f-9184-85fd099b02e9")
-		(property "Reference" "C16"
+		(property "Reference" "C35"
 			(at 133.35 200.6662 0)
 			(effects
 				(font
@@ -21823,7 +21823,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C16")
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -21839,7 +21839,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ee75afd2-f020-433f-8168-f48048c0a2af")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR039"
 			(at 313.69 76.2 0)
 			(effects
 				(font
@@ -21889,7 +21889,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "#PWR042")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -21905,7 +21905,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2199a36-9c67-4dbf-9166-1df3380654be")
-		(property "Reference" "C14"
+		(property "Reference" "C11"
 			(at 128.27 129.5399 0)
 			(effects
 				(font
@@ -21959,7 +21959,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C14")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -21975,7 +21975,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fde89863-9927-4257-a965-f734d43ffbc8")
-		(property "Reference" "C15"
+		(property "Reference" "C32"
 			(at 124.46 142.2399 0)
 			(effects
 				(font
@@ -22029,7 +22029,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C15")
+					(reference "C32")
 					(unit 1)
 				)
 			)
@@ -22045,7 +22045,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fee468bc-d26a-49c7-b51c-0fe2f74ea22c")
-		(property "Reference" "C29"
+		(property "Reference" "C18"
 			(at 358.14 198.1201 0)
 			(effects
 				(font
@@ -22099,7 +22099,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "C29")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -22115,7 +22115,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ff502b96-14c7-410d-ae0b-ffa5f855d671")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR042"
 			(at 279.4 60.96 0)
 			(effects
 				(font
@@ -22166,7 +22166,7 @@
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
-					(reference "#PWR040")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
