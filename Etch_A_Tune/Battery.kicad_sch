@@ -61,66 +61,6 @@
 					(hide yes)
 				)
 			)
-			(property "MF" "Keystone Electronics"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "15.11mm"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Package" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Check_prices" "https://www.snapeda.com/parts/1042P/Keystone/view-part/?ref=eda"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "STANDARD" "Manufacturer Recommendations"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
 			(property "PARTREV" "E"
 				(at 0 0 0)
 				(effects
@@ -131,27 +71,7 @@
 					(hide yes)
 				)
 			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/1042P/Keystone/view-part/?ref=snap"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MP" "1042P"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "SMT Polarized Battery Holder for 18650 Battery | Keystone Electronics 1042P"
+			(property "MANUFACTURER" "Keystone"
 				(at 0 0 0)
 				(effects
 					(font
@@ -171,7 +91,7 @@
 					(hide yes)
 				)
 			)
-			(property "Availability" "In Stock"
+			(property "MAXIMUM_PACKAGE_HEIGHT" "15.11mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -181,7 +101,7 @@
 					(hide yes)
 				)
 			)
-			(property "MANUFACTURER" "Keystone"
+			(property "STANDARD" "Manufacturer Recommendations"
 				(at 0 0 0)
 				(effects
 					(font
@@ -218,7 +138,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 2.54) (xy -1.27 0)
+						(xy -1.27 2.54) (xy -1.27 -2.54)
 					)
 					(stroke
 						(width 0.254)
@@ -242,31 +162,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 0) (xy -1.27 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 1.27 -1.27)
+						(xy 1.27 1.27) (xy 1.27 -1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -317,6 +213,656 @@
 						)
 					)
 					(number "N"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "BQ25170DSGR:BQ25170DSGR"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -10.16 11.049 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "BQ25170DSGR"
+				(at -10.16 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "BQ25170DSGR:SON50P200X200X80-9N"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "L1_NOM" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SNAPEDA_PACKAGE_ID" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "B_NOM" "0.25"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "EMAX" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "VACANCIES" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "BALL_COLUMNS" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "D1_NOM" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "THERMAL_PAD" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "DMAX" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "L1_MIN" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "B_MAX" "0.32"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "EMIN" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "JEDEC" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "ENOM" "0.5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "D_NOM" "2.0"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "D_MAX" "2.1"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "L_MAX" "0.4"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "A_MAX" "0.8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "D1_MAX" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "L1_MAX" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "D1_MIN" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "E2_NOM" "0.9"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "D2_NOM" "1.6"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" "A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "DNOM" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "DMIN" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "E_NOM" "2.0"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "BALL_ROWS" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "B_MIN" "0.18"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "IPC 7351B"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PIN_COUNT" "8.0"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "L_NOM" "0.3"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "Texas Instruments"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "IPC" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PIN_COLUMNS" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "BODY_DIAMETER" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "E_MIN" "1.9"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PACKAGE_TYPE" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "D_MIN" "1.9"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PINS" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "L_MIN" "0.2"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "E_MAX" "2.1"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "BQ25170DSGR_0_0"
+				(rectangle
+					(start -10.16 -10.16)
+					(end 10.16 10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -15.24 7.62 0)
+					(length 5.08)
+					(name "IN"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 2.54 0)
+					(length 5.08)
+					(name "VSET"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 0 0)
+					(length 5.08)
+					(name "ISET"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 -2.54 0)
+					(length 5.08)
+					(name "TS"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 7.62 180)
+					(length 5.08)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 2.54 180)
+					(length 5.08)
+					(name "~{PG}"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 0 180)
+					(length 5.08)
+					(name "STAT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 15.24 -5.08 180)
+					(length 5.08)
+					(name "EXP"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 15.24 -7.62 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -562,13 +1108,12 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "25V, N ch NexFET MOSFET, single SON3x3, 7.4mOhm 8-VSON-CLIP -55 to 150"
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
@@ -583,6 +1128,16 @@
 				)
 			)
 			(property "MOUSER-PURCHASE-URL" "https://snapeda.com/shop?store=Mouser&id=288071"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "DESCRIPTION" "25V, N ch NexFET MOSFET, single SON3x3, 7.4mOhm 8-VSON-CLIP -55 to 150"
 				(at 0 0 0)
 				(effects
 					(font
@@ -653,6 +1208,798 @@
 				)
 			)
 			(symbol "CSD16406Q3_0_0"
+				(polyline
+					(pts
+						(xy -7.62 5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 2.54) (xy -5.08 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 -5.08) (xy -3.81 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -7.62 -7.62)
+					(end 7.62 7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy -5.08 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 2.54) (xy -5.08 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -7.62 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -5.08 -3.81)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -3.81) (xy 0 -3.81)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -2.54) (xy -2.54 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -5.08) (xy -3.81 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 3.175) (xy -1.778 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.54) (xy -1.778 1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.54) (xy 0 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 0.762) (xy -1.778 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 0) (xy -1.778 -0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 0) (xy 0 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -1.905) (xy -1.778 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -2.54) (xy -1.778 -3.175)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0) (xy -0.508 0.762) (xy -0.508 -0.762) (xy -1.524 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.08) (xy 0 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 2.54)
+					(radius 0.2032)
+					(stroke
+						(width 0.4064)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 1.27 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy -1.778 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -2.54)
+					(radius 0.2032)
+					(stroke
+						(width 0.4064)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -3.81) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 1.27 0.508)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0.508) (xy 0.762 0.508)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0.508) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0.508) (xy 0.762 -0.254) (xy 1.778 -0.254) (xy 1.27 0.508)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.778 0.508) (xy 1.27 0.508)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 5.08) (xy 0 5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 5.08) (xy 7.62 5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 5.08 5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 7.62 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 5.08 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 7.62 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.54) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.54) (xy 7.62 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "CSD16406Q3_1"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -7.62 8.382 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "CSD16406Q3"
+				(at -7.62 -8.382 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "CSD16406Q3:TRANS_CSD16406Q3"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "Texas Instruments"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MOUSER-PURCHASE-URL" "https://snapeda.com/shop?store=Mouser&id=288071"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "DESCRIPTION" "25V, N ch NexFET MOSFET, single SON3x3, 7.4mOhm 8-VSON-CLIP -55 to 150"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PACKAGE" "VSON-CLIP-8 Texas Instruments"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PRICE" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "CSD16406Q3"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "TEXAS_INSTRUMENTS-PURCHASE-URL" "https://snapeda.com/shop?store=Texas+Instruments&id=288071"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "AVAILABILITY" "Good"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "DIGIKEY-PURCHASE-URL" "https://snapeda.com/shop?store=DigiKey&id=288071"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "CSD16406Q3_1_0_0"
 				(polyline
 					(pts
 						(xy -7.62 5.08) (xy -5.08 5.08)
@@ -1671,319 +3018,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "SamacSys_Parts:BQ25170DSGR"
-			(pin_names
-				(offset 0.762)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "IC"
-				(at 26.67 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "BQ25170DSGR"
-				(at 26.67 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "SON50P200X200X80-9N"
-				(at 26.67 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Datasheet" "https://www.ti.com/lit/gpn/bq25170"
-				(at 26.67 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "BQ25170DSGR"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "BQ25170DSGR"
-				(at 26.67 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Height" "0.8"
-				(at 26.67 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "Texas Instruments"
-				(at 26.67 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "BQ25170DSGR"
-				(at 26.67 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "595-BQ25170DSGR"
-				(at 26.67 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/BQ25170DSGR?qs=iLbezkQI%252BsiCISFdSxQWaQ%3D%3D"
-				(at 26.67 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Arrow Part Number" "BQ25170DSGR"
-				(at 26.67 -17.78 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Arrow Price/Stock" "https://www.arrow.com/en/products/bq25170dsgr/texas-instruments?utm_currency=USD&region=europe"
-				(at 26.67 -20.32 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(symbol "BQ25170DSGR_0_0"
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "IN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "ISET"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "TS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 0)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 -20.32 90)
-					(length 5.08)
-					(name "EP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 30.48 0 180)
-					(length 5.08)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 30.48 -2.54 180)
-					(length 5.08)
-					(name "VSET"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 30.48 -5.08 180)
-					(length 5.08)
-					(name "~{PG}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 30.48 -7.62 180)
-					(length 5.08)
-					(name "STAT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "BQ25170DSGR_0_1"
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 25.4 2.54) (xy 25.4 -15.24) (xy 5.08 -15.24) (xy 5.08 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:Earth"
 			(power)
 			(pin_numbers
@@ -2121,6 +3155,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "800-MA LINEAR BATTERY CHARGER \n"
 		(exclude_from_sim no)
@@ -2144,7 +3279,7 @@
 	)
 	(text "Drain Pins: 5,6,7,8\nSource pins: 3,2,1\nGate: 4"
 		(exclude_from_sim no)
-		(at 305.816 209.804 0)
+		(at 306.324 211.582 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2169,22 +3304,34 @@
 		(uuid "0037ced0-19a2-4a18-b66e-3c2e69060e62")
 	)
 	(junction
+		(at 340.36 210.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0194bb51-da81-4893-aea3-f1ebed82b32e")
+	)
+	(junction
+		(at 227.33 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "027f3f22-758f-4634-9b8e-5c90252a73d9")
+	)
+	(junction
 		(at 62.23 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "044bdd2a-a371-45b4-9ac9-39ab129eef12")
 	)
 	(junction
-		(at 320.04 213.36)
+		(at 118.11 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1b52243d-6777-4e6e-9ae1-d7caf458f179")
+		(uuid "04b6edce-a68b-42a3-a4f8-7fd59f387f64")
 	)
 	(junction
-		(at 320.04 177.8)
+		(at 340.36 213.36)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1f2a97fb-23e1-4a6e-83ef-f6ef75c83988")
+		(uuid "13e0a029-4885-48d8-b6e6-f495f3cd6a84")
 	)
 	(junction
 		(at 227.33 116.84)
@@ -2193,28 +3340,40 @@
 		(uuid "2483f8c8-0e57-433c-955c-1d774fa5db65")
 	)
 	(junction
+		(at 340.36 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "27de38d8-9edc-4a1d-9092-b3bca4ef0d1d")
+	)
+	(junction
+		(at 340.36 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "29e02e7c-f5ae-4f88-9bfb-1bf7c70abbcd")
+	)
+	(junction
+		(at 83.82 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2fd53bdd-d025-4869-bc6f-4afbe32f3024")
+	)
+	(junction
+		(at 147.32 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3185b768-fff4-42a8-b6f7-e48174f12b14")
+	)
+	(junction
+		(at 340.36 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "38228a57-6bf1-4892-adc6-e769f11e4d80")
+	)
+	(junction
 		(at 137.16 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "43503452-a24d-4c26-a9d3-2aca481f0174")
-	)
-	(junction
-		(at 340.36 177.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4a324f53-9b8f-4572-9e0d-62998e21ad76")
-	)
-	(junction
-		(at 340.36 213.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "534538c5-8f01-4c28-8e4b-3e8a0ea6be56")
-	)
-	(junction
-		(at 86.36 140.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "62b3d3e8-4c08-4094-bce8-ae092f4ffee3")
 	)
 	(junction
 		(at 146.05 101.6)
@@ -2223,28 +3382,34 @@
 		(uuid "6628d25c-cf9c-4d92-b200-88be1923ae50")
 	)
 	(junction
+		(at 320.04 215.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6a43bc1f-d9bc-4f96-9f9f-79f9fef87aef")
+	)
+	(junction
+		(at 320.04 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "831efdc7-f742-44df-893f-2df55152cc11")
+	)
+	(junction
 		(at 71.12 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "84c1d44c-2269-4784-b60d-217aff9f8ad9")
 	)
 	(junction
-		(at 320.04 215.9)
+		(at 320.04 213.36)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "86014677-6595-4f5d-98ba-0def34d65d33")
+		(uuid "8990c901-cc5a-4f03-b0db-45e857b62a39")
 	)
 	(junction
 		(at 245.11 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8a35d489-10b1-4567-a18a-778bc5dab4b1")
-	)
-	(junction
-		(at 340.36 208.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "937c7b0f-4a90-4d56-85c9-9560c3d0226f")
 	)
 	(junction
 		(at 166.37 106.68)
@@ -2259,22 +3424,10 @@
 		(uuid "b2232ec2-925c-4367-a399-66ae3e7b2566")
 	)
 	(junction
-		(at 340.36 172.72)
+		(at 281.94 215.9)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b3db428f-5702-40d2-90f5-7eaa0a8358e4")
-	)
-	(junction
-		(at 48.26 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b55c4cb0-f921-419e-abcb-cc3e57f9f5ed")
-	)
-	(junction
-		(at 340.36 175.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bcbaedbf-444d-4028-8bd0-a7da0e70090b")
+		(uuid "b7acdde7-adc3-432c-8710-82220f59340d")
 	)
 	(junction
 		(at 267.97 177.8)
@@ -2283,22 +3436,28 @@
 		(uuid "c128ffdf-7cc4-4082-947c-1f71701130d3")
 	)
 	(junction
-		(at 101.6 140.97)
+		(at 340.36 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c41eea85-f90f-4d60-ad90-e4f415648653")
+		(uuid "c1882f4e-1e62-4679-be52-43265e4b6583")
 	)
 	(junction
-		(at 340.36 210.82)
+		(at 48.26 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d13ff7e1-ddd3-49d9-a99f-2e6f613d4572")
+		(uuid "d157eefc-e5f5-47da-b26a-39a8ca92d7e5")
 	)
 	(junction
-		(at 123.19 140.97)
+		(at 168.91 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "de14dc91-9483-4645-9e7f-511afbaff435")
+		(uuid "d3a39217-7b19-424b-aac5-1178074185bb")
+	)
+	(junction
+		(at 118.11 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed1c7266-7763-4b9f-b8f2-d57c1df810fd")
 	)
 	(junction
 		(at 227.33 125.73)
@@ -2319,20 +3478,36 @@
 		(uuid "f28bd985-321e-403f-81fe-501e7e669d9e")
 	)
 	(junction
+		(at 281.94 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f29c3368-67d4-4b05-a66c-67999f2b3d1c")
+	)
+	(junction
+		(at 320.04 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb8f25ff-9c21-44da-8ed9-8a3f612b4945")
+	)
+	(junction
 		(at 59.69 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fe623fef-dafe-4475-9af1-09e9eb3e996f")
 	)
-	(junction
-		(at 320.04 175.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ff1f8224-932e-4a29-9ab1-33a85837b4bf")
+	(wire
+		(pts
+			(xy 340.36 210.82) (xy 340.36 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "013cc050-0f2c-44bc-ae48-0ebb16f33383")
 	)
 	(wire
 		(pts
-			(xy 86.36 106.68) (xy 71.12 106.68)
+			(xy 87.63 109.22) (xy 71.12 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2362,13 +3537,33 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 101.6) (xy 137.16 101.6)
+			(xy 118.11 101.6) (xy 137.16 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "057fb839-39bc-47d4-8d16-4dd4453b410e")
+	)
+	(wire
+		(pts
+			(xy 168.91 123.19) (xy 168.91 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06d85162-2f47-458f-8108-967a56116ca4")
+	)
+	(wire
+		(pts
+			(xy 83.82 140.97) (xy 118.11 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08f9a5bb-bc68-467b-93d8-2bb2afbfd139")
 	)
 	(wire
 		(pts
@@ -2392,7 +3587,17 @@
 	)
 	(wire
 		(pts
-			(xy 320.04 215.9) (xy 245.11 215.9)
+			(xy 281.94 177.8) (xy 281.94 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "131ffa5f-f195-4fc2-99b6-d896903832a4")
+	)
+	(wire
+		(pts
+			(xy 320.04 215.9) (xy 281.94 215.9)
 		)
 		(stroke
 			(width 0)
@@ -2422,7 +3627,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 101.6) (xy 38.1 101.6)
+			(xy 29.21 101.6) (xy 38.1 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2432,7 +3637,17 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 147.32) (xy 227.33 153.67)
+			(xy 71.12 109.22) (xy 71.12 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fc28e20-9fd0-44d5-bd2d-beef2f434110")
+	)
+	(wire
+		(pts
+			(xy 227.33 147.32) (xy 227.33 149.86)
 		)
 		(stroke
 			(width 0)
@@ -2452,7 +3667,7 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 177.8) (xy 320.04 177.8)
+			(xy 267.97 177.8) (xy 281.94 177.8)
 		)
 		(stroke
 			(width 0)
@@ -2472,7 +3687,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 109.22) (xy 191.77 109.22)
+			(xy 118.11 109.22) (xy 168.91 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2492,23 +3707,13 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 140.97) (xy 123.19 140.97)
+			(xy 118.11 140.97) (xy 137.16 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "36f0d104-8884-4271-bc94-55cc37ad5709")
-	)
-	(wire
-		(pts
-			(xy 340.36 172.72) (xy 340.36 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37e404d4-49b2-449b-8653-9932536d652f")
 	)
 	(wire
 		(pts
@@ -2522,13 +3727,13 @@
 	)
 	(wire
 		(pts
-			(xy 320.04 210.82) (xy 320.04 213.36)
+			(xy 340.36 172.72) (xy 340.36 175.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "473ed582-bb0b-4027-8477-e19a7b38ad9b")
+		(uuid "4767360b-21f5-4296-8f10-973a87c50111")
 	)
 	(wire
 		(pts
@@ -2542,6 +3747,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 149.86) (xy 227.33 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cbc3217-6e16-4dd4-9534-0c5139a8edc2")
+	)
+	(wire
+		(pts
 			(xy 245.11 133.35) (xy 280.67 133.35)
 		)
 		(stroke
@@ -2549,16 +3764,6 @@
 			(type default)
 		)
 		(uuid "4d8d0a41-82e9-4ffd-a613-f544b3d1003f")
-	)
-	(wire
-		(pts
-			(xy 101.6 140.97) (xy 86.36 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f1c3d5f-ac2e-4750-8e08-ad20d39faf4f")
 	)
 	(wire
 		(pts
@@ -2582,6 +3787,26 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 101.6) (xy 48.26 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5aa0d9dc-18d6-4a7c-b91f-3d59e8f31cc0")
+	)
+	(wire
+		(pts
+			(xy 147.32 106.68) (xy 151.13 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ae9316a-3401-4127-9359-5a4304a954f0")
+	)
+	(wire
+		(pts
 			(xy 353.06 190.5) (xy 340.36 190.5)
 		)
 		(stroke
@@ -2592,7 +3817,17 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 106.68) (xy 166.37 106.68)
+			(xy 306.07 205.74) (xy 284.48 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c73e50a-f20f-4530-a932-0c8ba3954576")
+	)
+	(wire
+		(pts
+			(xy 118.11 106.68) (xy 147.32 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2602,13 +3837,33 @@
 	)
 	(wire
 		(pts
-			(xy 340.36 213.36) (xy 340.36 215.9)
+			(xy 340.36 190.5) (xy 340.36 208.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "61b1cd9d-911b-4593-8f37-690e70dee597")
+	)
+	(wire
+		(pts
+			(xy 281.94 177.8) (xy 320.04 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "647cbd5c-19dc-4e2c-af24-ff4bd16f21c7")
+	)
+	(wire
+		(pts
+			(xy 168.91 109.22) (xy 168.91 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a244e8d-2932-4ccf-a904-1b9e03ef8ffa")
 	)
 	(wire
 		(pts
@@ -2642,13 +3897,13 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 104.14) (xy 123.19 104.14)
+			(xy 340.36 175.26) (xy 340.36 177.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7b562d4a-d002-4053-9f96-4339eb8a42d4")
+		(uuid "795b4af2-3ef7-4494-992b-7a80269d6147")
 	)
 	(wire
 		(pts
@@ -2662,27 +3917,17 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 109.22) (xy 86.36 140.97)
+			(xy 59.69 106.68) (xy 59.69 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "86d1ae31-c1f7-41cd-aecc-2d6f2e4eea63")
+		(uuid "84c32602-c221-40ad-bc3a-3f7c2f3ae2c1")
 	)
 	(wire
 		(pts
-			(xy 59.69 104.14) (xy 59.69 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8bc89dae-c09d-4d1e-8c12-5185e3a7ffcb")
-	)
-	(wire
-		(pts
-			(xy 86.36 140.97) (xy 71.12 140.97)
+			(xy 71.12 140.97) (xy 83.82 140.97)
 		)
 		(stroke
 			(width 0)
@@ -2712,13 +3957,13 @@
 	)
 	(wire
 		(pts
-			(xy 340.36 175.26) (xy 340.36 177.8)
+			(xy 147.32 123.19) (xy 147.32 133.35)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9c8d049f-2c8f-4e96-aa62-052f16207ae9")
+		(uuid "94f7344a-fd3e-446b-bdf0-fa422f986e1b")
 	)
 	(wire
 		(pts
@@ -2732,7 +3977,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 121.92) (xy 101.6 140.97)
+			(xy 118.11 114.3) (xy 118.11 116.84)
 		)
 		(stroke
 			(width 0)
@@ -2752,6 +3997,46 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 106.68) (xy 147.32 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2be0770-b77a-4da2-b806-6673f8c0aca9")
+	)
+	(wire
+		(pts
+			(xy 158.75 106.68) (xy 166.37 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a348f2e0-d88f-41c2-b823-ce2019bfd0e1")
+	)
+	(wire
+		(pts
+			(xy 168.91 109.22) (xy 180.34 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5d90062-ad33-44df-972d-e3f785498f5f")
+	)
+	(wire
+		(pts
+			(xy 340.36 208.28) (xy 340.36 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a86ac4d3-4f09-4bec-8640-f79923dadd2d")
+	)
+	(wire
+		(pts
 			(xy 290.83 153.67) (xy 290.83 143.51)
 		)
 		(stroke
@@ -2762,23 +4047,23 @@
 	)
 	(wire
 		(pts
-			(xy 340.36 210.82) (xy 340.36 213.36)
+			(xy 187.96 109.22) (xy 191.77 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b1253dcf-c03f-4178-a046-c7a6d1eb8d2d")
+		(uuid "aa15b4ec-2c1d-4670-93b9-96e5bf797469")
 	)
 	(wire
 		(pts
-			(xy 123.19 104.14) (xy 123.19 140.97)
+			(xy 48.26 101.6) (xy 87.63 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b1d66ab0-16ec-4fc0-b30d-4b1ab20f146e")
+		(uuid "aa2578e3-a2d4-417a-80f9-ff2d8dd423eb")
 	)
 	(wire
 		(pts
@@ -2792,17 +4077,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 106.68) (xy 176.53 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b8a6f930-cfee-4836-a158-0af1d96f52b1")
-	)
-	(wire
-		(pts
-			(xy 320.04 175.26) (xy 320.04 177.8)
+			(xy 320.04 172.72) (xy 320.04 175.26)
 		)
 		(stroke
 			(width 0)
@@ -2819,6 +4094,16 @@
 			(type default)
 		)
 		(uuid "b9b52b22-a4e9-4ce6-b46f-4c73fc43ffc3")
+	)
+	(wire
+		(pts
+			(xy 83.82 111.76) (xy 83.82 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9d82be1-712c-4f58-b78c-ba7eddc0ca4b")
 	)
 	(wire
 		(pts
@@ -2842,6 +4127,26 @@
 	)
 	(wire
 		(pts
+			(xy 340.36 213.36) (xy 340.36 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c439a89a-36e5-4579-9cef-7b2429ecbc67")
+	)
+	(wire
+		(pts
+			(xy 320.04 213.36) (xy 320.04 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c58c19c3-3376-4b9d-bb6f-30722975b163")
+	)
+	(wire
+		(pts
 			(xy 48.26 118.11) (xy 48.26 101.6)
 		)
 		(stroke
@@ -2852,13 +4157,23 @@
 	)
 	(wire
 		(pts
-			(xy 320.04 213.36) (xy 320.04 215.9)
+			(xy 320.04 210.82) (xy 320.04 213.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "cebd2298-24f2-47d2-83c7-824d48051d3d")
+	)
+	(wire
+		(pts
+			(xy 87.63 111.76) (xy 83.82 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf3a12cb-6257-436b-9822-7df7eef36fc7")
 	)
 	(wire
 		(pts
@@ -2872,7 +4187,27 @@
 	)
 	(wire
 		(pts
-			(xy 340.36 177.8) (xy 340.36 190.5)
+			(xy 320.04 175.26) (xy 320.04 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d11a652d-9d57-46ec-ac67-1ca5e622dd91")
+	)
+	(wire
+		(pts
+			(xy 118.11 116.84) (xy 118.11 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2ba190c-eaca-4ebe-8a32-59bc49164dd5")
+	)
+	(wire
+		(pts
+			(xy 340.36 170.18) (xy 340.36 172.72)
 		)
 		(stroke
 			(width 0)
@@ -2882,13 +4217,13 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 140.97) (xy 101.6 140.97)
+			(xy 281.94 215.9) (xy 245.11 215.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "de7076c2-97de-48a2-8121-0b994ed73366")
+		(uuid "dd4fd5b6-0d9d-44b0-9035-de42a754d449")
 	)
 	(wire
 		(pts
@@ -2902,7 +4237,7 @@
 	)
 	(wire
 		(pts
-			(xy 320.04 205.74) (xy 299.72 205.74)
+			(xy 320.04 205.74) (xy 313.69 205.74)
 		)
 		(stroke
 			(width 0)
@@ -2922,7 +4257,17 @@
 	)
 	(wire
 		(pts
-			(xy 320.04 167.64) (xy 297.18 167.64)
+			(xy 166.37 106.68) (xy 176.53 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3125b4f-d677-4c3b-b0d9-4b0570e6830b")
+	)
+	(wire
+		(pts
+			(xy 320.04 167.64) (xy 309.88 167.64)
 		)
 		(stroke
 			(width 0)
@@ -2932,33 +4277,23 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 101.6) (xy 48.26 101.6)
+			(xy 281.94 201.93) (xy 281.94 215.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e67a12f1-1a63-453d-8a30-238875a1b21e")
+		(uuid "ebdbc9a5-2482-4779-8f12-024f09b1a878")
 	)
 	(wire
 		(pts
-			(xy 340.36 190.5) (xy 340.36 208.28)
+			(xy 340.36 177.8) (xy 340.36 190.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e7770bb8-9e77-4846-b3db-190ff8221d76")
-	)
-	(wire
-		(pts
-			(xy 320.04 172.72) (xy 320.04 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e9375a31-8a36-42ca-a727-150a2e3aeb9f")
+		(uuid "edf2c6a8-dac6-4d66-94c1-c8ead3d101aa")
 	)
 	(wire
 		(pts
@@ -2972,47 +4307,27 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 101.6) (xy 86.36 101.6)
+			(xy 302.26 167.64) (xy 283.21 167.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "eebe544b-5d47-48a8-9785-705b6c079089")
+		(uuid "f01596f7-b635-4c1f-833f-dacc7901a726")
 	)
 	(wire
 		(pts
-			(xy 71.12 106.68) (xy 71.12 118.11)
+			(xy 83.82 125.73) (xy 83.82 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f0ae2c6d-3518-43fe-b8b7-68546b6dce0d")
+		(uuid "fc781e5f-98b7-479e-9ee0-29c9dca453c9")
 	)
 	(wire
 		(pts
-			(xy 340.36 208.28) (xy 340.36 210.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f3dd3248-c5b8-4357-8c47-88892133f418")
-	)
-	(wire
-		(pts
-			(xy 340.36 170.18) (xy 340.36 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f98e01af-d7cd-41b9-b776-207c1115a296")
-	)
-	(wire
-		(pts
-			(xy 86.36 104.14) (xy 59.69 104.14)
+			(xy 87.63 106.68) (xy 59.69 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3050,18 +4365,8 @@
 		)
 		(uuid "238c2684-9057-4d3f-9016-97c015ca0bce")
 	)
-	(label "USB_POWER"
-		(at 24.13 101.6 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "347aea5b-adcb-4395-a6bb-e5d106929e0d")
-	)
 	(label "DISCHARGE_GATE"
-		(at 299.72 205.74 0)
+		(at 284.48 205.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3071,7 +4376,7 @@
 		(uuid "85af8044-1fa0-4bcd-9330-77926939a39e")
 	)
 	(label "CHARGE_GATE"
-		(at 297.18 167.64 0)
+		(at 283.21 167.64 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3124,9 +4429,9 @@
 		)
 		(uuid "b80cb91d-2815-4ab5-9a69-7f6769e365c5")
 	)
-	(hierarchical_label "USB_Power"
+	(hierarchical_label "USB_Charge"
 		(shape input)
-		(at 22.86 101.6 180)
+		(at 29.21 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3202,185 +4507,6 @@
 		)
 	)
 	(symbol
-		(lib_id "CSD16406Q3:CSD16406Q3")
-		(at 330.2 210.82 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "02b029b3-dc0d-4268-a0f4-460f67987453")
-		(property "Reference" "U2"
-			(at 328.9299 219.71 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "CSD16406Q3"
-			(at 331.4699 219.71 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "BQ25170DSGR:TRANS_CSD16406Q3"
-			(at 330.2 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 330.2 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 330.2 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Texas Instruments"
-			(at 330.2 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MOUSER-PURCHASE-URL" "https://snapeda.com/shop?store=Mouser&id=288071"
-			(at 330.2 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "DESCRIPTION" "25V, N ch NexFET MOSFET, single SON3x3, 7.4mOhm 8-VSON-CLIP -55 to 150"
-			(at 330.2 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PACKAGE" "VSON-CLIP-8 Texas Instruments"
-			(at 330.2 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PRICE" "None"
-			(at 330.2 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "CSD16406Q3"
-			(at 330.2 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "TEXAS_INSTRUMENTS-PURCHASE-URL" "https://snapeda.com/shop?store=Texas+Instruments&id=288071"
-			(at 330.2 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "AVAILABILITY" "Good"
-			(at 330.2 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "DIGIKEY-PURCHASE-URL" "https://snapeda.com/shop?store=DigiKey&id=288071"
-			(at 330.2 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "9eddf75b-0a80-4032-97a1-802083384a13")
-		)
-		(pin "5"
-			(uuid "f9417d67-3872-4285-9a16-85ce3ba16162")
-		)
-		(pin "7"
-			(uuid "452ca039-c73a-4ee8-9ece-ea1da7801dc9")
-		)
-		(pin "3"
-			(uuid "60f296fd-39e7-4cb0-8411-ea945713875e")
-		)
-		(pin "2"
-			(uuid "15767e46-b993-4cee-b945-e49617cf9760")
-		)
-		(pin "1"
-			(uuid "cf529364-cf8e-4318-8ebf-dd36540dbbd3")
-		)
-		(pin "8"
-			(uuid "cd090034-e995-4da1-9ee3-78733ffe46a4")
-		)
-		(pin "6"
-			(uuid "443dfe47-1013-4694-85cb-5f34ef217ae7")
-		)
-		(instances
-			(project ""
-				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 41.91 101.6 90)
 		(unit 1)
@@ -3443,6 +4569,184 @@
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
 					(reference "R28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CSD16406Q3:CSD16406Q3")
+		(at 330.2 172.72 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "07775d5f-26a1-498d-92f1-11a23153e223")
+		(property "Reference" "U3"
+			(at 330.2 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CSD16406Q3"
+			(at 330.2 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "BQ25170DSGR:TRANS_CSD16406Q3"
+			(at 330.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 330.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 330.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Texas Instruments"
+			(at 330.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MOUSER-PURCHASE-URL" "https://snapeda.com/shop?store=Mouser&id=288071"
+			(at 330.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "DESCRIPTION" "25V, N ch NexFET MOSFET, single SON3x3, 7.4mOhm 8-VSON-CLIP -55 to 150"
+			(at 330.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "VSON-CLIP-8 Texas Instruments"
+			(at 330.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "None"
+			(at 330.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "CSD16406Q3"
+			(at 330.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "TEXAS_INSTRUMENTS-PURCHASE-URL" "https://snapeda.com/shop?store=Texas+Instruments&id=288071"
+			(at 330.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "AVAILABILITY" "Good"
+			(at 330.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "DIGIKEY-PURCHASE-URL" "https://snapeda.com/shop?store=DigiKey&id=288071"
+			(at 330.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "512e73bf-596b-401f-bc60-cf5276a25a8d")
+		)
+		(pin "8"
+			(uuid "9aba8dd8-32c3-42a7-92c6-4f5f5975b0bb")
+		)
+		(pin "6"
+			(uuid "27831f2a-5e01-4b6e-9498-03cee5d42d02")
+		)
+		(pin "5"
+			(uuid "e6d917cb-3a7f-421d-9d02-d85dfe8956ed")
+		)
+		(pin "1"
+			(uuid "c44e4315-0288-4cdf-bf51-b2b541c5c813")
+		)
+		(pin "3"
+			(uuid "1a297b81-bb55-4cdc-adcb-1580c75ff1d2")
+		)
+		(pin "4"
+			(uuid "6b7d0e6c-32f5-4c23-8f1b-eb540551e2f5")
+		)
+		(pin "7"
+			(uuid "a54f0096-538b-41d7-aa32-05ba2d793d01")
+		)
+		(instances
+			(project ""
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -3520,6 +4824,142 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
+		(at 147.32 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "15dc6ae6-65df-4c40-be32-fe1b9c808b35")
+		(property "Reference" "#PWR026"
+			(at 147.32 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 147.32 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 147.32 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a24d63ee-2d9c-4bd3-926b-0f6b7aab3393")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 83.82 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "15e7d959-9ffb-4418-bd1a-af14b9dea57d")
+		(property "Reference" "R31"
+			(at 86.36 120.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 86.36 123.1899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 82.042 121.92 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 83.82 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RC0603FR-0710KL"
+			(at 83.82 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a40783b-dfca-400c-b77d-dd7a986425ba")
+		)
+		(pin "2"
+			(uuid "dec9bdf3-462c-4155-bbb4-f4ea02683d06")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
+					(reference "R31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
 		(at 62.23 140.97 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3585,17 +5025,155 @@
 		)
 	)
 	(symbol
-		(lib_id "CSD16406Q3:CSD16406Q3")
-		(at 330.2 172.72 0)
-		(mirror x)
+		(lib_id "Device:R")
+		(at 147.32 119.38 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "373aec22-9d3e-4f55-abd8-b873dfd024f9")
+		(property "Reference" "R37"
+			(at 149.86 118.1099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0"
+			(at 149.86 120.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 149.098 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 147.32 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RC0603JR-070RL"
+			(at 147.32 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ff8f80ac-66d1-4152-a2a3-6dfd02b24dc5")
+		)
+		(pin "2"
+			(uuid "6b7a2ce1-ffec-4930-88cc-76bce83a15ff")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
+					(reference "R37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 306.07 167.64 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3cfdc982-08b0-46f4-aacc-7b2a466bd0b4")
-		(property "Reference" "U3"
-			(at 328.9299 181.61 90)
+		(fields_autoplaced yes)
+		(uuid "3ae52389-9d4d-4d02-a0c7-fa42f6b17843")
+		(property "Reference" "R33"
+			(at 306.07 161.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 306.07 163.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 306.07 165.862 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 306.07 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RC0603JR-070RL"
+			(at 306.07 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fe328bf4-3b08-41ce-b874-2587d187ffb4")
+		)
+		(pin "2"
+			(uuid "426eddfe-8051-46af-93b1-2cec85831447")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
+					(reference "R33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "1042P:1042P")
+		(at 227.33 139.7 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3e4f585b-dfc7-4386-a02f-157b4661f917")
+		(property "Reference" "BT1"
+			(at 231.14 137.7949 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3603,8 +5181,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "CSD16406Q3"
-			(at 331.4699 181.61 90)
+		(property "Value" "1042P"
+			(at 231.14 140.3349 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3612,8 +5190,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "BQ25170DSGR:TRANS_CSD16406Q3"
-			(at 330.2 172.72 0)
+		(property "Footprint" "BQ25170DSGR:BAT_1042P"
+			(at 227.33 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3623,7 +5201,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 330.2 172.72 0)
+			(at 227.33 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3632,7 +5210,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 330.2 172.72 0)
+			(at 227.33 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3640,18 +5218,8 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "Texas Instruments"
-			(at 330.2 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MOUSER-PURCHASE-URL" "https://snapeda.com/shop?store=Mouser&id=288071"
-			(at 330.2 172.72 0)
+		(property "PARTREV" "E"
+			(at 227.33 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3660,8 +5228,8 @@
 				(hide yes)
 			)
 		)
-		(property "DESCRIPTION" "25V, N ch NexFET MOSFET, single SON3x3, 7.4mOhm 8-VSON-CLIP -55 to 150"
-			(at 330.2 172.72 0)
+		(property "MANUFACTURER" "Keystone"
+			(at 227.33 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3670,8 +5238,8 @@
 				(hide yes)
 			)
 		)
-		(property "PACKAGE" "VSON-CLIP-8 Texas Instruments"
-			(at 330.2 172.72 0)
+		(property "SNAPEDA_PN" "1042"
+			(at 227.33 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3680,8 +5248,8 @@
 				(hide yes)
 			)
 		)
-		(property "PRICE" "None"
-			(at 330.2 172.72 0)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "15.11mm"
+			(at 227.33 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3690,8 +5258,8 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "CSD16406Q3"
-			(at 330.2 172.72 0)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 227.33 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3700,64 +5268,82 @@
 				(hide yes)
 			)
 		)
-		(property "TEXAS_INSTRUMENTS-PURCHASE-URL" "https://snapeda.com/shop?store=Texas+Instruments&id=288071"
-			(at 330.2 172.72 0)
+		(pin "P"
+			(uuid "4252f606-152f-43f6-946b-28b8e53c0589")
+		)
+		(pin "N"
+			(uuid "44bb1885-5ae0-42c0-b5a5-8a7b6fcb78e6")
+		)
+		(instances
+			(project ""
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
+					(reference "BT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 168.91 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4643551e-8e26-41a8-a81d-bb727042701f")
+		(property "Reference" "#PWR028"
+			(at 168.91 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "AVAILABILITY" "Good"
-			(at 330.2 172.72 0)
+		(property "Value" "GND"
+			(at 168.91 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
-				(hide yes)
 			)
 		)
-		(property "DIGIKEY-PURCHASE-URL" "https://snapeda.com/shop?store=DigiKey&id=288071"
-			(at 330.2 172.72 0)
+		(property "Footprint" ""
+			(at 168.91 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
-		(pin "4"
-			(uuid "fd3b4571-c4bb-4771-88f5-9ba92927f829")
+		(property "Datasheet" "~"
+			(at 168.91 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "5"
-			(uuid "8109738e-f108-452a-a929-741e160b191f")
-		)
-		(pin "7"
-			(uuid "dc7e2320-9b5f-48fb-9324-b4f060822880")
-		)
-		(pin "3"
-			(uuid "22215c28-4870-4dfe-bb49-6b351aeeedfb")
-		)
-		(pin "2"
-			(uuid "3b191a80-483b-4e09-9029-b8b2d3996324")
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 168.91 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "5146a13c-63cb-4f69-b4ce-1095088e85ac")
-		)
-		(pin "8"
-			(uuid "aeeaf4bc-2107-4ebc-9ba6-8d01748d46cd")
-		)
-		(pin "6"
-			(uuid "2531d679-9b48-4118-9137-bd3e269a94d5")
+			(uuid "08f0d11a-3e90-4481-8004-038797bdadba")
 		)
 		(instances
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
-					(reference "U3")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -3834,6 +5420,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 309.88 205.74 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f35a18d-f934-4bd0-a2f3-d848e564e4cf")
+		(property "Reference" "R34"
+			(at 309.88 199.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 309.88 201.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 309.88 207.518 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 309.88 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RC0603JR-070RL"
+			(at 309.88 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b6aacef5-4d4e-4fcc-8af0-965d98ac0fa7")
+		)
+		(pin "2"
+			(uuid "fefb5843-b699-4ae5-812f-1c18d15472b5")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
+					(reference "R34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:Earth")
 		(at 267.97 177.8 0)
 		(unit 1)
@@ -3894,6 +5548,390 @@
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 227.33 149.86 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5a22b65b-e161-49f9-b119-f8588d5d0bbc")
+		(property "Reference" "#FLG02"
+			(at 225.425 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 222.25 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 227.33 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 227.33 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 227.33 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d638cf6b-4d93-464e-8b77-4390207faf55")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 281.94 198.12 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "624c8da1-9054-4b28-b903-241a684e4156")
+		(property "Reference" "R32"
+			(at 284.48 196.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0"
+			(at 284.48 199.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 283.718 198.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 281.94 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RC0603JR-070RL"
+			(at 281.94 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06fa9c8e-14fa-4026-befe-39c7b284c6fe")
+		)
+		(pin "2"
+			(uuid "4555de8c-9b9d-48e4-80f2-913169077e8e")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
+					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "CSD16406Q3_1")
+		(lib_id "CSD16406Q3:CSD16406Q3")
+		(at 330.2 210.82 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6b9414a0-7731-4980-8542-ea88aa266a3b")
+		(property "Reference" "U2"
+			(at 330.2 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CSD16406Q3"
+			(at 330.2 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "BQ25170DSGR:TRANS_CSD16406Q3"
+			(at 330.2 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 330.2 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 330.2 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Texas Instruments"
+			(at 330.2 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MOUSER-PURCHASE-URL" "https://snapeda.com/shop?store=Mouser&id=288071"
+			(at 330.2 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "DESCRIPTION" "25V, N ch NexFET MOSFET, single SON3x3, 7.4mOhm 8-VSON-CLIP -55 to 150"
+			(at 330.2 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "VSON-CLIP-8 Texas Instruments"
+			(at 330.2 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "None"
+			(at 330.2 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "CSD16406Q3"
+			(at 330.2 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "TEXAS_INSTRUMENTS-PURCHASE-URL" "https://snapeda.com/shop?store=Texas+Instruments&id=288071"
+			(at 330.2 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "AVAILABILITY" "Good"
+			(at 330.2 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "DIGIKEY-PURCHASE-URL" "https://snapeda.com/shop?store=DigiKey&id=288071"
+			(at 330.2 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "12ff1f48-eaa8-4f9f-8191-4098d3cc534d")
+		)
+		(pin "1"
+			(uuid "8c8b31a0-cb85-409b-aa9e-3eede7e9f8e8")
+		)
+		(pin "6"
+			(uuid "1891bdfd-3f7a-46c2-aa60-55dd6b6cfb2f")
+		)
+		(pin "2"
+			(uuid "ca5778d5-d861-4728-aebe-1e843cbe9ff0")
+		)
+		(pin "4"
+			(uuid "28384734-d18b-4f03-8532-aaacc1aea456")
+		)
+		(pin "7"
+			(uuid "99147c5e-ddb3-4d5a-bab4-f5a9c506033b")
+		)
+		(pin "5"
+			(uuid "82587ed8-25ea-4076-a8c4-01380dd1aa32")
+		)
+		(pin "3"
+			(uuid "4d0228d6-3f34-494e-bc65-cf8b42dfd0f4")
+		)
+		(instances
+			(project ""
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 168.91 119.38 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "6e09f4b1-d007-4469-9ad1-afb9c99eacf0")
+		(property "Reference" "R38"
+			(at 171.45 118.1099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0"
+			(at 171.45 120.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 170.688 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 168.91 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RC0603JR-070RL"
+			(at 168.91 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4928d503-426a-4689-b894-5cf9795dc6fe")
+		)
+		(pin "2"
+			(uuid "2a075085-9d5d-4deb-8116-7e9afdd0c9bd")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
+					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -3980,207 +6018,6 @@
 		)
 	)
 	(symbol
-		(lib_id "1042P:1042P")
-		(at 227.33 139.7 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "77ee4a2a-50d6-4de5-8583-c0d0a0b65f6d")
-		(property "Reference" "BT1"
-			(at 231.14 137.7949 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1042P"
-			(at 231.14 140.3349 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "BQ25170DSGR:BAT_1042P"
-			(at 227.33 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 227.33 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 227.33 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Keystone Electronics"
-			(at 227.33 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "15.11mm"
-			(at 227.33 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 227.33 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 227.33 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/1042P/Keystone/view-part/?ref=eda"
-			(at 227.33 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 227.33 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "E"
-			(at 227.33 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/1042P/Keystone/view-part/?ref=snap"
-			(at 227.33 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "1042P"
-			(at 227.33 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "SMT Polarized Battery Holder for 18650 Battery | Keystone Electronics 1042P"
-			(at 227.33 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SNAPEDA_PN" "1042"
-			(at 227.33 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 227.33 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Keystone"
-			(at 227.33 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "N"
-			(uuid "04ecb3d5-8823-4d77-9cf8-9e284ff01752")
-		)
-		(pin "P"
-			(uuid "fe123637-fbbf-45bf-9667-b896d640808f")
-		)
-		(instances
-			(project ""
-				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
-					(reference "BT1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 59.69 121.92 0)
 		(unit 1)
@@ -4199,7 +6036,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "24k"
+		(property "Value" "27k"
 			(at 62.23 123.1899 0)
 			(effects
 				(font
@@ -4217,7 +6054,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=Data%20Sheet&DocLang=English&DocFormat=pdf&PartCntxt=4-2176338-3"
 			(at 59.69 121.92 0)
 			(effects
 				(font
@@ -4226,7 +6063,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RMCF0603FG24K0"
+		(property "Description" "CRGCQ0603F27K"
 			(at 59.69 121.92 0)
 			(effects
 				(font
@@ -4245,6 +6082,74 @@
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 184.15 109.22 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "89286243-7b5a-4deb-9e56-b79e3f04d04c")
+		(property "Reference" "R35"
+			(at 184.15 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 184.15 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 184.15 110.998 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 184.15 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RC0603JR-070RL"
+			(at 184.15 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bf1e54f4-6fd0-461d-a90d-48433431b5e4")
+		)
+		(pin "2"
+			(uuid "70bc9663-ef6e-445b-80b9-cbe5885aef72")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -4524,6 +6429,74 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 154.94 106.68 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa903a56-f8fa-430b-bf38-b23dd4589b07")
+		(property "Reference" "R36"
+			(at 154.94 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 154.94 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 154.94 108.458 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 154.94 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RC0603JR-070RL"
+			(at 154.94 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3c0f1203-f1a0-40b0-87db-4c1c160a4d84")
+		)
+		(pin "2"
+			(uuid "15ef5b2b-68d5-4635-a209-7302626a152b")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
+					(reference "R36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 267.97 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4593,17 +6566,17 @@
 		)
 	)
 	(symbol
-		(lib_id "SamacSys_Parts:BQ25170DSGR")
-		(at 86.36 101.6 0)
+		(lib_id "BQ25170DSGR:BQ25170DSGR")
+		(at 102.87 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c3d8d0b1-f692-4a0e-b2d5-0ad2298b6ca7")
-		(property "Reference" "IC1"
-			(at 101.6 91.44 0)
+		(uuid "bbfc745c-5013-41ea-8430-a531b382c24b")
+		(property "Reference" "U6"
+			(at 102.87 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4611,7 +6584,7 @@
 			)
 		)
 		(property "Value" "BQ25170DSGR"
-			(at 101.6 93.98 0)
+			(at 102.87 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4619,25 +6592,17 @@
 			)
 		)
 		(property "Footprint" "BQ25170DSGR:SON50P200X200X80-9N"
-			(at 101.6 96.52 0)
+			(at 102.87 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/gpn/bq25170"
-			(at 113.03 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
+				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Description" "BQ25170DSGR"
-			(at 86.36 101.6 0)
+		(property "Datasheet" ""
+			(at 102.87 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4645,117 +6610,466 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "BQ25170DSGR"
-			(at 113.03 104.14 0)
+		(property "Description" ""
+			(at 102.87 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Height" "0.8"
-			(at 113.03 106.68 0)
+		(property "L1_NOM" ""
+			(at 102.87 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Texas Instruments"
-			(at 113.03 109.22 0)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 102.87 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "BQ25170DSGR"
-			(at 113.03 111.76 0)
+		(property "B_NOM" "0.25"
+			(at 102.87 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "595-BQ25170DSGR"
-			(at 113.03 114.3 0)
+		(property "EMAX" ""
+			(at 102.87 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/BQ25170DSGR?qs=iLbezkQI%252BsiCISFdSxQWaQ%3D%3D"
-			(at 113.03 116.84 0)
+		(property "VACANCIES" ""
+			(at 102.87 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Arrow Part Number" "BQ25170DSGR"
-			(at 113.03 119.38 0)
+		(property "BALL_COLUMNS" ""
+			(at 102.87 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/bq25170dsgr/texas-instruments?utm_currency=USD&region=europe"
-			(at 113.03 121.92 0)
+		(property "D1_NOM" ""
+			(at 102.87 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify bottom)
 				(hide yes)
 			)
 		)
-		(pin "4"
-			(uuid "a404fcb0-c356-47be-bdab-ccc8c0fab987")
+		(property "THERMAL_PAD" ""
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
 		)
-		(pin "1"
-			(uuid "a92dff99-40d2-4ef3-8780-35d3c82529a0")
+		(property "DMAX" ""
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
 		)
-		(pin "2"
-			(uuid "1b093a5c-c2fa-4b20-9383-eced8fc20868")
+		(property "L1_MIN" ""
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
 		)
-		(pin "3"
-			(uuid "fc5771ae-fcfb-437b-aeb9-ab7f30e63c81")
+		(property "B_MAX" "0.32"
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "EMIN" ""
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "JEDEC" ""
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "ENOM" "0.5"
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "D_NOM" "2.0"
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "D_MAX" "2.1"
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "L_MAX" "0.4"
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "A_MAX" "0.8"
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "D1_MAX" ""
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "L1_MAX" ""
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "D1_MIN" ""
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "E2_NOM" "0.9"
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "D2_NOM" "1.6"
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "A"
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "DNOM" ""
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "DMIN" ""
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "E_NOM" "2.0"
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "BALL_ROWS" ""
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "B_MIN" "0.18"
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "IPC 7351B"
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PIN_COUNT" "8.0"
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "L_NOM" "0.3"
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Texas Instruments"
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "IPC" ""
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PIN_COLUMNS" ""
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "BODY_DIAMETER" ""
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "E_MIN" "1.9"
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE_TYPE" ""
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "D_MIN" "1.9"
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PINS" ""
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "L_MIN" "0.2"
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "E_MAX" "2.1"
+			(at 102.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
 		)
 		(pin "7"
-			(uuid "ae24b774-9a31-4cd3-b674-87c9d2f650c4")
+			(uuid "c5681650-d40e-48b7-a5f0-d188b021a648")
 		)
-		(pin "8"
-			(uuid "3fc4c5d0-d34e-4ca6-93f7-80b134b0d186")
+		(pin "2"
+			(uuid "8b592e0c-2d63-49d7-a863-b310dc31b0e3")
 		)
-		(pin "9"
-			(uuid "1267cee2-e137-4853-b45d-ea56ec865990")
+		(pin "3"
+			(uuid "1ef4c955-7d6d-4231-85ae-12a38a0edaa5")
 		)
 		(pin "5"
-			(uuid "15b4124e-b6e4-45b6-b2e3-a8b89c47f762")
+			(uuid "0377f979-a4f5-473a-8888-a7be4ed0067c")
+		)
+		(pin "1"
+			(uuid "48c143dd-e9f0-4076-8c24-a8c9057b5c31")
+		)
+		(pin "9"
+			(uuid "5aaf5e6b-acaa-4b69-9159-2db92e7488ab")
 		)
 		(pin "6"
-			(uuid "5d8e3a35-0dd0-4c20-9366-27e3f77643af")
+			(uuid "3aa81a49-e9ef-4a71-bb8b-ebddc37a3408")
+		)
+		(pin "4"
+			(uuid "94e224d5-50ba-4675-92d8-b85c2079258b")
+		)
+		(pin "8"
+			(uuid "97bcad13-7fc0-4984-adc5-addc420efdd4")
 		)
 		(instances
 			(project ""
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/dd28cf9e-f503-4fc4-9cf8-d81b8295f9d5"
-					(reference "IC1")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -4769,10 +7083,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c9a10bf1-ba70-4dc2-aa33-d7f73468b376")
 		(property "Reference" "TP3"
-			(at 148.59 97.0279 0)
+			(at 135.382 95.504 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4781,7 +7094,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 148.59 99.5679 0)
+			(at 134.366 98.552 0)
 			(effects
 				(font
 					(size 1.27 1.27)

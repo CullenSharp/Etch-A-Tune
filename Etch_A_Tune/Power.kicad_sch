@@ -1598,6 +1598,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "Nominal .26V forward voltage drop @ 25C\nmax current draw 500mA\n.5*.26 =0.13W\nJunction to ambiant 135 c/w\n0.13 * 135 = 17.55 C\n17.55 + 25 = 42.55C\n"
 		(exclude_from_sim no)
@@ -1654,6 +1755,18 @@
 		(uuid "1a64f9f3-b982-4db7-8fbc-fa3fa6f69f22")
 	)
 	(junction
+		(at 149.86 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "248a3946-f7de-4501-b869-592049b319a3")
+	)
+	(junction
+		(at 143.51 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "315e2bae-23fb-420b-b520-5253807b77e4")
+	)
+	(junction
 		(at 165.1 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1664,12 +1777,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4bd0a48f-b993-4784-a509-e20ebc9acefe")
-	)
-	(junction
-		(at 143.51 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4e2da3f3-4ca0-489e-a259-36a8e6cb142d")
 	)
 	(junction
 		(at 102.87 86.36)
@@ -1696,6 +1803,12 @@
 		(uuid "84a8f807-8680-47b9-81f5-6d07a3315889")
 	)
 	(junction
+		(at 208.28 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8afa426e-87a6-4f03-a111-79e55b24ae96")
+	)
+	(junction
 		(at 69.85 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1711,7 +1824,7 @@
 		(at 143.51 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d5b5585c-27b8-41bd-9769-3ab980dfab5a")
+		(uuid "c67565f5-f683-47a9-9997-d04bc1b52460")
 	)
 	(junction
 		(at 29.21 92.71)
@@ -1737,7 +1850,17 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 83.82) (xy 201.93 83.82)
+			(xy 143.51 104.14) (xy 143.51 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10a2ab87-1a67-4f12-a6ec-8dde72612554")
+	)
+	(wire
+		(pts
+			(xy 195.58 83.82) (xy 208.28 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1807,6 +1930,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 106.68) (xy 143.51 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "489c964b-617f-48c4-9e31-22bb23cac231")
+	)
+	(wire
+		(pts
 			(xy 43.18 80.01) (xy 49.53 80.01)
 		)
 		(stroke
@@ -1827,7 +1960,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 83.82) (xy 153.67 83.82)
+			(xy 143.51 83.82) (xy 149.86 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2007,16 +2140,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 104.14) (xy 143.51 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6b45267-31d0-40ce-8c5b-ee6e6252180e")
-	)
-	(wire
-		(pts
 			(xy 161.29 83.82) (xy 165.1 83.82)
 		)
 		(stroke
@@ -2024,6 +2147,16 @@
 			(type default)
 		)
 		(uuid "a7378628-9f57-486a-a78b-20a657d8e2b5")
+	)
+	(wire
+		(pts
+			(xy 208.28 83.82) (xy 208.28 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac267fdd-ca11-4368-8e08-c07eed4cfad0")
 	)
 	(wire
 		(pts
@@ -2067,6 +2200,16 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 83.82) (xy 153.67 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfd59f5f-576e-4530-9f2a-59639e06f8ba")
+	)
+	(wire
+		(pts
 			(xy 175.26 97.79) (xy 165.1 97.79)
 		)
 		(stroke
@@ -2084,6 +2227,16 @@
 			(type default)
 		)
 		(uuid "c08b4046-c6b3-4ae5-bd68-6d55e3a74ffe")
+	)
+	(wire
+		(pts
+			(xy 208.28 78.74) (xy 208.28 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6aaf1ee-2054-4dfd-b664-52a1495c6c76")
 	)
 	(wire
 		(pts
@@ -2174,16 +2327,6 @@
 			(type default)
 		)
 		(uuid "ed186822-ba6f-4329-9a51-d45255d3cb04")
-	)
-	(wire
-		(pts
-			(xy 143.51 106.68) (xy 143.51 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0a20f56-61cf-429b-a9e0-694512dae32d")
 	)
 	(wire
 		(pts
@@ -2312,97 +2455,6 @@
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/e5e22929-d6f1-4829-905c-a53e6965babb"
 					(reference "CR2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "TPS62063DSGR:TPS62063DSGR")
-		(at 125.73 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1c70887f-80a3-4dee-b13c-202085f4bfb2")
-		(property "Reference" "U4"
-			(at 125.73 73.66 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "TPS62063DSGR"
-			(at 125.73 76.2 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "BQ25170DSGR:DSG0008A"
-			(at 125.73 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/gpn/tps62063"
-			(at 125.73 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 125.73 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ba81ee8c-ee9f-4d1b-b9b2-27d827b45d48")
-		)
-		(pin "8"
-			(uuid "f61b8c9f-8233-4725-b9e3-e1b2f4465c70")
-		)
-		(pin "1"
-			(uuid "69f4b161-5114-4869-9040-69f85b4f3f86")
-		)
-		(pin "4"
-			(uuid "2d9d088a-45de-42c6-bc4a-08a90a6f367e")
-		)
-		(pin "3"
-			(uuid "cbdee95f-069a-41a8-bb3a-9de3c76c28af")
-		)
-		(pin "6"
-			(uuid "306220e5-42f8-44e7-87a5-44a138de4116")
-		)
-		(pin "5"
-			(uuid "4c2326e9-3970-4a4f-9a4c-90cf926d1793")
-		)
-		(pin "9"
-			(uuid "a30fe7de-fc45-475c-be8c-3cf8508570cf")
-		)
-		(pin "7"
-			(uuid "f53b91aa-ef96-4973-8ae5-368f95f44136")
-		)
-		(instances
-			(project ""
-				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/e5e22929-d6f1-4829-905c-a53e6965babb"
-					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -2751,6 +2803,97 @@
 		)
 	)
 	(symbol
+		(lib_id "TPS62063DSGR:TPS62063DSGR")
+		(at 125.73 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5611d6d9-ea78-488f-a06f-348a6e045980")
+		(property "Reference" "U4"
+			(at 125.73 73.66 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "TPS62063DSGR"
+			(at 125.73 76.2 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "BQ25170DSGR:DSG0008A"
+			(at 125.73 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/gpn/tps62063"
+			(at 125.73 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 125.73 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e4099866-0325-4028-96d4-94c6a892538b")
+		)
+		(pin "7"
+			(uuid "486dbffc-0b83-4703-bc76-7ec3d6b15a37")
+		)
+		(pin "6"
+			(uuid "b8f1a912-7df5-4efa-8924-9725d462bcce")
+		)
+		(pin "8"
+			(uuid "506fb50c-7717-4f80-bc4c-020198f2b0de")
+		)
+		(pin "1"
+			(uuid "ae5e7f1f-e96e-4ca9-8a54-47505eeb523d")
+		)
+		(pin "5"
+			(uuid "05a75925-ad83-421c-a777-0ecfce542620")
+		)
+		(pin "3"
+			(uuid "59d500bb-2973-417f-b6fa-c12e4a31ab44")
+		)
+		(pin "4"
+			(uuid "5b7f433e-c1e8-4109-909d-0c5ad0de4685")
+		)
+		(pin "9"
+			(uuid "d3c5700c-82be-447e-b0ca-cb9b8e0bd7e4")
+		)
+		(instances
+			(project ""
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/e5e22929-d6f1-4829-905c-a53e6965babb"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 92.71 100.33 0)
 		(unit 1)
@@ -3023,6 +3166,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 208.28 78.74 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7bcab171-b620-446f-978a-c21668e30ebb")
+		(property "Reference" "#FLG05"
+			(at 210.185 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 213.868 80.772 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 208.28 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "021fc5f3-6ad5-4b1f-b80d-f2ec58dc686e")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/e5e22929-d6f1-4829-905c-a53e6965babb"
+					(reference "#FLG05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "CMS06(TE12L,Q,M):CMS06TE12L_Q_M")
 		(at 59.69 92.71 180)
 		(unit 1)
@@ -3094,7 +3302,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 201.93 83.82 0)
+		(at 208.28 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3103,7 +3311,7 @@
 		(fields_autoplaced yes)
 		(uuid "83f349b2-10c1-4152-8033-1a6357b5b772")
 		(property "Reference" "#PWR09"
-			(at 201.93 87.63 0)
+			(at 208.28 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3112,7 +3320,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 201.93 78.74 0)
+			(at 208.28 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3120,7 +3328,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 201.93 83.82 0)
+			(at 208.28 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3129,7 +3337,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 201.93 83.82 0)
+			(at 208.28 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3138,7 +3346,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 201.93 83.82 0)
+			(at 208.28 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3232,6 +3440,71 @@
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/e5e22929-d6f1-4829-905c-a53e6965babb"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 149.86 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8512534b-dde6-4cbe-bdc8-cd1c31e1d795")
+		(property "Reference" "#FLG03"
+			(at 149.86 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 143.764 81.788 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.86 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.86 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 149.86 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1a9a1804-6ae2-473c-b117-cc9a98e3f0a4")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/e5e22929-d6f1-4829-905c-a53e6965babb"
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
