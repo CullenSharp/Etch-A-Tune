@@ -1108,12 +1108,13 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "25V, N ch NexFET MOSFET, single SON3x3, 7.4mOhm 8-VSON-CLIP -55 to 150"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
@@ -1128,16 +1129,6 @@
 				)
 			)
 			(property "MOUSER-PURCHASE-URL" "https://snapeda.com/shop?store=Mouser&id=288071"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "DESCRIPTION" "25V, N ch NexFET MOSFET, single SON3x3, 7.4mOhm 8-VSON-CLIP -55 to 150"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1900,12 +1891,13 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "25V, N ch NexFET MOSFET, single SON3x3, 7.4mOhm 8-VSON-CLIP -55 to 150"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
@@ -1920,16 +1912,6 @@
 				)
 			)
 			(property "MOUSER-PURCHASE-URL" "https://snapeda.com/shop?store=Mouser&id=288071"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "DESCRIPTION" "25V, N ch NexFET MOSFET, single SON3x3, 7.4mOhm 8-VSON-CLIP -55 to 150"
 				(at 0 0 0)
 				(effects
 					(font
