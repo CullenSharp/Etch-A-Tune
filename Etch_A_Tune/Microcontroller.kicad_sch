@@ -251,6 +251,262 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Crystal_GND24"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Y"
+				(at 3.175 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Crystal_GND24"
+				(at 3.175 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Four pin crystal, GND on pins 2 and 4"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "quartz ceramic resonator oscillator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Crystal*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Crystal_GND24_0_1"
+				(polyline
+					(pts
+						(xy -2.54 2.286) (xy -2.54 3.556) (xy 2.54 3.556) (xy 2.54 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.032 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.286) (xy -2.54 -3.556) (xy 2.54 -3.556) (xy 2.54 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -1.27) (xy -2.032 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.143 2.54)
+					(end 1.143 -2.54)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 3.556) (xy 0 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -3.81) (xy 0 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -1.27) (xy 2.032 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Crystal_GND24_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 1.27)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:FerriteBead_Small"
 			(pin_numbers
 				(hide yes)
@@ -4006,6 +4262,16 @@
 		)
 		(uuid "83c9a614-b591-4bb7-b7a3-f32c060ce56b")
 	)
+	(text "Crystal Oscillator"
+		(exclude_from_sim no)
+		(at 295.402 27.432 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8cb6c9f0-0826-450f-b72e-6b48102c2f54")
+	)
 	(text "Place Near VCAP\n\n\n"
 		(exclude_from_sim no)
 		(at 519.43 122.428 0)
@@ -4796,10 +5062,6 @@
 		(uuid "98250b4f-fbfc-49ce-88a3-8e2bed7245fd")
 	)
 	(no_connect
-		(at 157.48 167.64)
-		(uuid "9c67ac4d-f4db-4d88-aa0a-9841a3e8195c")
-	)
-	(no_connect
 		(at 406.4 134.62)
 		(uuid "a3b70670-423d-4f96-9642-bef43d24cb53")
 	)
@@ -4850,10 +5112,6 @@
 	(no_connect
 		(at 157.48 152.4)
 		(uuid "d2f40a90-a01a-43be-b309-eede40aa63d3")
-	)
-	(no_connect
-		(at 157.48 165.1)
-		(uuid "f0f34b8d-988f-4dc9-ba58-1658a38e59d2")
 	)
 	(no_connect
 		(at 223.52 121.92)
@@ -5089,6 +5347,16 @@
 	)
 	(wire
 		(pts
+			(xy 309.88 50.8) (xy 309.88 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21c647ba-c41b-43e3-ba54-6b5b7ba5946e")
+	)
+	(wire
+		(pts
 			(xy 223.52 175.26) (xy 231.14 175.26)
 		)
 		(stroke
@@ -5316,6 +5584,16 @@
 			(type default)
 		)
 		(uuid "3b094734-05a1-4e49-903a-dcda07f84b8a")
+	)
+	(wire
+		(pts
+			(xy 313.69 45.72) (xy 323.85 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b7e8d43-6c38-4498-a719-b75eb989545e")
 	)
 	(wire
 		(pts
@@ -5676,6 +5954,16 @@
 			(type default)
 		)
 		(uuid "5cb943c8-6ab9-4557-905f-ee9134d351bd")
+	)
+	(wire
+		(pts
+			(xy 309.88 33.02) (xy 309.88 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ccd0aa4-f721-4247-b089-199415b2ebd8")
 	)
 	(wire
 		(pts
@@ -6059,6 +6347,16 @@
 	)
 	(wire
 		(pts
+			(xy 293.37 45.72) (xy 306.07 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "852b98d6-4b0f-46ef-9c5e-5d8337228978")
+	)
+	(wire
+		(pts
 			(xy 157.48 144.78) (xy 152.4 144.78)
 		)
 		(stroke
@@ -6086,6 +6384,16 @@
 			(type default)
 		)
 		(uuid "899fabc9-1547-4646-b18b-f94e0a3a0bfc")
+	)
+	(wire
+		(pts
+			(xy 281.94 45.72) (xy 285.75 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a011ba9-c151-4a3e-80e9-fd852292115b")
 	)
 	(wire
 		(pts
@@ -6156,6 +6464,16 @@
 			(type default)
 		)
 		(uuid "92e600cf-78ec-4278-bc26-4376b12a4dab")
+	)
+	(wire
+		(pts
+			(xy 331.47 45.72) (xy 336.55 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92f74752-45ad-485d-9d18-135724799730")
 	)
 	(wire
 		(pts
@@ -16406,6 +16724,94 @@
 			)
 		)
 	)
+	(global_label "OSC_H_OUT"
+		(shape input)
+		(at 318.77 45.72 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7ea9f843-7f11-4527-bdc2-2e24aa2c27b1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 318.77 59.4095 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "OSC_H_IN"
+		(shape input)
+		(at 157.48 165.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "967a488e-9f8d-40a4-83a0-05be654d74ee")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 145.4838 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "OSC_H_IN"
+		(shape input)
+		(at 300.99 45.72 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d166a0ee-9959-4410-be4a-4a2c38ec8035")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 300.99 33.7238 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "OSC_H_OUT"
+		(shape input)
+		(at 157.48 167.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dde6a755-1c9c-43b6-a3b9-53141c95b84c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 143.7905 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "VCORE"
 		(shape input)
 		(at 267.97 114.3 0)
@@ -17211,6 +17617,74 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 289.56 45.72 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "105b029e-53dc-4c48-8324-c12e8ddc2c3f")
+		(property "Reference" "C36"
+			(at 289.56 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "18pf"
+			(at 289.56 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 285.75 46.6852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 289.56 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 289.56 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "23595508-7668-4ff9-a46d-70bc0f673413")
+		)
+		(pin "2"
+			(uuid "5f168cd9-4ce6-4573-aa8b-96665feaf614")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
+					(reference "C36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 538.48 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17423,6 +17897,72 @@
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 309.88 33.02 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "14a03365-3be8-4df8-bf1f-ca8050dc9b25")
+		(property "Reference" "#PWR042"
+			(at 309.88 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 309.88 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 309.88 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 309.88 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 309.88 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e021eeb-d93e-4903-8c26-dec9c9a8344d")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -19168,6 +19708,79 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Crystal_GND24")
+		(at 309.88 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7603ea85-e1ec-4c2b-9b52-6e0298063864")
+		(property "Reference" "Y2"
+			(at 321.31 39.2998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "12Mhz"
+			(at 321.31 41.8398 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm"
+			(at 309.88 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/184/1/ABM8G.pdf"
+			(at 309.88 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Four pin crystal, GND on pins 2 and 4"
+			(at 309.88 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4f422792-eb60-4777-9ce8-e426f0c29d2f")
+		)
+		(pin "2"
+			(uuid "dd0f2770-3d81-4290-9a4a-1d3385e8c8e2")
+		)
+		(pin "3"
+			(uuid "fa553193-ebcf-435d-a93f-529580a6c05c")
+		)
+		(pin "4"
+			(uuid "56a783fb-8195-4d6b-be59-a459473826c8")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
+					(reference "Y2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 501.65 121.92 0)
 		(unit 1)
@@ -19296,6 +19909,72 @@
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
 					(reference "TP41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 309.88 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "81f8a63d-db43-43ad-b289-818e420078c5")
+		(property "Reference" "#PWR046"
+			(at 309.88 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 309.88 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 309.88 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 309.88 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 309.88 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c395f1ef-a7f2-43a8-81b7-97d866a00e55")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -20629,7 +21308,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 144.78 191.262 90)
 			(effects
 				(font
@@ -20666,6 +21345,74 @@
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
 					(reference "FB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 327.66 45.72 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cf1e8e9d-d6ad-47cb-bfca-e3c348ad2382")
+		(property "Reference" "C37"
+			(at 327.66 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "18pf"
+			(at 327.66 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 331.47 46.6852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 327.66 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 327.66 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "81ae12cc-1e1d-494e-82b7-1fec25bd1cb8")
+		)
+		(pin "2"
+			(uuid "3e0219fe-5278-4fec-b9fa-6f51b0250390")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -20876,6 +21623,73 @@
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
 					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 336.55 45.72 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "de296bf7-57b7-47ea-9097-e5fb2b58c8dc")
+		(property "Reference" "#PWR047"
+			(at 342.9 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 340.36 45.7199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 336.55 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 336.55 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 336.55 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7a93f993-2cbd-4202-975f-429f2d345e99")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -21152,6 +21966,73 @@
 			(project "Etch_A_Tune"
 				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
 					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 281.94 45.72 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ff502b96-14c7-410d-ae0b-ffa5f855d671")
+		(property "Reference" "#PWR0101"
+			(at 275.59 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 278.13 45.7199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 281.94 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 281.94 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 281.94 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f198f3d3-45a5-4086-924c-eaae36f7b864")
+		)
+		(instances
+			(project "Etch_A_Tune"
+				(path "/b4cdadf2-c4fe-48fe-ba6a-e15d1cad03b2/bdf5df61-f93b-4da5-86af-6fa833da55c4"
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
