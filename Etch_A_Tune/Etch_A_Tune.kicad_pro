@@ -68,6 +68,18 @@
           ""
         ],
         [
+          "clearance|46990001|47690003|a3f63af4-e915-4263-8ef4-3b273e11cace|1b04d0d0-8ef9-4877-add2-c6ea424e4109",
+          ""
+        ],
+        [
+          "clearance|46990001|49290001|a3f63af4-e915-4263-8ef4-3b273e11cace|9c9290b1-ec3f-43ba-bae8-a5377bff2073",
+          ""
+        ],
+        [
+          "clearance|47340003|49240001|9c9290b1-ec3f-43ba-bae8-a5377bff2073|b91aa1f1-50e1-42bc-b02c-fbdc58c21d46",
+          ""
+        ],
+        [
           "clearance|54605000|33345000|104b0ca1-77cf-4b7e-9189-f9627ba6fbf3|f5b5c2d7-aaa0-4672-abcf-537e9bec3306",
           ""
         ],
@@ -77,6 +89,14 @@
         ],
         [
           "clearance|54605000|34345000|a22efb37-c574-4035-8661-99cfcec59a08|f5b5c2d7-aaa0-4672-abcf-537e9bec3306",
+          ""
+        ],
+        [
+          "clearance|55055000|33190000|f5b5c2d7-aaa0-4672-abcf-537e9bec3306|c55a2f04-5c89-462e-9e6e-a5a5a112ca11",
+          ""
+        ],
+        [
+          "clearance|55055000|34790000|f5b5c2d7-aaa0-4672-abcf-537e9bec3306|5ed0827b-8510-4767-b9c8-0d15c15e4b59",
           ""
         ],
         [
@@ -112,6 +132,10 @@
           ""
         ],
         [
+          "lib_footprint_mismatch|54802500|33990000|24a5e8cc-3355-439d-a167-b0066dc10403|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
           "malformed_courtyard|46990001|47990001|08796f0c-62a7-48ad-995d-f84e3f54a192|00000000-0000-0000-0000-000000000000",
           ""
         ],
@@ -120,11 +144,43 @@
           ""
         ],
         [
+          "shorting_items|46840001|48240000|1b04d0d0-8ef9-4877-add2-c6ea424e4109|f46231d4-fdff-4b37-9cc2-dc5f3a9d54a0",
+          ""
+        ],
+        [
+          "shorting_items|47140001|48240000|1b04d0d0-8ef9-4877-add2-c6ea424e4109|33ae190f-aeaa-4358-8ec1-e00f3844ea7a",
+          ""
+        ],
+        [
+          "shorting_items|54855000|34740000|5d776dd7-ee1d-41b0-abd1-43d08356ed58|5ed0827b-8510-4767-b9c8-0d15c15e4b59",
+          ""
+        ],
+        [
+          "shorting_items|54913579|34681421|2a95c87f-f0df-4834-b37d-3fe428211f6e|5ed0827b-8510-4767-b9c8-0d15c15e4b59",
+          ""
+        ],
+        [
           "solder_mask_bridge|119790000|34555000|39ab67a6-503b-4c20-a944-d9f4d92890b9|ce11f440-130b-4603-97b2-b06baa76dfea",
           ""
         ],
         [
           "solder_mask_bridge|120940000|42055000|32e30257-1846-4b7d-83a3-8ff3bdbc883a|4259815b-f71d-4d77-884a-2a270d8b5e29",
+          ""
+        ],
+        [
+          "solder_mask_bridge|46840001|48240000|f46231d4-fdff-4b37-9cc2-dc5f3a9d54a0|1b04d0d0-8ef9-4877-add2-c6ea424e4109",
+          ""
+        ],
+        [
+          "solder_mask_bridge|46990001|47690003|a3f63af4-e915-4263-8ef4-3b273e11cace|1b04d0d0-8ef9-4877-add2-c6ea424e4109",
+          ""
+        ],
+        [
+          "solder_mask_bridge|46990001|49290001|a3f63af4-e915-4263-8ef4-3b273e11cace|9c9290b1-ec3f-43ba-bae8-a5377bff2073",
+          ""
+        ],
+        [
+          "solder_mask_bridge|47140001|48240000|33ae190f-aeaa-4358-8ec1-e00f3844ea7a|1b04d0d0-8ef9-4877-add2-c6ea424e4109",
           ""
         ],
         [
@@ -137,6 +193,14 @@
         ],
         [
           "solder_mask_bridge|54605000|34345000|a22efb37-c574-4035-8661-99cfcec59a08|f5b5c2d7-aaa0-4672-abcf-537e9bec3306",
+          ""
+        ],
+        [
+          "solder_mask_bridge|55055000|33190000|c55a2f04-5c89-462e-9e6e-a5a5a112ca11|f5b5c2d7-aaa0-4672-abcf-537e9bec3306",
+          ""
+        ],
+        [
+          "solder_mask_bridge|55055000|34790000|5ed0827b-8510-4767-b9c8-0d15c15e4b59|f5b5c2d7-aaa0-4672-abcf-537e9bec3306",
           ""
         ],
         [
@@ -341,7 +405,20 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "lib_symbol_mismatch|3302000|1727200|07775d5f-26a1-498d-92f1-11a23153e223|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|3302000|2108200|6b9414a0-7731-4980-8542-ea88aa266a3b|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|990600|2019300|a85b8e7b-9f94-442f-9a0c-8396e06c003a|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -598,7 +675,9 @@
     "meta": {
       "version": 4
     },
-    "net_colors": null,
+    "net_colors": {
+      "+3.3V": "rgb(9, 255, 0)"
+    },
     "netclass_assignments": null,
     "netclass_patterns": []
   },
