@@ -52,7 +52,7 @@ LCD_DrvTypeDef   st7789_drv =
 LCD_DrvTypeDef  *lcd_drv = &st7789_drv;
 
 /* transaction data */
-#define TRANSDATAMAXSIZE  4
+#define TRANSDATAMAXSIZE  8
 union
 {
   char       c[TRANSDATAMAXSIZE];

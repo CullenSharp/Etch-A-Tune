@@ -1,0 +1,11 @@
+../Core/Src/App/appLcdSpeedTest.c:109:10:ClearTest	2
+../Core/Src/App/appLcdSpeedTest.c:118:10:PixelTest	2
+../Core/Src/App/appLcdSpeedTest.c:133:10:LineTest	2
+../Core/Src/App/appLcdSpeedTest.c:151:10:FillRectTest	2
+../Core/Src/App/appLcdSpeedTest.c:169:10:CharTest	7
+../Core/Src/App/appLcdSpeedTest.c:203:10:CircleTest	4
+../Core/Src/App/appLcdSpeedTest.c:228:10:FillCircleTest	4
+../Core/Src/App/appLcdSpeedTest.c:253:10:ColorTest	2
+../Core/Src/App/appLcdSpeedTest.c:281:10:BitmapTest	1
+../Core/Src/App/appLcdSpeedTest.c:293:10:ScrollTest	9
+../Core/Src/App/appLcdSpeedTest.c:459:6:mainApp	1
