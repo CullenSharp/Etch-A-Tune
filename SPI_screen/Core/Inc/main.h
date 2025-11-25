@@ -60,14 +60,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define TS_SCK_Pin GPIO_PIN_2
-#define TS_SCK_GPIO_Port GPIOE
+#define LED_Pin GPIO_PIN_2
+#define LED_GPIO_Port GPIOE
 #define TS_CS_Pin GPIO_PIN_4
 #define TS_CS_GPIO_Port GPIOE
-#define TS_MISO_Pin GPIO_PIN_5
-#define TS_MISO_GPIO_Port GPIOE
-#define TS_MOSI_Pin GPIO_PIN_6
-#define TS_MOSI_GPIO_Port GPIOE
 #define OSC32_IN_Pin GPIO_PIN_14
 #define OSC32_IN_GPIO_Port GPIOC
 #define OSC32_OUT_Pin GPIO_PIN_15
@@ -78,16 +74,46 @@ void Error_Handler(void);
 #define PH0_MCU_GPIO_Port GPIOH
 #define PH1_MCU_Pin GPIO_PIN_1
 #define PH1_MCU_GPIO_Port GPIOH
-#define LCD_SCK_Pin GPIO_PIN_10
-#define LCD_SCK_GPIO_Port GPIOC
-#define LCD_MISO_Pin GPIO_PIN_11
-#define LCD_MISO_GPIO_Port GPIOC
-#define LCD_MOSI_Pin GPIO_PIN_12
-#define LCD_MOSI_GPIO_Port GPIOC
-#define LCD_RESET_Pin GPIO_PIN_0
-#define LCD_RESET_GPIO_Port GPIOD
-#define LCD_RS_Pin GPIO_PIN_1
-#define LCD_RS_GPIO_Port GPIOD
+#define Y__Pin GPIO_PIN_1
+#define Y__GPIO_Port GPIOC
+#define X__Pin GPIO_PIN_0
+#define X__GPIO_Port GPIOA
+#define Y_A1_Pin GPIO_PIN_1
+#define Y_A1_GPIO_Port GPIOA
+#define X_A2_Pin GPIO_PIN_2
+#define X_A2_GPIO_Port GPIOA
+#define BAT_V_SENSE_Pin GPIO_PIN_3
+#define BAT_V_SENSE_GPIO_Port GPIOA
+#define AUDIO_OUT_Pin GPIO_PIN_4
+#define AUDIO_OUT_GPIO_Port GPIOA
+#define ROTP1_Pin GPIO_PIN_0
+#define ROTP1_GPIO_Port GPIOD
+#define ROTB1_Pin GPIO_PIN_1
+#define ROTB1_GPIO_Port GPIOD
+#define ROTA1_Pin GPIO_PIN_2
+#define ROTA1_GPIO_Port GPIOD
+#define ROTP2_Pin GPIO_PIN_3
+#define ROTP2_GPIO_Port GPIOD
+#define ROTB2_Pin GPIO_PIN_4
+#define ROTB2_GPIO_Port GPIOD
+#define ROTA2_Pin GPIO_PIN_5
+#define ROTA2_GPIO_Port GPIOD
+#define SW1_Pin GPIO_PIN_6
+#define SW1_GPIO_Port GPIOD
+#define SW2_Pin GPIO_PIN_7
+#define SW2_GPIO_Port GPIOD
+#define SW3_Pin GPIO_PIN_9
+#define SW3_GPIO_Port GPIOG
+#define SW3G10_Pin GPIO_PIN_10
+#define SW3G10_GPIO_Port GPIOG
+#define SW5_Pin GPIO_PIN_11
+#define SW5_GPIO_Port GPIOG
+#define SLIDE_SWITCH_Pin GPIO_PIN_12
+#define SLIDE_SWITCH_GPIO_Port GPIOG
+#define BAT_DIAG_Pin GPIO_PIN_13
+#define BAT_DIAG_GPIO_Port GPIOG
+#define POWER_GOOD_Pin GPIO_PIN_14
+#define POWER_GOOD_GPIO_Port GPIOG
 
 /* USER CODE BEGIN Private defines */
 
