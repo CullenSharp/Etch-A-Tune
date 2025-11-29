@@ -50,12 +50,18 @@ uint32_t TS_Drv_Read_Touch_Y(void) {
 	LL_GPIO_SetPinMode(ts_drv._yp_port, ts_drv._yp_pin, LL_GPIO_MODE_OUTPUT);
 	LL_GPIO_SetPinMode(ts_drv._ym_port, ts_drv._ym_pin, LL_GPIO_MODE_OUTPUT);
 
+	// Y- = Vcc
 	LL_GPIO_SetOutputPin(ts_drv._ym_port, ts_drv._ym_pin);
+
+	// Y+ = Gnd
 	LL_GPIO_ResetOutputPin(ts_drv._yp_port, ts_drv._yp_pin);
 
 	// delay for voltages to settle
 	// 5600 iterations roughly translates to 20us
 	for (volatile uint32_t i = 0; i < 5600; ++i);
+
+	// Stop ADC since channel selection is only allowed when stopped
+	HAL_ADC_Stop(&hadc1);
 
 	// only read channel 14
 	LL_ADC_SetChannelPreselection(ADC1, LL_ADC_CHANNEL_14);
@@ -82,12 +88,18 @@ uint32_t TS_Drv_Read_Touch_X(void) {
 	LL_GPIO_SetPinMode(ts_drv._yp_port, ts_drv._yp_pin, LL_GPIO_MODE_ANALOG);
 	LL_GPIO_SetPinMode(ts_drv._ym_port, ts_drv._ym_pin, LL_GPIO_MODE_INPUT);
 
+	// X- = Vcc
 	LL_GPIO_SetOutputPin(ts_drv._xm_port, 	ts_drv._xm_pin);
+
+	// X+ = Gnd
 	LL_GPIO_ResetOutputPin(ts_drv._xp_port, ts_drv._xp_pin);
 
 	// delay for voltages to settle
 	// 5600 iterations roughly translates to 20us
 	for (volatile uint32_t i = 0; i < 5600; ++i);
+
+	// Stop ADC since channel selection is only allowed when stopped
+	HAL_ADC_Stop(&hadc1);
 
 	// only read channel 17
 	LL_ADC_SetChannelPreselection(ADC1, LL_ADC_CHANNEL_17);
