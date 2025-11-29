@@ -9,8 +9,6 @@
 #ifndef __TS_H_
 #define __TS_H_
 
-#define N_SAMPLES 2
-
 /* Interface section */
 
 /* Includes ------------------------------------------------------------------*/

@@ -29,9 +29,6 @@ extern "C" {
 /* Includes ------------------------------------------------------------------*/
 #include "stm32h7xx_hal.h"
 
-#include "stm32h7xx_nucleo.h"
-#include <stdio.h>
-
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -68,24 +65,50 @@ void Error_Handler(void);
 #define OSC32_IN_GPIO_Port GPIOC
 #define OSC32_OUT_Pin GPIO_PIN_15
 #define OSC32_OUT_GPIO_Port GPIOC
-#define LCD_CS_Pin GPIO_PIN_9
-#define LCD_CS_GPIO_Port GPIOF
 #define PH0_MCU_Pin GPIO_PIN_0
 #define PH0_MCU_GPIO_Port GPIOH
 #define PH1_MCU_Pin GPIO_PIN_1
 #define PH1_MCU_GPIO_Port GPIOH
-#define Y__Pin GPIO_PIN_1
-#define Y__GPIO_Port GPIOC
-#define X__Pin GPIO_PIN_0
-#define X__GPIO_Port GPIOA
-#define Y_A1_Pin GPIO_PIN_1
-#define Y_A1_GPIO_Port GPIOA
-#define X_A2_Pin GPIO_PIN_2
-#define X_A2_GPIO_Port GPIOA
+#define YM_Pin GPIO_PIN_1
+#define YM_GPIO_Port GPIOC
+#define XP_Pin GPIO_PIN_0
+#define XP_GPIO_Port GPIOA
+#define YP_Pin GPIO_PIN_1
+#define YP_GPIO_Port GPIOA
+#define XM_Pin GPIO_PIN_2
+#define XM_GPIO_Port GPIOA
 #define BAT_V_SENSE_Pin GPIO_PIN_3
 #define BAT_V_SENSE_GPIO_Port GPIOA
 #define AUDIO_OUT_Pin GPIO_PIN_4
 #define AUDIO_OUT_GPIO_Port GPIOA
+#define LCD_RD_Pin GPIO_PIN_5
+#define LCD_RD_GPIO_Port GPIOA
+#define LCD_D0_Pin GPIO_PIN_6
+#define LCD_D0_GPIO_Port GPIOA
+#define LCD_WR_Pin GPIO_PIN_7
+#define LCD_WR_GPIO_Port GPIOA
+#define LCD_CS_Pin GPIO_PIN_4
+#define LCD_CS_GPIO_Port GPIOC
+#define LCD_RST_Pin GPIO_PIN_5
+#define LCD_RST_GPIO_Port GPIOC
+#define LCD_RS_Pin GPIO_PIN_0
+#define LCD_RS_GPIO_Port GPIOB
+#define LCD_BL_Pin GPIO_PIN_1
+#define LCD_BL_GPIO_Port GPIOB
+#define LCD_D2_Pin GPIO_PIN_12
+#define LCD_D2_GPIO_Port GPIOB
+#define LCD_D1_Pin GPIO_PIN_13
+#define LCD_D1_GPIO_Port GPIOB
+#define LCD_D4_Pin GPIO_PIN_14
+#define LCD_D4_GPIO_Port GPIOB
+#define LCD_D3_Pin GPIO_PIN_15
+#define LCD_D3_GPIO_Port GPIOB
+#define LCD_D5_Pin GPIO_PIN_8
+#define LCD_D5_GPIO_Port GPIOD
+#define LCD_D6_Pin GPIO_PIN_8
+#define LCD_D6_GPIO_Port GPIOA
+#define LCD_D7_Pin GPIO_PIN_9
+#define LCD_D7_GPIO_Port GPIOA
 #define ROTP1_Pin GPIO_PIN_0
 #define ROTP1_GPIO_Port GPIOD
 #define ROTB1_Pin GPIO_PIN_1
