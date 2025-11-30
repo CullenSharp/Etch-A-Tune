@@ -20,25 +20,19 @@ typedef struct {
     // State variables for x and y
     uint32_t x;
     uint32_t y;
+    uint32_t z;
 } TS_Point;
 
 typedef struct {
-    /**
-     * @brief Construct a new TS_Drv object
-     *
-     * @param xp X+ pin. Must be an analog pin
-     * @param yp Y+ pin. Must be an analog pin
-     * @param xm X- pin. Can be a digital pin
-     * @param ym Y- pin. Can be a digital pin
-     */
     void 	(*Init)(void);
 
     // public methods
-    uint32_t 	(*Read_Touch_Y)();
-    uint32_t 	(*Read_Touch_X)();
+    uint8_t 	(*Read_Touch_Y)(uint32_t*);
+    uint8_t 	(*Read_Touch_X)(uint32_t*);
     TS_Point 	(*Get_Point)();
 
     // private variables
+    uint32_t _rxplate;
     // pins
     uint32_t  _xp_pin,  _yp_pin,  _xm_pin,  _ym_pin;
     // ports
