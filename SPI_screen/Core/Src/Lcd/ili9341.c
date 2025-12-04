@@ -140,35 +140,12 @@ union
 #define ILI9341_MAD_COLORMODE  ILI9341_MAD_BGR
 #endif
 
-#if (ILI9341_ORIENTATION == 0)
-#define ILI9341_SIZE_X                     ILI9341_LCD_PIXEL_WIDTH
-#define ILI9341_SIZE_Y                     ILI9341_LCD_PIXEL_HEIGHT
+#define ILI9341_SIZE_X                     ILI9341_LCD_WIDTH
+#define ILI9341_SIZE_Y                     ILI9341_LCD_HEIGHT
 #define ILI9341_MAD_DATA_RIGHT_THEN_UP     (ILI9341_MAD_COLORMODE | ILI9341_MAD_X_RIGHT | ILI9341_MAD_Y_UP)
 #define ILI9341_MAD_DATA_RIGHT_THEN_DOWN   (ILI9341_MAD_COLORMODE | ILI9341_MAD_X_RIGHT | ILI9341_MAD_Y_DOWN)
 #define XSIZE                              Xsize
 #define YSIZE                              Ysize
-#elif (ILI9341_ORIENTATION == 1)
-#define ILI9341_SIZE_X                     ILI9341_LCD_PIXEL_HEIGHT
-#define ILI9341_SIZE_Y                     ILI9341_LCD_PIXEL_WIDTH
-#define ILI9341_MAD_DATA_RIGHT_THEN_UP     (ILI9341_MAD_COLORMODE | ILI9341_MAD_X_RIGHT | ILI9341_MAD_Y_DOWN | ILI9341_MAD_VERTICAL)
-#define ILI9341_MAD_DATA_RIGHT_THEN_DOWN   (ILI9341_MAD_COLORMODE | ILI9341_MAD_X_LEFT  | ILI9341_MAD_Y_DOWN | ILI9341_MAD_VERTICAL)
-#define XSIZE                              Ysize
-#define YSIZE                              Xsize
-#elif (ILI9341_ORIENTATION == 2)
-#define ILI9341_SIZE_X                     ILI9341_LCD_PIXEL_WIDTH
-#define ILI9341_SIZE_Y                     ILI9341_LCD_PIXEL_HEIGHT
-#define ILI9341_MAD_DATA_RIGHT_THEN_UP     (ILI9341_MAD_COLORMODE | ILI9341_MAD_X_LEFT  | ILI9341_MAD_Y_DOWN)
-#define ILI9341_MAD_DATA_RIGHT_THEN_DOWN   (ILI9341_MAD_COLORMODE | ILI9341_MAD_X_LEFT  | ILI9341_MAD_Y_UP)
-#define XSIZE                              Xsize
-#define YSIZE                              Ysize
-#elif (ILI9341_ORIENTATION == 3)
-#define ILI9341_SIZE_X                     ILI9341_LCD_PIXEL_HEIGHT
-#define ILI9341_SIZE_Y                     ILI9341_LCD_PIXEL_WIDTH
-#define ILI9341_MAD_DATA_RIGHT_THEN_UP     (ILI9341_MAD_COLORMODE | ILI9341_MAD_X_LEFT  | ILI9341_MAD_Y_UP   | ILI9341_MAD_VERTICAL)
-#define ILI9341_MAD_DATA_RIGHT_THEN_DOWN   (ILI9341_MAD_COLORMODE | ILI9341_MAD_X_RIGHT | ILI9341_MAD_Y_UP   | ILI9341_MAD_VERTICAL)
-#define XSIZE                              Ysize
-#define YSIZE                              Xsize
-#endif
 
 #define ILI9341_SETWINDOW(x1, x2, y1, y2) \
   { transdata.d16[0] = __REVSH(x1); transdata.d16[1] = __REVSH(x2); LCD_IO_WriteCmd8MultipleData8(ILI9341_CASET, &transdata, 4); \
@@ -598,49 +575,10 @@ void ili9341_Scroll(int16_t Scroll, uint16_t TopFix, uint16_t BottonFix)
   {
     scrparam[1] = __REVSH(TopFix);
     scrparam[3] = __REVSH(BottonFix);
-    scrparam[2] = __REVSH(ILI9341_LCD_PIXEL_HEIGHT - TopFix - BottonFix);
+    scrparam[2] = __REVSH(ILI9341_LCD_HEIGHT - TopFix - BottonFix);
     LCD_IO_WriteCmd8MultipleData8(ILI9341_VSCRDEF, &scrparam[1], 6);
   }
   Scroll = (0 - Scroll) % __REVSH(scrparam[2]);
-  if(Scroll < 0)
-    Scroll = __REVSH(scrparam[2]) + Scroll + __REVSH(scrparam[1]);
-  else
-    Scroll = Scroll + __REVSH(scrparam[1]);
-  #elif (ILI9341_ORIENTATION == 1)
-  if((TopFix != __REVSH(scrparam[1])) || (BottonFix != __REVSH(scrparam[3])))
-  {
-    scrparam[1] = __REVSH(TopFix);
-    scrparam[3] = __REVSH(BottonFix);
-    scrparam[2] = __REVSH(ILI9341_LCD_PIXEL_HEIGHT - TopFix - BottonFix);
-    LCD_IO_WriteCmd8MultipleData8(ILI9341_VSCRDEF, &scrparam[1], 6);
-  }
-  Scroll = (0 - Scroll) % __REVSH(scrparam[2]);
-  if(Scroll < 0)
-    Scroll = __REVSH(scrparam[2]) + Scroll + __REVSH(scrparam[1]);
-  else
-    Scroll = Scroll + __REVSH(scrparam[1]);
-  #elif (ILI9341_ORIENTATION == 2)
-  if((TopFix != __REVSH(scrparam[3])) || (BottonFix != __REVSH(scrparam[1])))
-  {
-    scrparam[3] = __REVSH(TopFix);
-    scrparam[1] = __REVSH(BottonFix);
-    scrparam[2] = __REVSH(ILI9341_LCD_PIXEL_HEIGHT - TopFix - BottonFix);
-    LCD_IO_WriteCmd8MultipleData8(ILI9341_VSCRDEF, &scrparam[1], 6);
-  }
-  Scroll %= scrparam[2];
-  if(Scroll < 0)
-    Scroll = scrparam[2] + Scroll + scrparam[1];
-  else
-    Scroll = Scroll + scrparam[1];
-  #elif (ILI9341_ORIENTATION == 3)
-  if((TopFix != __REVSH(scrparam[3])) || (BottonFix != __REVSH(scrparam[1])))
-  {
-    scrparam[3] = __REVSH(TopFix);
-    scrparam[1] = __REVSH(BottonFix);
-    scrparam[2] = __REVSH(ILI9341_LCD_PIXEL_HEIGHT - TopFix - BottonFix);
-    LCD_IO_WriteCmd8MultipleData8(ILI9341_VSCRDEF, &scrparam[1], 6);
-  }
-  Scroll %= __REVSH(scrparam[2]);
   if(Scroll < 0)
     Scroll = __REVSH(scrparam[2]) + Scroll + __REVSH(scrparam[1]);
   else

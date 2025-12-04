@@ -18,15 +18,19 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "cmsis_os.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <string.h>
-#include "App/appLcdSpeedTest.h"
+#include "Lcd/ts.h"
+#include "Lcd/ili9341.h"
 
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
+typedef StaticTask_t osStaticThreadDef_t;
+typedef StaticSemaphore_t osStaticSemaphoreDef_t;
 /* USER CODE BEGIN PTD */
 
 /* USER CODE END PTD */
@@ -45,9 +49,39 @@ ADC_HandleTypeDef hadc1;
 DAC_HandleTypeDef hdac1;
 
 TIM_HandleTypeDef htim6;
+TIM_HandleTypeDef htim13;
 
+/* Definitions for Render */
+osThreadId_t RenderHandle;
+uint32_t renderBuffer[ 128 ];
+osStaticThreadDef_t renderControlBlock;
+const osThreadAttr_t Render_attributes = {
+  .name = "Render",
+  .cb_mem = &renderControlBlock,
+  .cb_size = sizeof(renderControlBlock),
+  .stack_mem = &renderBuffer[0],
+  .stack_size = sizeof(renderBuffer),
+  .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for buffer_swap_sem */
+osSemaphoreId_t buffer_swap_semHandle;
+osStaticSemaphoreDef_t buffer_swap_semControlBlock;
+const osSemaphoreAttr_t buffer_swap_sem_attributes = {
+  .name = "buffer_swap_sem",
+  .cb_mem = &buffer_swap_semControlBlock,
+  .cb_size = sizeof(buffer_swap_semControlBlock),
+};
 /* USER CODE BEGIN PV */
+extern TS_Drv  *ts_drv;
+TS_Point test_point;
+uint32_t mapped_x, mapped_y;
 
+/* NON-CACHEABLE MEMORY */
+uint16_t back_buf[ILI9341_LCD_WIDTH * ILI9341_LCD_HEIGHT];
+uint16_t front_buf[ILI9341_LCD_WIDTH * ILI9341_LCD_HEIGHT];
+
+volatile uint16_t *inBufPtr  = back_buf;
+volatile uint16_t *outBufPtr = front_buf;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -57,12 +91,23 @@ static void MX_GPIO_Init(void);
 static void MX_TIM6_Init(void);
 static void MX_DAC1_Init(void);
 static void MX_ADC1_Init(void);
+static void MX_TIM13_Init(void);
+void Start_Render_Task(void *argument);
+
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+static  uint32_t map(
+		uint32_t x,
+		uint32_t in_min,
+		uint32_t in_max,
+		uint32_t out_min,
+		uint32_t out_max) {
+	return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
 
 /* USER CODE END 0 */
 
@@ -100,16 +145,55 @@ int main(void)
   MX_TIM6_Init();
   MX_DAC1_Init();
   MX_ADC1_Init();
+  MX_TIM13_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
 
+  /* Init scheduler */
+  osKernelInitialize();
+
+  /* USER CODE BEGIN RTOS_MUTEX */
+  /* add mutexes, ... */
+  /* USER CODE END RTOS_MUTEX */
+
+  /* Create the semaphores(s) */
+  /* creation of buffer_swap_sem */
+  buffer_swap_semHandle = osSemaphoreNew(1, 0, &buffer_swap_sem_attributes);
+
+  /* USER CODE BEGIN RTOS_SEMAPHORES */
+  /* add semaphores, ... */
+  /* USER CODE END RTOS_SEMAPHORES */
+
+  /* USER CODE BEGIN RTOS_TIMERS */
+  /* start timers, add new ones, ... */
+  /* USER CODE END RTOS_TIMERS */
+
+  /* USER CODE BEGIN RTOS_QUEUES */
+  /* add queues, ... */
+  /* USER CODE END RTOS_QUEUES */
+
+  /* Create the thread(s) */
+  /* creation of Render */
+  RenderHandle = osThreadNew(Start_Render_Task, NULL, &Render_attributes);
+
+  /* USER CODE BEGIN RTOS_THREADS */
+  /* add threads, ... */
+  /* USER CODE END RTOS_THREADS */
+
+  /* USER CODE BEGIN RTOS_EVENTS */
+  /* add events, ... */
+  /* USER CODE END RTOS_EVENTS */
+
+  /* Start scheduler */
+  osKernelStart();
+
+  /* We should never get here as control is now taken by the scheduler */
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  mainApp();
   while (1)
   {
-
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -329,6 +413,37 @@ static void MX_TIM6_Init(void)
 }
 
 /**
+  * @brief TIM13 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM13_Init(void)
+{
+
+  /* USER CODE BEGIN TIM13_Init 0 */
+
+  /* USER CODE END TIM13_Init 0 */
+
+  /* USER CODE BEGIN TIM13_Init 1 */
+
+  /* USER CODE END TIM13_Init 1 */
+  htim13.Instance = TIM13;
+  htim13.Init.Prescaler = 28000 - 1;
+  htim13.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim13.Init.Period = 334 - 1;
+  htim13.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim13.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
+  if (HAL_TIM_Base_Init(&htim13) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM13_Init 2 */
+  HAL_TIM_Base_Start_IT(&htim13);
+  /* USER CODE END TIM13_Init 2 */
+
+}
+
+/**
   * @brief GPIO Initialization Function
   * @param None
   * @retval None
@@ -481,6 +596,34 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE END 4 */
 
+/* USER CODE BEGIN Header_Start_Render_Task */
+/**
+  * @brief  Function implementing the Render thread.
+  * @param  argument: Not used
+  * @retval None
+  */
+/* USER CODE END Header_Start_Render_Task */
+void Start_Render_Task(void *argument)
+{
+  /* USER CODE BEGIN 5 */
+  /* Infinite loop */
+  for(;;)
+  {
+    test_point = ts_drv->Get_Point();
+
+    if (((test_point.x != 0 ) || (test_point.y != 0) ) && (test_point.z < 200)) {
+		mapped_x = map(test_point.x, MIN_X, MAX_X, 0, 240);
+		mapped_y = map(test_point.y, MIN_Y, MAX_Y, 0, 320);
+
+		// draw point to the buffer
+		inBufPtr[mapped_x + 320*mapped_y] = (uint16_t) 0x7FF;
+
+    }
+	osDelay(10);
+  }
+  /* USER CODE END 5 */
+}
+
  /* MPU Configuration */
 
 void MPU_Config(void)
@@ -508,6 +651,28 @@ void MPU_Config(void)
   /* Enables the MPU */
   HAL_MPU_Enable(MPU_PRIVILEGED_DEFAULT);
 
+}
+
+/**
+  * @brief  Period elapsed callback in non blocking mode
+  * @note   This function is called  when TIM5 interrupt took place, inside
+  * HAL_TIM_IRQHandler(). It makes a direct call to HAL_IncTick() to increment
+  * a global variable "uwTick" used as application time base.
+  * @param  htim : TIM handle
+  * @retval None
+  */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+  /* USER CODE BEGIN Callback 0 */
+
+  /* USER CODE END Callback 0 */
+  if (htim->Instance == TIM5)
+  {
+    HAL_IncTick();
+  }
+  /* USER CODE BEGIN Callback 1 */
+
+  /* USER CODE END Callback 1 */
 }
 
 /**
