@@ -5,16 +5,23 @@
  *      Author: cullen-sharp
  */
 
-/* Define to prevent recursive inclusion -------------------------------------*/
+/* Define to prevent recursive inclusion ------------------------------------*/
 #ifndef __TS_H_
 #define __TS_H_
 
-/* Interface section */
-
-/* Includes ------------------------------------------------------------------*/
+/* Includes -----------------------------------------------------------------*/
 #include <stdint.h>
 #include "stm32h7a3xxq.h"
 #include "stm32h7xx_ll_gpio.h"
+
+/* Defines ------------------------------------------------------------------*/
+// These will be used to map the touch screen to the coords to screen space
+// They were found experimentally
+#define MIN_X	40u
+#define MIN_Y	60u
+#define MAX_X	950u
+#define MAX_Y	900u
+/* Interface ----------------------------------------------------------------*/
 
 typedef struct {
     // State variables for x and y

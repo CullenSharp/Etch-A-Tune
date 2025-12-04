@@ -4,7 +4,6 @@
  *  Created on: Nov 28, 2025
  *      Author: cullen-sharp
  *
- *	todo: implement error logging
  *	todo: write adc reads to be non-blocking
  */
 
@@ -16,8 +15,8 @@ extern ADC_HandleTypeDef hadc1;
 
 // function prototypes
 void 	 TS_Drv_init(void);
-uint8_t TS_Drv_Read_Touch_Y(uint32_t* y);
-uint8_t TS_Drv_Read_Touch_X(uint32_t* x);
+uint8_t  TS_Drv_Read_Touch_Y(uint32_t* y);
+uint8_t  TS_Drv_Read_Touch_X(uint32_t* x);
 TS_Point TS_Drv_Get_Point(void);
 
 TS_Drv ili9341_ts_drv = {
@@ -25,7 +24,7 @@ TS_Drv ili9341_ts_drv = {
 	TS_Drv_Read_Touch_Y,
 	TS_Drv_Read_Touch_X,
 	TS_Drv_Get_Point,
-	300,				// nominal resistance between plates
+	330,				// nominal resistance between plates
 	XP_Pin, 			// _xp
 	YP_Pin, 			// _yp
 	XM_Pin, 			// _xm
@@ -47,6 +46,7 @@ void TS_Drv_init(void) {
 uint8_t TS_Drv_Read_Touch_X(uint32_t *x) {
 	uint32_t s0, s1;
 	uint8_t valid = 1;
+	int32_t diff;
 
 	// |              | X+   | X-         | Y+   | Y-            |
 	// | X-Coordinate | Hi-Z | Hi-Z / ADC | Gnd  | Vcc           |
@@ -84,7 +84,8 @@ uint8_t TS_Drv_Read_Touch_X(uint32_t *x) {
 	*x = (s0 + s1) >> 1;
 
 	// check for validity
-	if (s0 - s1 < -4 || s0 - s1 > 4) {
+	diff = (int32_t)s1 - (int32_t)s0;
+	if ((diff < -8) || (diff > 8)) {
 		return !valid;
 	} else {
 		return  valid;
@@ -94,6 +95,7 @@ uint8_t TS_Drv_Read_Touch_X(uint32_t *x) {
 uint8_t TS_Drv_Read_Touch_Y(uint32_t *y) {
 	uint32_t s0, s1;
 	uint8_t valid = 1;
+	int32_t diff;
 
 	//|              | X+   | X-         | Y+   	  | Y-      |
 	//| Y-Coordinate | Gnd  | Vcc        | Hi-Z / ADC | Hi-Z    |
@@ -128,10 +130,11 @@ uint8_t TS_Drv_Read_Touch_Y(uint32_t *y) {
 	s1 = HAL_ADC_GetValue(&hadc1);
 
 	// assign result
-	*y = (s0 + s1) >> 1;
+	*y = 1023 - ((s0 + s1) >> 1);
 
 	// check for validity
-	if (s0 - s1 < -4 || s0 - s1 > 4) {
+	diff = (int32_t)s1 - (int32_t)s0;
+	if ((diff < -8) || (diff > 8)) {
 		return !valid;
 	} else {
 		return  valid;
@@ -143,13 +146,8 @@ TS_Point TS_Drv_Get_Point(void) {
 	uint32_t s1, s0;
 	uint8_t valid;
 
-	if ((valid = ili9341_ts_drv.Read_Touch_X(&x)) != 1) {
-		Error_Handler();
-	}
-
-	if ((valid = ili9341_ts_drv.Read_Touch_Y(&y)) != 1) {
-		Error_Handler();
-	}
+	valid = ili9341_ts_drv.Read_Touch_X(&x);
+	valid = ili9341_ts_drv.Read_Touch_Y(&y);
 
 	//|              | X+   | X-         | Y+   	  | Y-      |
 	//| Pressure     | Gnd  | ADC        | ADC 		  | Vcc    	|
@@ -167,7 +165,7 @@ TS_Point TS_Drv_Get_Point(void) {
 	// Stop ADC since channel selection is only allowed when stopped
 	HAL_ADC_Stop(&hadc1);
 
-	// only read channel 17
+	// only read channel 17 (y+)
 	LL_ADC_SetChannelPreselection(ADC1, LL_ADC_CHANNEL_17);
 	LL_ADC_REG_SetSequencerRanks(ADC1, LL_ADC_REG_RANK_1, LL_ADC_CHANNEL_17);
 
@@ -178,7 +176,7 @@ TS_Point TS_Drv_Get_Point(void) {
 	// Stop ADC since channel selection is only allowed when stopped
 	HAL_ADC_Stop(&hadc1);
 
-	// only read channel 14
+	// only read channel 14 (x-)
 	LL_ADC_SetChannelPreselection(ADC1, LL_ADC_CHANNEL_14);
 	LL_ADC_REG_SetSequencerRanks(ADC1, LL_ADC_REG_RANK_1, LL_ADC_CHANNEL_14);
 
@@ -189,15 +187,15 @@ TS_Point TS_Drv_Get_Point(void) {
 	// calculate the pressure
 	if (ili9341_ts_drv._rxplate != 0) {
 		float scratch;
-		scratch  = s1;
-		scratch /= s0;
+		scratch  = s0;
+		scratch /= s1;
 		scratch -= 1;
 		scratch *= x;
 		scratch *= ili9341_ts_drv._rxplate;
 		scratch /= 1024;
 		z = (uint32_t) scratch;
 	} else {
-		z = (1023 - (s1 - s0));
+		z = (1023 - (s0 - s1));
 	}
 
 	if (!valid) {
