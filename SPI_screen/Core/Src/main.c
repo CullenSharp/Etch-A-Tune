@@ -106,12 +106,11 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  mainApp();
   while (1)
   {
 
     /* USER CODE END WHILE */
-
+	mainApp();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
