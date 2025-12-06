@@ -44,7 +44,7 @@ typedef struct {
     uint32_t  _xp_pin,  _yp_pin,  _xm_pin,  _ym_pin;
     // ports
     GPIO_TypeDef *_xp_port, *_yp_port, *_xm_port, *_ym_port;
-} TS_Drv;
+} GRTS_Drv;
 
 
 #endif /* INC_LCD_TS_H_ */

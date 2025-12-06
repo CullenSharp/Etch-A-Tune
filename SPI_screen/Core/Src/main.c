@@ -23,6 +23,7 @@
 /* USER CODE BEGIN Includes */
 #include <string.h>
 #include "App/appLcdSpeedTest.h"
+#include "Lcd/ts.h"
 
 /* USER CODE END Includes */
 
@@ -47,7 +48,9 @@ DAC_HandleTypeDef hdac1;
 TIM_HandleTypeDef htim6;
 
 /* USER CODE BEGIN PV */
-
+extern GRTS_Drv  *ts_drv;
+TS_Point test_point;
+uint8_t touched_flag = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -101,16 +104,22 @@ int main(void)
   MX_DAC1_Init();
   MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
-
+  mainApp();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
+	test_point = ts_drv->Get_Point();
+	if (test_point.z < 500) {
+		touched_flag = 1;
+	} else {
+		touched_flag = 0;
+	}
+	HAL_Delay(10);
     /* USER CODE END WHILE */
-	mainApp();
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -242,7 +251,7 @@ static void MX_ADC1_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN ADC1_Init 2 */
-
+  HAL_ADCEx_Calibration_Start(&hadc1, ADC_CALIB_OFFSET_LINEARITY, ADC_CALIB_OFFSET_LINEARITY);
   /* USER CODE END ADC1_Init 2 */
 
 }
