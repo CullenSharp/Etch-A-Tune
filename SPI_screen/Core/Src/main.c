@@ -1,33 +1,36 @@
 /* USER CODE BEGIN Header */
 /**
-  ******************************************************************************
-  * @file           : main.c
-  * @brief          : Main program body
-  ******************************************************************************
-  * @attention
-  *
-  * Copyright (c) 2025 STMicroelectronics.
-  * All rights reserved.
-  *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
-  *
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file           : main.c
+ * @brief          : Main program body
+ ******************************************************************************
+ * @attention
+ *
+ * Copyright (c) 2025 STMicroelectronics.
+ * All rights reserved.
+ *
+ * This software is licensed under terms that can be found in the LICENSE file
+ * in the root directory of this software component.
+ * If no LICENSE file comes with this software, it is provided AS-IS.
+ *
+ ******************************************************************************
+ */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "cmsis_os.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <string.h>
-#include "App/appLcdSpeedTest.h"
 #include "Lcd/ts.h"
+#include "Lcd/ili9341.h"
+#include "Lcd/stm32_adafruit_lcd.h"
 
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
+typedef StaticTask_t osStaticThreadDef_t;
 /* USER CODE BEGIN PTD */
 
 /* USER CODE END PTD */
@@ -46,11 +49,42 @@ ADC_HandleTypeDef hadc1;
 DAC_HandleTypeDef hdac1;
 
 TIM_HandleTypeDef htim6;
+TIM_HandleTypeDef htim13;
 
+/* Definitions for touch_io */
+osThreadId_t touch_ioHandle;
+uint32_t touch_ioBuffer[ 128 ];
+osStaticThreadDef_t touch_ioControlBlock;
+const osThreadAttr_t touch_io_attributes = {
+  .name = "touch_io",
+  .cb_mem = &touch_ioControlBlock,
+  .cb_size = sizeof(touch_ioControlBlock),
+  .stack_mem = &touch_ioBuffer[0],
+  .stack_size = sizeof(touch_ioBuffer),
+  .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for lcd_display */
+osThreadId_t lcd_displayHandle;
+uint32_t lcd_displayBuffer[ 128 ];
+osStaticThreadDef_t lcd_displayControlBlock;
+const osThreadAttr_t lcd_display_attributes = {
+  .name = "lcd_display",
+  .cb_mem = &lcd_displayControlBlock,
+  .cb_size = sizeof(lcd_displayControlBlock),
+  .stack_mem = &lcd_displayBuffer[0],
+  .stack_size = sizeof(lcd_displayBuffer),
+  .priority = (osPriority_t) osPriorityBelowNormal7,
+};
 /* USER CODE BEGIN PV */
-extern GRTS_Drv  *ts_drv;
-TS_Point test_point;
-uint8_t touched_flag = 0;
+extern GRTS_Drv *ts_drv;
+TS_Point p;
+uint32_t x, y;
+
+uint16_t write_buffer[ILI9341_LCD_PIXEL_WIDTH * ILI9341_LCD_PIXEL_HEIGHT];
+uint16_t draw_buffer[ILI9341_LCD_PIXEL_WIDTH * ILI9341_LCD_PIXEL_HEIGHT];
+
+uint16_t *write_to = write_buffer;
+uint16_t *draw_from = draw_buffer;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -60,13 +94,20 @@ static void MX_GPIO_Init(void);
 static void MX_TIM6_Init(void);
 static void MX_DAC1_Init(void);
 static void MX_ADC1_Init(void);
+static void MX_TIM13_Init(void);
+void start_touch_io(void *argument);
+void start_lcd_display(void *argument);
+
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+static inline uint32_t map(uint32_t x, uint32_t in_min, uint32_t in_max,
+		uint32_t out_min, uint32_t out_max) {
+	return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
 /* USER CODE END 0 */
 
 /**
@@ -103,25 +144,59 @@ int main(void)
   MX_TIM6_Init();
   MX_DAC1_Init();
   MX_ADC1_Init();
+  MX_TIM13_Init();
   /* USER CODE BEGIN 2 */
-  mainApp();
+	HAL_Delay(300);
+	BSP_LCD_Init();
+	BSP_LCD_Clear(LCD_COLOR_BLACK);
   /* USER CODE END 2 */
+
+  /* Init scheduler */
+  osKernelInitialize();
+
+  /* USER CODE BEGIN RTOS_MUTEX */
+	/* add mutexes, ... */
+  /* USER CODE END RTOS_MUTEX */
+
+  /* USER CODE BEGIN RTOS_SEMAPHORES */
+	/* add semaphores, ... */
+  /* USER CODE END RTOS_SEMAPHORES */
+
+  /* USER CODE BEGIN RTOS_TIMERS */
+	/* start timers, add new ones, ... */
+  /* USER CODE END RTOS_TIMERS */
+
+  /* USER CODE BEGIN RTOS_QUEUES */
+	/* add queues, ... */
+  /* USER CODE END RTOS_QUEUES */
+
+  /* Create the thread(s) */
+  /* creation of touch_io */
+  touch_ioHandle = osThreadNew(start_touch_io, NULL, &touch_io_attributes);
+
+  /* creation of lcd_display */
+  lcd_displayHandle = osThreadNew(start_lcd_display, NULL, &lcd_display_attributes);
+
+  /* USER CODE BEGIN RTOS_THREADS */
+	/* add threads, ... */
+  /* USER CODE END RTOS_THREADS */
+
+  /* USER CODE BEGIN RTOS_EVENTS */
+	/* add events, ... */
+  /* USER CODE END RTOS_EVENTS */
+
+  /* Start scheduler */
+  osKernelStart();
+
+  /* We should never get here as control is now taken by the scheduler */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
-  {
-	test_point = ts_drv->Get_Point();
-	if (test_point.z < 500) {
-		touched_flag = 1;
-	} else {
-		touched_flag = 0;
-	}
-	HAL_Delay(10);
+	while (1) {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-  }
+	}
   /* USER CODE END 3 */
 }
 
@@ -251,7 +326,8 @@ static void MX_ADC1_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN ADC1_Init 2 */
-  HAL_ADCEx_Calibration_Start(&hadc1, ADC_CALIB_OFFSET_LINEARITY, ADC_CALIB_OFFSET_LINEARITY);
+	HAL_ADCEx_Calibration_Start(&hadc1, ADC_CALIB_OFFSET_LINEARITY,
+	ADC_CALIB_OFFSET_LINEARITY);
   /* USER CODE END ADC1_Init 2 */
 
 }
@@ -331,8 +407,39 @@ static void MX_TIM6_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN TIM6_Init 2 */
-  HAL_TIM_Base_Start(&htim6);
+	HAL_TIM_Base_Start(&htim6);
   /* USER CODE END TIM6_Init 2 */
+
+}
+
+/**
+  * @brief TIM13 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM13_Init(void)
+{
+
+  /* USER CODE BEGIN TIM13_Init 0 */
+
+  /* USER CODE END TIM13_Init 0 */
+
+  /* USER CODE BEGIN TIM13_Init 1 */
+
+  /* USER CODE END TIM13_Init 1 */
+  htim13.Instance = TIM13;
+  htim13.Init.Prescaler = 28000 - 1;
+  htim13.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim13.Init.Period = 333 - 1;
+  htim13.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim13.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
+  if (HAL_TIM_Base_Init(&htim13) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM13_Init 2 */
+	HAL_TIM_Base_Start_IT(&htim13);
+  /* USER CODE END TIM13_Init 2 */
 
 }
 
@@ -487,6 +594,57 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE END 4 */
 
+/* USER CODE BEGIN Header_start_touch_io */
+/**
+ * @brief  Function implementing the touch_io thread.
+ * @param  argument: Not used
+ * @retval None
+ */
+/* USER CODE END Header_start_touch_io */
+void start_touch_io(void *argument)
+{
+  /* USER CODE BEGIN 5 */
+	/* Infinite loop */
+	for (;;) {
+		p = ts_drv->Get_Point();
+
+		if (p.z < 5000) {
+			if ((p.x < MIN_X) || (p.x > MAX_X)) {
+				__NOP();
+			}
+			else if ((p.y < MIN_Y) || (p.y > MAX_Y)) {
+				__NOP();
+			} else {
+				x = map(p.x, MIN_X, MAX_X, 0, ILI9341_LCD_PIXEL_HEIGHT);
+				y = map(p.y, MIN_Y, MAX_Y, 0, ILI9341_LCD_PIXEL_WIDTH);
+
+				// draw pixel to the buffer
+				write_to[x + ILI9341_LCD_PIXEL_WIDTH * y] = 0x7E0;
+			}
+		}
+		osDelay(TOUCH_IO_REFRESH_RATE);
+	}
+  /* USER CODE END 5 */
+}
+
+/* USER CODE BEGIN Header_start_lcd_display */
+/**
+ * @brief Function implementing the lcd_display thread.
+ * @param argument: Not used
+ * @retval None
+ */
+/* USER CODE END Header_start_lcd_display */
+void start_lcd_display(void *argument)
+{
+  /* USER CODE BEGIN start_lcd_display */
+	/* Infinite loop */
+	for (;;) {
+		BSP_LCD_DrawRGB16Image(0, 0, ILI9341_LCD_PIXEL_WIDTH,
+				ILI9341_LCD_PIXEL_HEIGHT, draw_from);
+	}
+  /* USER CODE END start_lcd_display */
+}
+
  /* MPU Configuration */
 
 void MPU_Config(void)
@@ -517,17 +675,38 @@ void MPU_Config(void)
 }
 
 /**
+  * @brief  Period elapsed callback in non blocking mode
+  * @note   This function is called  when TIM12 interrupt took place, inside
+  * HAL_TIM_IRQHandler(). It makes a direct call to HAL_IncTick() to increment
+  * a global variable "uwTick" used as application time base.
+  * @param  htim : TIM handle
+  * @retval None
+  */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+  /* USER CODE BEGIN Callback 0 */
+
+  /* USER CODE END Callback 0 */
+  if (htim->Instance == TIM12)
+  {
+    HAL_IncTick();
+  }
+  /* USER CODE BEGIN Callback 1 */
+
+  /* USER CODE END Callback 1 */
+}
+
+/**
   * @brief  This function is executed in case of error occurrence.
   * @retval None
   */
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
-  /* User can add his own implementation to report the HAL error return state */
-  __disable_irq();
-  while (1)
-  {
-  }
+	/* User can add his own implementation to report the HAL error return state */
+	__disable_irq();
+	while (1) {
+	}
   /* USER CODE END Error_Handler_Debug */
 }
 #ifdef USE_FULL_ASSERT

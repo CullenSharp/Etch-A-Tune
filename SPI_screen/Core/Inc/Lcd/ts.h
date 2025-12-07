@@ -17,10 +17,10 @@
 /* Defines ------------------------------------------------------------------*/
 // These will be used to map the touch screen to the coords to screen space
 // They were found experimentally
-#define MIN_X	40u
-#define MIN_Y	60u
-#define MAX_X	950u
-#define MAX_Y	900u
+#define MIN_X	70u
+#define MIN_Y	100u
+#define MAX_X	930u
+#define MAX_Y	910u
 /* Interface ----------------------------------------------------------------*/
 
 typedef struct {
