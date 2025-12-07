@@ -560,11 +560,17 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Alternate = GPIO_AF7_USART3;
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : ROTP1_Pin ROTB1_Pin ROTA1_Pin ROTP2_Pin
-                           ROTB2_Pin ROTA2_Pin SW1_Pin SW2_Pin */
-  GPIO_InitStruct.Pin = ROTP1_Pin|ROTB1_Pin|ROTA1_Pin|ROTP2_Pin
-                          |ROTB2_Pin|ROTA2_Pin|SW1_Pin|SW2_Pin;
+  /*Configure GPIO pins : ROTP1_Pin ROTP2_Pin ROTB2_Pin ROTA2_Pin
+                           SW1_Pin SW2_Pin */
+  GPIO_InitStruct.Pin = ROTP1_Pin|ROTP2_Pin|ROTB2_Pin|ROTA2_Pin
+                          |SW1_Pin|SW2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : ROTB1_Pin ROTA1_Pin */
+  GPIO_InitStruct.Pin = ROTB1_Pin|ROTA1_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING_FALLING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
