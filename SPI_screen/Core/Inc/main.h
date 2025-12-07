@@ -132,8 +132,9 @@ void Error_Handler(void);
 #define SW3G10_GPIO_Port GPIOG
 #define SW5_Pin GPIO_PIN_11
 #define SW5_GPIO_Port GPIOG
-#define SLIDE_SWITCH_Pin GPIO_PIN_12
-#define SLIDE_SWITCH_GPIO_Port GPIOG
+#define SLIDE_SW_Pin GPIO_PIN_12
+#define SLIDE_SW_GPIO_Port GPIOG
+#define SLIDE_SW_EXTI_IRQn EXTI15_10_IRQn
 #define BAT_DIAG_Pin GPIO_PIN_13
 #define BAT_DIAG_GPIO_Port GPIOG
 #define POWER_GOOD_Pin GPIO_PIN_14

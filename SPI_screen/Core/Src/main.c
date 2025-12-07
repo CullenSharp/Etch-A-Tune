@@ -465,7 +465,7 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOG_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOE, LED_Pin|GPIO_PIN_1, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(TS_CS_GPIO_Port, TS_CS_Pin, GPIO_PIN_SET);
@@ -492,12 +492,12 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(LCD_D5_GPIO_Port, LCD_D5_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : LED_Pin PE1 */
-  GPIO_InitStruct.Pin = LED_Pin|GPIO_PIN_1;
+  /*Configure GPIO pin : LED_Pin */
+  GPIO_InitStruct.Pin = LED_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
+  HAL_GPIO_Init(LED_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : TS_CS_Pin */
   GPIO_InitStruct.Pin = TS_CS_Pin;
@@ -505,12 +505,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
   HAL_GPIO_Init(TS_CS_GPIO_Port, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : PC13 */
-  GPIO_InitStruct.Pin = GPIO_PIN_13;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pins : YM_Pin LCD_CS_Pin */
   GPIO_InitStruct.Pin = YM_Pin|LCD_CS_Pin;
@@ -574,16 +568,26 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : SW3_Pin SW3G10_Pin SW5_Pin SLIDE_SWITCH_Pin
-                           BAT_DIAG_Pin POWER_GOOD_Pin */
-  GPIO_InitStruct.Pin = SW3_Pin|SW3G10_Pin|SW5_Pin|SLIDE_SWITCH_Pin
-                          |BAT_DIAG_Pin|POWER_GOOD_Pin;
+  /*Configure GPIO pins : SW3_Pin SW3G10_Pin SW5_Pin BAT_DIAG_Pin
+                           POWER_GOOD_Pin */
+  GPIO_InitStruct.Pin = SW3_Pin|SW3G10_Pin|SW5_Pin|BAT_DIAG_Pin
+                          |POWER_GOOD_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOG, &GPIO_InitStruct);
 
+  /*Configure GPIO pin : SLIDE_SW_Pin */
+  GPIO_InitStruct.Pin = SLIDE_SW_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(SLIDE_SW_GPIO_Port, &GPIO_InitStruct);
+
   /*AnalogSwitch Config */
   HAL_SYSCFG_AnalogSwitchConfig(SYSCFG_SWITCH_PA0, SYSCFG_SWITCH_PA0_CLOSE);
+
+  /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(SLIDE_SW_EXTI_IRQn, 5, 0);
+  HAL_NVIC_EnableIRQ(SLIDE_SW_EXTI_IRQn);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
 
@@ -591,7 +595,13 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+	// Todo: write mode switch logic
+	if (GPIO_Pin == SLIDE_SW_Pin) {
+		__NOP();
+	}
+}
 /* USER CODE END 4 */
 
 /* USER CODE BEGIN Header_start_touch_io */
