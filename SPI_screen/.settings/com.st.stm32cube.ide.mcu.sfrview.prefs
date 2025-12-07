@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-sfrviewstate={"fFavorites"\:{"fLists"\:{}},"fProperties"\:{"fNodeProperties"\:{"STM32H7A3/SPI3/TXDR"\:{"fNodeProperties"\:{"autoupdate"\:"false"}},"STM32H7A3/TIM6/CNT"\:{"fNodeProperties"\:{"autoupdate"\:"true"}}}}}
+sfrviewstate={"fFavorites"\:{"fLists"\:{"system"\:["Cortex_M7/SysTick/STCVR"]}},"fProperties"\:{"fNodeProperties"\:{"STM32H7A3/SPI3/TXDR"\:{"fNodeProperties"\:{"autoupdate"\:"false"}},"STM32H7A3/TIM6/CNT"\:{"fNodeProperties"\:{"autoupdate"\:"true"}},"STM32H7A3/DAC1/DOR2"\:{"fNodeProperties"\:{"autoupdate"\:"true"}},"STM32H7A3/DAC1/DHR8RD"\:{"fNodeProperties"\:{"autoupdate"\:"true"}},"STM32H7A3/DAC1/DHR8R2"\:{"fNodeProperties"\:{"autoupdate"\:"true"}},"Cortex_M7/SysTick/STCVR"\:{"fNodeProperties"\:{"autoupdate"\:"false"}}}}}
