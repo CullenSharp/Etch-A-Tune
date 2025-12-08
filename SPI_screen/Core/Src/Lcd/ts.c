@@ -1,10 +1,10 @@
 /*
- * ts.c
+ * ts.c -- adapted from adafruit/Adafruit_TouchScreen
+ *
+ *	Credit to ladyada / adafruit
  *
  *  Created on: Nov 28, 2025
  *      Author: cullen-sharp
- *
- *	todo: write adc reads to be non-blocking
  */
 
 #include "Lcd/ts.h"

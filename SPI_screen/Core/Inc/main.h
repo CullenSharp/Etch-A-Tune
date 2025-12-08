@@ -112,10 +112,12 @@ void Error_Handler(void);
 #define LCD_D7_GPIO_Port GPIOA
 #define ROTP1_Pin GPIO_PIN_0
 #define ROTP1_GPIO_Port GPIOD
-#define ROTB1_Pin GPIO_PIN_1
-#define ROTB1_GPIO_Port GPIOD
-#define ROTA1_Pin GPIO_PIN_2
+#define ROTA1_Pin GPIO_PIN_1
 #define ROTA1_GPIO_Port GPIOD
+#define ROTA1_EXTI_IRQn EXTI1_IRQn
+#define ROTB1_Pin GPIO_PIN_2
+#define ROTB1_GPIO_Port GPIOD
+#define ROTB1_EXTI_IRQn EXTI2_IRQn
 #define ROTP2_Pin GPIO_PIN_3
 #define ROTP2_GPIO_Port GPIOD
 #define ROTB2_Pin GPIO_PIN_4

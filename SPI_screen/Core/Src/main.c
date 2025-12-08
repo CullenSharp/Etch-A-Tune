@@ -26,6 +26,7 @@
 #include "Lcd/ts.h"
 #include "Lcd/ili9341.h"
 #include "Lcd/stm32_adafruit_lcd.h"
+#include "Encoder/encoder.h"
 
 /* USER CODE END Includes */
 
@@ -85,6 +86,8 @@ uint16_t draw_buffer[ILI9341_LCD_PIXEL_WIDTH * ILI9341_LCD_PIXEL_HEIGHT];
 
 uint16_t *write_to = write_buffer;
 uint16_t *draw_from = draw_buffer;
+
+extern Rotary_Encoder encoders[2];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -179,6 +182,8 @@ int main(void)
 
   /* USER CODE BEGIN RTOS_THREADS */
 	/* add threads, ... */
+//  osThreadSuspend(touch_ioHandle);
+//  osThreadSuspend(lcd_displayHandle);
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */
@@ -568,8 +573,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : ROTB1_Pin ROTA1_Pin */
-  GPIO_InitStruct.Pin = ROTB1_Pin|ROTA1_Pin;
+  /*Configure GPIO pins : ROTA1_Pin ROTB1_Pin */
+  GPIO_InitStruct.Pin = ROTA1_Pin|ROTB1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING_FALLING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
@@ -592,6 +597,12 @@ static void MX_GPIO_Init(void)
   HAL_SYSCFG_AnalogSwitchConfig(SYSCFG_SWITCH_PA0, SYSCFG_SWITCH_PA0_CLOSE);
 
   /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(ROTA1_EXTI_IRQn, 5, 0);
+  HAL_NVIC_EnableIRQ(ROTA1_EXTI_IRQn);
+
+  HAL_NVIC_SetPriority(ROTB1_EXTI_IRQn, 5, 0);
+  HAL_NVIC_EnableIRQ(ROTB1_EXTI_IRQn);
+
   HAL_NVIC_SetPriority(SLIDE_SW_EXTI_IRQn, 5, 0);
   HAL_NVIC_EnableIRQ(SLIDE_SW_EXTI_IRQn);
 
@@ -606,6 +617,10 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 	// Todo: write mode switch logic
 	if (GPIO_Pin == SLIDE_SW_Pin) {
 		__NOP();
+	}
+
+	if ((GPIO_Pin == ROTA1_Pin) || (GPIO_Pin == ROTB1_Pin)) {
+		encoders[0].irq_handler(&encoders[0]);
 	}
 }
 /* USER CODE END 4 */
