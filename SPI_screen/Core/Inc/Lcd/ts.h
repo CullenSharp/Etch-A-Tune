@@ -1,5 +1,7 @@
 /*
- * ts.h
+ * ts.h -- adapted from adafruit/Adafruit_TouchScreen
+ *
+ *	Credit to ladyada / adafruit
  *
  *  Created on: Nov 28, 2025
  *      Author: cullen-sharp
